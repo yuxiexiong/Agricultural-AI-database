@@ -22,6 +22,7 @@ International Agricultural Big Data + AI Consulting Knowledge Base
 | [database/schema/](./database/schema/) | 标签、字段和质量规则 |
 | [database/multimodal/](./database/multimodal/) | 图片、视频、PDF、图表等多模态资源元数据 |
 | [materials/](./materials/) | 人类可读素材卡片，按政策、市场、技术、案例、ROI 等分类 |
+| [materials/index.md](./materials/index.md) | 从旧长文档拆分出的 84 条素材总索引 |
 | [reports/](./reports/) | 咨询报告、月报和实施方案模板 |
 | [archive/](./archive/) | 历史底稿和旧结构备份 |
 
