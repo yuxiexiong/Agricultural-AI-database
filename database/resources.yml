@@ -668,3 +668,212 @@ resources:
     why_it_matters_zh: "适合作为农业大数据平台架构和 IoT 接入层设计的技术背景。"
     best_for: ["technology_selection", "data_architecture", "consulting_report"]
     local_downloaded: false
+
+  - id: "RES-0036"
+    title: "USDA NASS Quick Stats"
+    title_zh: "USDA NASS Quick Stats 农业统计查询工具"
+    url: "https://quickstats.nass.usda.gov/"
+    source_name: "USDA National Agricultural Statistics Service"
+    source_type: "government"
+    resource_type: "data_portal"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["us"]
+    tags: ["data_source", "ag_statistics", "production", "prices", "market"]
+    linked_material_ids: ["DATA-023", "MKT-005", "SRC-036"]
+    summary_zh: "美国 USDA NASS 的农业统计查询入口，覆盖作物、畜牧、价格、经济、环境等维度。"
+    why_it_matters_zh: "适合作为美国农业市场、产量、价格和农场结构分析的权威数据源。"
+    best_for: ["market_context", "data_architecture", "consulting_report"]
+    local_downloaded: false
+
+  - id: "RES-0037"
+    title: "USDA CropScape / Cropland Data Layer"
+    title_zh: "USDA CropScape / CDL 作物图层"
+    url: "https://nassgeodata.gmu.edu/CropScape/"
+    source_name: "USDA NASS / George Mason University"
+    source_type: "government"
+    resource_type: "data_portal"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["us"]
+    tags: ["remote_sensing", "crop_type_map", "land_cover", "data_source"]
+    linked_material_ids: ["DATA-024", "TECH-015", "SRC-037"]
+    summary_zh: "美国作物类型和农地覆盖数据入口，常用于作物识别、遥感标签和地理空间分析。"
+    why_it_matters_zh: "是讲解农业 AI 训练标签、作物分类和公共遥感数据产品的高质量案例。"
+    best_for: ["data_architecture", "technology_selection", "benchmark_case"]
+    local_downloaded: false
+
+  - id: "RES-0038"
+    title: "FarmVibes.AI"
+    title_zh: "Microsoft FarmVibes.AI 农业与可持续地理空间 ML 工具"
+    url: "https://github.com/microsoft/farmvibes-ai"
+    source_name: "Microsoft"
+    source_type: "open_source"
+    resource_type: "project"
+    quality_tier: "C"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["geospatial_ai", "remote_sensing", "open_source", "modeling"]
+    linked_material_ids: ["TECH-016", "DATA-025", "SRC-038"]
+    summary_zh: "开源农业与可持续地理空间机器学习项目，适合做技术原型和方法参考。"
+    why_it_matters_zh: "可为农业遥感、地理空间 ML 和原型系统提供工程化参考。"
+    best_for: ["technology_selection", "data_architecture", "content_ip"]
+    local_downloaded: false
+
+  - id: "RES-0039"
+    title: "Planet Agriculture"
+    title_zh: "Planet 农业遥感行业方案"
+    url: "https://www.planet.com/industries/agriculture/"
+    source_name: "Planet"
+    source_type: "company_official"
+    resource_type: "product_page"
+    quality_tier: "B"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["remote_sensing", "commercial_satellite", "crop_monitoring", "geospatial_ai"]
+    linked_material_ids: ["CASE-009", "DATA-026", "SRC-039"]
+    summary_zh: "商业卫星公司 Planet 的农业行业方案入口，适合了解高频遥感在农业中的商业应用。"
+    why_it_matters_zh: "帮助区分公开遥感数据和商业高频影像在农业 AI 项目中的角色。"
+    best_for: ["benchmark_case", "technology_selection", "market_context"]
+    local_downloaded: false
+
+  - id: "RES-0040"
+    title: "STAC: SpatioTemporal Asset Catalogs"
+    title_zh: "STAC 时空资产目录规范"
+    url: "https://stacspec.org/en"
+    source_name: "STAC Community"
+    source_type: "open_source"
+    resource_type: "standard"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["geospatial_ai", "data_catalog", "interoperability", "standard"]
+    linked_material_ids: ["STD-004", "DATA-027", "SRC-040"]
+    summary_zh: "面向遥感和时空数据的开放目录规范，用统一结构描述、索引和发现地理空间资产。"
+    why_it_matters_zh: "农业遥感平台要管理 Sentinel、Landsat、商业影像和派生产品时，STAC 是重要的数据目录参考。"
+    best_for: ["data_architecture", "technology_selection", "risk_control"]
+    local_downloaded: false
+
+  - id: "RES-0041"
+    title: "Trimble Agriculture"
+    title_zh: "Trimble 农业精准技术与农场管理方案"
+    url: "https://www.trimble.com/en/industries/agriculture"
+    source_name: "Trimble"
+    source_type: "company_official"
+    resource_type: "product_page"
+    quality_tier: "B"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["precision_agriculture", "farm_management", "guidance", "data_platform"]
+    linked_material_ids: ["CASE-010", "STD-005", "SRC-041"]
+    summary_zh: "Trimble 农业行业技术入口，覆盖精准农业、定位导航、农场管理和数字工作流。"
+    why_it_matters_zh: "适合说明农业 AI 落地常依赖定位、农机、作业记录和农场管理系统等基础设施。"
+    best_for: ["benchmark_case", "technology_selection", "data_architecture"]
+    local_downloaded: false
+
+  - id: "RES-0042"
+    title: "Carbon Robotics LaserWeeder"
+    title_zh: "Carbon Robotics LaserWeeder 激光除草机器人"
+    url: "https://carbonrobotics.com/laserweeder"
+    source_name: "Carbon Robotics"
+    source_type: "company_official"
+    resource_type: "case"
+    quality_tier: "B"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["us"]
+    tags: ["robotics", "computer_vision", "precision_application", "weed_control"]
+    linked_material_ids: ["CASE-011", "SCN-009", "ROI-006", "SRC-042"]
+    summary_zh: "将视觉识别与激光除草执行结合的农业机器人产品案例。"
+    why_it_matters_zh: "适合展示农业 AI 从识别/建议进入自动化执行层的趋势。"
+    best_for: ["benchmark_case", "content_ip", "technology_selection"]
+    local_downloaded: false
+
+  - id: "RES-0043"
+    title: "Google Earth Engine"
+    title_zh: "Google Earth Engine 地球观测数据与分析平台"
+    url: "https://earthengine.google.com/"
+    source_name: "Google"
+    source_type: "company_official"
+    resource_type: "data_catalog"
+    quality_tier: "B"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["remote_sensing", "geospatial_ai", "cloud_compute", "data_catalog"]
+    linked_material_ids: ["DATA-028", "TECH-017", "SRC-043"]
+    summary_zh: "云端地球观测数据和分析平台，包含大量公开遥感与地理空间数据目录。"
+    why_it_matters_zh: "适合农业遥感 AI 原型验证、特征工程和快速可行性分析。"
+    best_for: ["technology_selection", "data_architecture", "benchmark_case"]
+    local_downloaded: false
+
+  - id: "RES-0044"
+    title: "FAO AGRIS"
+    title_zh: "FAO AGRIS 国际农业科技文献系统"
+    url: "https://agris.fao.org/"
+    source_name: "FAO"
+    source_type: "official_international"
+    resource_type: "data_catalog"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["literature", "data_catalog", "agricultural_research", "knowledge_base"]
+    linked_material_ids: ["DATA-029", "SRC-044"]
+    summary_zh: "FAO 维护的农业科学技术文献与书目记录平台，覆盖多语言、多国家、多类型资料。"
+    why_it_matters_zh: "适合为农业 AI 报告、综述和政策分析补充全球农业研究线索。"
+    best_for: ["consulting_report", "monthly_intelligence", "content_ip"]
+    local_downloaded: false
+
+  - id: "RES-0045"
+    title: "AGROVOC"
+    title_zh: "AGROVOC 多语种农业词表"
+    url: "https://www.fao.org/agrovoc/"
+    source_name: "FAO"
+    source_type: "official_international"
+    resource_type: "vocabulary"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["vocabulary", "linked_data", "knowledge_graph", "interoperability"]
+    linked_material_ids: ["STD-006", "DATA-030", "SRC-045"]
+    summary_zh: "FAO 的多语种农业词表和 Linked Open Data 资源，用于标准化农业概念、术语和关系。"
+    why_it_matters_zh: "适合支撑农业知识图谱、多语言检索、元数据治理和跨系统语义互操作。"
+    best_for: ["data_architecture", "technology_selection", "risk_control"]
+    local_downloaded: false
+
+  - id: "RES-0046"
+    title: "WFP PRISM"
+    title_zh: "WFP PRISM 气候风险监测系统"
+    url: "https://innovation.wfp.org/project/prism"
+    source_name: "World Food Programme"
+    source_type: "official_international"
+    resource_type: "project"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["climate_risk", "remote_sensing", "vulnerability", "risk_monitoring"]
+    linked_material_ids: ["CASE-012", "RISK-008", "SRC-046"]
+    summary_zh: "WFP 气候风险监测项目，整合遥感灾害数据和社会经济脆弱性信息。"
+    why_it_matters_zh: "适合农业风险、灾害预警、保险辅助和公共治理场景的案例参考。"
+    best_for: ["benchmark_case", "risk_control", "monthly_intelligence"]
+    local_downloaded: false

@@ -1,0 +1,148 @@
+version: "0.1"
+updated_at: "2026-07-01"
+download_policy: "link_only"
+
+datasets:
+  - id: "DATASET-001"
+    name: "FAOSTAT"
+    name_zh: "FAOSTAT 全球农业统计数据库"
+    resource_ids: ["RES-0004"]
+    data_domain: ["production", "trade", "prices", "food_security", "land_inputs"]
+    spatial_scale: ["country", "region"]
+    temporal_scale: ["annual", "monthly_optional"]
+    access_pattern: "web_portal_api_or_bulk_download"
+    best_use: ["market_context", "macro_model_features", "country_benchmarking"]
+    limitations_zh: "宏观统计适合国家和区域层面，不适合直接支撑地块级农事建议。"
+    consulting_angle_zh: "作为国际农业大数据平台的宏观底座，用来支撑市场、产量、贸易和粮食安全判断。"
+
+  - id: "DATASET-002"
+    name: "Copernicus Sentinel-2"
+    name_zh: "Sentinel-2 多光谱遥感数据"
+    resource_ids: ["RES-0014"]
+    data_domain: ["satellite_imagery", "vegetation_indices", "land_cover"]
+    spatial_scale: ["field", "region", "country", "global"]
+    temporal_scale: ["multi_day_revisit", "time_series"]
+    access_pattern: "copernicus_data_space_or_cloud_catalog"
+    best_use: ["crop_monitoring", "yield_estimation", "disaster_assessment", "field_zoning"]
+    limitations_zh: "云覆盖和地块边界质量会影响模型稳定性，通常需要气象、土壤和地面样本补充。"
+    consulting_angle_zh: "适合作为低成本、广覆盖农业 AI 数据底座的核心遥感层。"
+
+  - id: "DATASET-003"
+    name: "NASA/USGS Landsat"
+    name_zh: "Landsat 长周期遥感数据"
+    resource_ids: ["RES-0015"]
+    data_domain: ["satellite_imagery", "land_use", "long_term_change"]
+    spatial_scale: ["region", "country", "global"]
+    temporal_scale: ["long_history", "time_series"]
+    access_pattern: "usgs_nasa_or_cloud_catalog"
+    best_use: ["historical_baseline", "land_use_change", "climate_trend_context"]
+    limitations_zh: "空间分辨率较 Sentinel-2 粗，但历史连续性强。"
+    consulting_angle_zh: "适合做长期趋势、历史基线和跨年度农业变化分析。"
+
+  - id: "DATASET-004"
+    name: "OpenET"
+    name_zh: "OpenET 蒸散发数据"
+    resource_ids: ["RES-0016"]
+    data_domain: ["evapotranspiration", "water_use", "irrigation"]
+    spatial_scale: ["field", "basin", "region"]
+    temporal_scale: ["monthly", "seasonal", "annual"]
+    access_pattern: "web_data_explorer_api"
+    best_use: ["irrigation_advisory", "water_accounting", "roi_model"]
+    limitations_zh: "主要覆盖美国，跨国复制时需要寻找当地数据源或替代模型。"
+    consulting_angle_zh: "智能灌溉项目里最容易把 AI 价值转化成节水、合规和 ROI 指标的数据源之一。"
+
+  - id: "DATASET-005"
+    name: "NASA POWER"
+    name_zh: "NASA POWER 气象与太阳辐射数据"
+    resource_ids: ["RES-0017"]
+    data_domain: ["weather", "solar_radiation", "climate"]
+    spatial_scale: ["point", "region", "global"]
+    temporal_scale: ["daily", "monthly", "multi_year"]
+    access_pattern: "api"
+    best_use: ["crop_modeling", "weather_features", "risk_warning"]
+    limitations_zh: "再分析/卫星派生数据不能完全替代本地气象站，地块级决策需校准。"
+    consulting_angle_zh: "适合在缺少本地气象站数据时，为作物模型和风险预警提供统一气象特征。"
+
+  - id: "DATASET-006"
+    name: "ERA5"
+    name_zh: "ERA5 全球再分析数据"
+    resource_ids: ["RES-0018"]
+    data_domain: ["weather", "climate", "reanalysis"]
+    spatial_scale: ["region", "country", "global"]
+    temporal_scale: ["hourly", "daily", "multi_decade"]
+    access_pattern: "copernicus_climate_data_store"
+    best_use: ["climate_risk", "historical_weather_baseline", "model_features"]
+    limitations_zh: "数据量大、处理门槛较高，咨询项目中通常需要预处理管线。"
+    consulting_angle_zh: "适合作为跨国家农业 AI 项目的统一气候背景层。"
+
+  - id: "DATASET-007"
+    name: "SoilGrids"
+    name_zh: "SoilGrids 全球土壤属性数据"
+    resource_ids: ["RES-0020"]
+    data_domain: ["soil", "spatial_modeling", "crop_suitability"]
+    spatial_scale: ["field_approx", "region", "global"]
+    temporal_scale: ["static_or_slow_changing"]
+    access_pattern: "web_services_download"
+    best_use: ["field_profiling", "yield_modeling", "crop_suitability"]
+    limitations_zh: "全球模型化土壤数据不能替代地块采样，适合作先验层或缺省层。"
+    consulting_angle_zh: "把地块从影像像素变成具备土壤背景的经营单元。"
+
+  - id: "DATASET-008"
+    name: "USDA NASS Quick Stats"
+    name_zh: "USDA NASS Quick Stats"
+    resource_ids: ["RES-0036"]
+    data_domain: ["us_ag_statistics", "production", "prices", "farm_structure"]
+    spatial_scale: ["national", "state", "county"]
+    temporal_scale: ["annual", "seasonal", "monthly_optional"]
+    access_pattern: "web_query_api"
+    best_use: ["us_market_context", "benchmarking", "training_labels_context"]
+    limitations_zh: "美国数据源，不能直接代表其他国家市场；部分指标口径需理解 NASS 调查体系。"
+    consulting_angle_zh: "适合作为美国农业市场、产量、价格和农场结构的权威统计入口。"
+
+  - id: "DATASET-009"
+    name: "USDA CropScape / Cropland Data Layer"
+    name_zh: "USDA CropScape / CDL 作物图层"
+    resource_ids: ["RES-0037"]
+    data_domain: ["crop_type_map", "land_cover", "remote_sensing_labels"]
+    spatial_scale: ["field_approx", "county", "state", "us"]
+    temporal_scale: ["annual"]
+    access_pattern: "web_map_download"
+    best_use: ["crop_classification", "label_source", "benchmark_dataset"]
+    limitations_zh: "主要覆盖美国，标签精度随作物和地区变化；训练模型时需注意噪声标签。"
+    consulting_angle_zh: "是讲解作物识别、遥感标签和地块级数据产品的典型公共案例。"
+
+  - id: "DATASET-010"
+    name: "Google Earth Engine Data Catalog"
+    name_zh: "Google Earth Engine 数据目录"
+    resource_ids: ["RES-0043"]
+    data_domain: ["satellite_imagery", "weather", "land_cover", "agriculture_layers"]
+    spatial_scale: ["field", "region", "global"]
+    temporal_scale: ["varies_by_dataset"]
+    access_pattern: "cloud_api_code_editor"
+    best_use: ["prototype", "remote_sensing_pipeline", "feature_engineering"]
+    limitations_zh: "商业化、权限、配额和数据许可需要单独核验；不能把平台能力等同于客户可直接部署能力。"
+    consulting_angle_zh: "适合快速验证农业遥感 AI 原型，但正式平台要评估成本、权限和可迁移性。"
+
+  - id: "DATASET-011"
+    name: "FAO AGRIS"
+    name_zh: "FAO AGRIS 农业科技文献系统"
+    resource_ids: ["RES-0044"]
+    data_domain: ["literature", "grey_literature", "research_index"]
+    spatial_scale: ["global"]
+    temporal_scale: ["ongoing"]
+    access_pattern: "search_portal"
+    best_use: ["literature_review", "policy_background", "evidence_discovery"]
+    limitations_zh: "它是文献索引，不是结构化农业生产数据库；需要继续追溯原文。"
+    consulting_angle_zh: "适合为农业 AI 报告补充全球南方、灰色文献和政策研究线索。"
+
+  - id: "DATASET-012"
+    name: "AGROVOC"
+    name_zh: "AGROVOC 多语种农业词表"
+    resource_ids: ["RES-0045"]
+    data_domain: ["vocabulary", "linked_data", "semantic_interoperability"]
+    spatial_scale: ["global"]
+    temporal_scale: ["ongoing"]
+    access_pattern: "web_browse_linked_data"
+    best_use: ["knowledge_graph", "metadata_standardization", "multilingual_search"]
+    limitations_zh: "词表解决语义一致性，不直接解决数据质量和模型准确率。"
+    consulting_angle_zh: "适合支撑农业知识图谱、多语言检索和跨系统元数据治理。"

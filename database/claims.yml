@@ -1,0 +1,83 @@
+version: "0.1"
+updated_at: "2026-07-01"
+
+claims:
+  - id: "CLAIM-001"
+    claim_zh: "农业 AI 的瓶颈往往不是单个模型，而是跨来源数据能否被稳定采集、治理、连接到农事工作流。"
+    evidence_level: "strong"
+    resource_ids: ["RES-0003", "RES-0008", "RES-0023", "RES-0030"]
+    use_for: ["consulting_report", "content_ip", "technology_selection"]
+    content_angle_zh: "适合作为报告开场或短视频观点：农业 AI 不是先买模型，而是先让数据流动起来。"
+    caution_zh: "不要把这个观点绝对化；在视觉识别等局部任务中，模型能力仍然重要。"
+
+  - id: "CLAIM-002"
+    claim_zh: "遥感数据适合做广域、低成本、连续监测，但地块级决策通常还需要气象、土壤、农事记录和地面样本补足。"
+    evidence_level: "strong"
+    resource_ids: ["RES-0014", "RES-0015", "RES-0017", "RES-0020", "RES-0034"]
+    use_for: ["consulting_report", "technology_selection", "content_ip"]
+    content_angle_zh: "适合解释为什么农业 AI 平台不能只靠卫星图。"
+    caution_zh: "如果客户只需要区域监测，不一定需要高成本地面数据。"
+
+  - id: "CLAIM-003"
+    claim_zh: "精准喷洒和变量作业是农业 AI 中 ROI 较容易被理解的场景，因为模型输出可以直接连接到投入品节省。"
+    evidence_level: "moderate"
+    resource_ids: ["RES-0024", "RES-0042"]
+    use_for: ["roi_model", "benchmark_case", "content_ip"]
+    content_angle_zh: "适合做案例拆解：AI 不是只给建议，而是控制喷头、激光或机械执行器。"
+    caution_zh: "具体节省比例必须以企业官方说明、试点数据或客户实测为准。"
+
+  - id: "CLAIM-004"
+    claim_zh: "农业数据空间和互操作标准会决定农业 AI 能否从单点工具升级为行业基础设施。"
+    evidence_level: "strong"
+    resource_ids: ["RES-0008", "RES-0021", "RES-0022", "RES-0023", "RES-0040"]
+    use_for: ["consulting_report", "data_architecture", "technology_selection"]
+    content_angle_zh: "适合写平台战略：真正的壁垒不是一个模型，而是数据标准和生态连接能力。"
+    caution_zh: "标准本身不能保证商业成功，还需要激励、接口和治理机制。"
+
+  - id: "CLAIM-005"
+    claim_zh: "生成式 AI 在农业中的安全边界应当先定位为检索、解释、辅助和分诊，而不是未经审核的自动处方。"
+    evidence_level: "moderate"
+    resource_ids: ["RES-0032", "RES-0033", "RES-0044", "RES-0045"]
+    use_for: ["risk_control", "content_ip", "technology_selection"]
+    content_angle_zh: "适合做反方观点：农业大模型不能把高风险建议说得像万能答案。"
+    caution_zh: "不同国家对农药、兽药、金融建议等监管不同，正式交付前需做本地合规核验。"
+
+  - id: "CLAIM-006"
+    claim_zh: "气候风险正在把农业 AI 的价值从田间生产扩展到采购、库存、供应链和金融风控。"
+    evidence_level: "moderate"
+    resource_ids: ["RES-0002", "RES-0010", "RES-0018", "RES-0026", "RES-0046"]
+    use_for: ["market_context", "consulting_report", "content_ip"]
+    content_angle_zh: "适合写趋势判断：农业 AI 的客户不只是农场，也包括食品企业、贸易商、保险和政府。"
+    caution_zh: "气候预测必须以概率和情景方式表达，避免确定性承诺。"
+
+  - id: "CLAIM-007"
+    claim_zh: "低成本边缘 AI 和 TinyML 适合小农户和弱网络环境，但落地成败取决于维护、供电、连接和服务网络。"
+    evidence_level: "moderate"
+    resource_ids: ["RES-0031"]
+    use_for: ["technology_selection", "content_ip", "risk_control"]
+    content_angle_zh: "适合解释为什么便宜硬件不是完整方案，农业 AI 还需要运维体系。"
+    caution_zh: "论文和原型不能直接代表规模化商业部署能力。"
+
+  - id: "CLAIM-008"
+    claim_zh: "农业 AI 的第一阶段试点应优先选择数据闭环短、价值指标清楚、专家可复核的场景。"
+    evidence_level: "strong"
+    resource_ids: ["RES-0003", "RES-0025", "RES-0027", "RES-0030"]
+    use_for: ["consulting_report", "roi_model", "risk_control"]
+    content_angle_zh: "适合做实施建议：先做可验收的小闭环，再讲平台和大模型。"
+    caution_zh: "如果甲方已有成熟数据平台，可更快进入跨场景整合。"
+
+  - id: "CLAIM-009"
+    claim_zh: "农业 AI 内容/IP 最容易破圈的表达，是把抽象技术翻译成节水、少打药、稳产、少损失、少弯路。"
+    evidence_level: "moderate"
+    resource_ids: ["RES-0016", "RES-0024", "RES-0025", "RES-0042"]
+    use_for: ["content_ip", "roi_model"]
+    content_angle_zh: "适合做选题和销售话术：少讲参数，多讲农户和企业能少浪费什么。"
+    caution_zh: "传播表达可以通俗，但不能虚构效果数字。"
+
+  - id: "CLAIM-010"
+    claim_zh: "公共数据源能降低农业 AI 原型成本，但正式商业系统仍要解决许可、稳定性、更新频率和本地适配。"
+    evidence_level: "strong"
+    resource_ids: ["RES-0014", "RES-0015", "RES-0017", "RES-0043", "RES-0040"]
+    use_for: ["technology_selection", "risk_control", "consulting_report"]
+    content_angle_zh: "适合提醒客户：公开数据是起点，不是完整产品。"
+    caution_zh: "部分公共数据允许研究使用但商业使用条件不同，需逐项核验。"

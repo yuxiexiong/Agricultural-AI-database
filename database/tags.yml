@@ -5,7 +5,9 @@ resource_types:
   report: "行业报告、展望报告、政策报告或综合研究报告"
   policy_page: "政府、国际组织或公共项目政策页面"
   data_portal: "公开数据平台、数据目录或数据服务"
+  data_catalog: "数据目录、元数据目录或聚合检索入口"
   standard: "技术标准、互操作框架或标准词典"
+  vocabulary: "术语表、本体、词表或知识组织系统"
   project: "科研、公共治理或国际合作项目"
   product_page: "企业产品、解决方案或商业服务页面"
   case: "可作为标杆案例拆解的项目或产品"
@@ -18,6 +20,7 @@ source_types:
   public_research: "科研机构、大学、公共科研项目"
   standards_body: "标准组织或行业互操作组织"
   company_official: "企业官网或产品官网"
+  open_source: "开源项目、公开代码仓库或开放规范"
   academic: "学术论文、预印本平台或学术出版物"
   market_secondary: "市场研究、媒体或二手资料"
 
@@ -69,8 +72,11 @@ best_for:
 
 technology_tags:
   remote_sensing: "遥感、卫星影像、地球观测"
+  geospatial_ai: "地理空间 AI、地球观测 AI、空间数据分析"
   iot: "传感器、农机、物联网"
   data_platform: "大数据平台、数据空间、数据湖"
+  data_catalog: "数据目录、元数据、数据发现"
+  vocabulary: "术语、本体、知识组织、语义互操作"
   modeling: "预测建模、机器学习、深度学习"
   generative_ai: "生成式 AI、农业助手、知识问答"
   computer_vision: "计算机视觉、识别、分级、检测"
@@ -82,7 +88,21 @@ technology_tags:
   crop_monitoring: "作物监测、长势、病虫害、产量"
   farm_management: "农场管理、农事记录、决策支持"
   precision_application: "精准喷洒、变量作业、投入品优化"
+  robotics: "农业机器人、自动化作业、无人化设备"
+  supply_chain: "供应链、采购、贸易、溯源、MRV"
+  insurance_finance: "农业保险、信贷、金融风控"
   trust_safety: "可信 AI、模型评估、风险控制"
+
+evidence_levels:
+  strong: "来自 A 级一手来源或多个相互印证来源，可用于报告主论据"
+  moderate: "来自 B/C 级来源，可用于案例、趋势和方法论，但不宜单独支撑关键结论"
+  weak: "来自二手或待核验来源，只作线索"
+
+refresh_cycles:
+  quarterly: "每季度复核，适合政策、产品、企业能力和活跃项目"
+  semiannual: "每半年复核，适合数据源、标准生态和案例库"
+  annual: "每年复核，适合稳定公共数据、经典标准和长期背景材料"
+  event_driven: "出现政策变动、产品发布、融资并购或重大灾害事件时复核"
 
 crop_systems:
   row_crops: "大田作物"

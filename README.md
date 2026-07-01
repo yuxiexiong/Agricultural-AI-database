@@ -19,7 +19,13 @@ International Agricultural Big Data + AI Consulting Knowledge Base
 
 结构化 database 文件：
 
+- [database/index.md](./database/index.md)：GitHub 可读的 database 目录页，适合快速浏览资料库结构。
 - [database/resources.yml](./database/resources.yml)：机器可读资源索引，记录外部资源链接、来源类型、可信度、标签、用途和对应素材编号。
+- [database/datasets.yml](./database/datasets.yml)：数据源库，记录遥感、气象、土壤、统计、文献和语义数据源。
+- [database/cases.yml](./database/cases.yml)：标杆案例库，记录产品/项目案例、价值主张、可复用角度和限制。
+- [database/scenarios.yml](./database/scenarios.yml)：应用场景库，记录数据需求、AI 方法、业务价值、风险和试点建议。
+- [database/claims.yml](./database/claims.yml)：可引用观点库，每条观点绑定来源和使用边界。
+- [database/vendors.yml](./database/vendors.yml)：企业/项目生态库，用于竞品观察和月度情报。
 - [database/tags.yml](./database/tags.yml)：统一标签字典，定义资源类型、来源类型、应用场景、技术标签和可信度等级。
 - [database/README.md](./database/README.md)：database schema、追加规则和质量控制说明。
 
@@ -119,8 +125,12 @@ International Agricultural Big Data + AI Consulting Knowledge Base
 如果后续用脚本、RAG 工具或文案工具自动生成内容，建议优先读取：
 
 1. `database/resources.yml`：获取来源、链接、摘要、标签、适用场景和可信度。
-2. `database/tags.yml`：统一分类口径，避免同义标签混乱。
-3. `农业AI技术咨询_资料库与报告底稿.md` 第 8 章：获取可直接改写的素材正文。
+2. `database/claims.yml`：获取可直接用于报告或 IP 内容的观点。
+3. `database/scenarios.yml`：获取场景化数据需求、AI 方法、价值和风险。
+4. `database/cases.yml`：获取标杆案例和可复用表达角度。
+5. `database/datasets.yml`：获取数据源、尺度、接入方式和限制。
+6. `database/tags.yml`：统一分类口径，避免同义标签混乱。
+7. `农业AI技术咨询_资料库与报告底稿.md` 第 8 章：获取可直接改写的素材正文。
 
 常见筛选方式：
 

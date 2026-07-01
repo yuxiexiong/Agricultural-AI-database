@@ -1,0 +1,83 @@
+version: "0.1"
+updated_at: "2026-07-01"
+
+vendors:
+  - id: "VENDOR-001"
+    name: "John Deere"
+    vendor_type: "agricultural_machinery_ai"
+    resource_ids: ["RES-0024"]
+    primary_scenarios: ["SCENARIO-003", "SCENARIO-010"]
+    strengths_zh: "农机、传感器、作业数据和执行器一体化能力强，适合作为精准作业标杆。"
+    watch_items_zh: "关注 See & Spray、自动化、数据平台和农机互操作相关产品更新。"
+
+  - id: "VENDOR-002"
+    name: "CropX"
+    vendor_type: "farm_management_iot"
+    resource_ids: ["RES-0025"]
+    primary_scenarios: ["SCENARIO-001", "SCENARIO-006"]
+    strengths_zh: "土壤传感器、农艺平台和灌溉/施肥建议结合紧密。"
+    watch_items_zh: "关注传感器生态、并购整合、作物覆盖和区域扩展。"
+
+  - id: "VENDOR-003"
+    name: "xFarm Technologies"
+    vendor_type: "farm_management_platform"
+    resource_ids: ["RES-0027"]
+    primary_scenarios: ["SCENARIO-006", "SCENARIO-010"]
+    strengths_zh: "欧洲农业数字化平台代表，强调农场管理、传感器、卫星和农机连接。"
+    watch_items_zh: "关注企业客户、供应链模块、可持续/MRV 模块和跨国部署能力。"
+
+  - id: "VENDOR-004"
+    name: "ClimateAi"
+    vendor_type: "climate_risk_intelligence"
+    resource_ids: ["RES-0026"]
+    primary_scenarios: ["SCENARIO-007", "SCENARIO-011"]
+    strengths_zh: "将气候预测和食品农业供应链经营决策结合。"
+    watch_items_zh: "关注预测范围、行业客户案例、模型解释性和风险管理产品化。"
+
+  - id: "VENDOR-005"
+    name: "Trimble Agriculture"
+    vendor_type: "precision_agriculture_infrastructure"
+    resource_ids: ["RES-0041"]
+    primary_scenarios: ["SCENARIO-006", "SCENARIO-010"]
+    strengths_zh: "定位、导航、农机作业和数字工作流基础深。"
+    watch_items_zh: "关注 PTx Trimble、农机生态合作和平台数据接口。"
+
+  - id: "VENDOR-006"
+    name: "Planet"
+    vendor_type: "earth_observation_data"
+    resource_ids: ["RES-0039"]
+    primary_scenarios: ["SCENARIO-004", "SCENARIO-008"]
+    strengths_zh: "高频商业卫星影像和农业遥感服务能力，适合补充公开遥感数据。"
+    watch_items_zh: "关注农业行业方案、影像频率、价格、许可和 API 能力。"
+
+  - id: "VENDOR-007"
+    name: "Carbon Robotics"
+    vendor_type: "agricultural_robotics"
+    resource_ids: ["RES-0042"]
+    primary_scenarios: ["SCENARIO-003", "SCENARIO-012"]
+    strengths_zh: "把计算机视觉与激光除草执行器结合，具备强传播性和案例价值。"
+    watch_items_zh: "关注适配作物、设备成本、实际作业效率和商业扩张。"
+
+  - id: "VENDOR-008"
+    name: "Google Earth Engine"
+    vendor_type: "geospatial_cloud_platform"
+    resource_ids: ["RES-0043"]
+    primary_scenarios: ["SCENARIO-004", "SCENARIO-008"]
+    strengths_zh: "公开遥感数据、云端计算和快速原型能力强。"
+    watch_items_zh: "关注商业条款、配额、云成本和模型生产化路径。"
+
+  - id: "VENDOR-009"
+    name: "Microsoft FarmVibes.AI"
+    vendor_type: "open_source_research_toolkit"
+    resource_ids: ["RES-0038"]
+    primary_scenarios: ["SCENARIO-008", "SCENARIO-012"]
+    strengths_zh: "开源农业与可持续地理空间 ML 工具，适合技术探索和原型。"
+    watch_items_zh: "关注维护活跃度、许可、依赖和是否适合生产环境。"
+
+  - id: "VENDOR-010"
+    name: "Bayer Climate FieldView"
+    vendor_type: "farm_data_platform"
+    resource_ids: ["RES-0028"]
+    primary_scenarios: ["SCENARIO-006"]
+    strengths_zh: "农场数据平台和田间决策支持入口明确。"
+    watch_items_zh: "关注数据所有权、平台生态、区域可用性和与其他系统互操作。"

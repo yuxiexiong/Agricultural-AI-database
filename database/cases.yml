@@ -1,0 +1,124 @@
+version: "0.1"
+updated_at: "2026-07-01"
+download_policy: "link_only"
+
+cases:
+  - id: "CASEDB-001"
+    name: "John Deere See & Spray"
+    name_zh: "John Deere See & Spray 精准喷洒"
+    resource_ids: ["RES-0024"]
+    case_type: "commercial_product"
+    region: ["us", "global"]
+    scenario_ids: ["SCENARIO-003"]
+    technologies: ["computer_vision", "precision_application", "machinery"]
+    value_claim_zh: "把识别结果直接连接到喷洒动作，价值更容易通过投入品节省和作业效率解释。"
+    reusable_angle_zh: "农业 AI 最容易被客户理解的路径之一，是从看见问题到自动执行变量作业。"
+    caveats_zh: "企业官方效果数字需要逐项核验；不同作物、田块和杂草压力下 ROI 不同。"
+
+  - id: "CASEDB-002"
+    name: "CropX"
+    name_zh: "CropX 农艺农场管理系统"
+    resource_ids: ["RES-0025"]
+    case_type: "commercial_platform"
+    region: ["global"]
+    scenario_ids: ["SCENARIO-001", "SCENARIO-006"]
+    technologies: ["iot", "irrigation", "farm_management", "decision_support"]
+    value_claim_zh: "通过传感器、土壤数据和农艺建议把灌溉/施肥决策数字化。"
+    reusable_angle_zh: "物联网数据要变成价值，必须进入农艺建议和日常农场管理工作流。"
+    caveats_zh: "传感器布点、维护成本和农户执行意愿会影响落地效果。"
+
+  - id: "CASEDB-003"
+    name: "NASA Harvest"
+    name_zh: "NASA Harvest 农业遥感与粮食安全项目"
+    resource_ids: ["RES-0011"]
+    case_type: "public_research_program"
+    region: ["global"]
+    scenario_ids: ["SCENARIO-004", "SCENARIO-009"]
+    technologies: ["remote_sensing", "crop_monitoring", "food_security"]
+    value_claim_zh: "把卫星数据、作物监测和粮食安全决策连接起来，体现农业 AI 的公共治理价值。"
+    reusable_angle_zh: "国家/区域级农业大数据项目可以先从遥感监测和粮食安全情报做入口。"
+    caveats_zh: "公共治理案例不等同于商业 SaaS，需要区分目标、预算和组织能力。"
+
+  - id: "CASEDB-004"
+    name: "OpenET"
+    name_zh: "OpenET 蒸散发数据平台"
+    resource_ids: ["RES-0016"]
+    case_type: "public_data_platform"
+    region: ["us"]
+    scenario_ids: ["SCENARIO-001"]
+    technologies: ["remote_sensing", "irrigation", "water_management"]
+    value_claim_zh: "用公开、透明的 ET 数据支撑灌溉管理、水权讨论和区域水资源治理。"
+    reusable_angle_zh: "农业 AI 的价值不一定是替代农户，而是提供可共同讨论的客观数据层。"
+    caveats_zh: "覆盖区域和数据许可需要核验；跨国复制时需要本地化。"
+
+  - id: "CASEDB-005"
+    name: "xFarm"
+    name_zh: "xFarm 农场管理平台"
+    resource_ids: ["RES-0027"]
+    case_type: "commercial_platform"
+    region: ["eu", "global"]
+    scenario_ids: ["SCENARIO-006", "SCENARIO-010"]
+    technologies: ["farm_management", "iot", "satellite", "interoperability"]
+    value_claim_zh: "把农事记录、传感器、卫星和作业建议集成到农场管理平台。"
+    reusable_angle_zh: "农业 AI 的产品入口往往不是聊天机器人，而是已有农场管理工作流。"
+    caveats_zh: "平台覆盖面积、客户数量等企业口径对外引用前要保留原链接和日期。"
+
+  - id: "CASEDB-006"
+    name: "ClimateAi"
+    name_zh: "ClimateAi 农业气候风险平台"
+    resource_ids: ["RES-0026"]
+    case_type: "commercial_platform"
+    region: ["global"]
+    scenario_ids: ["SCENARIO-007", "SCENARIO-011"]
+    technologies: ["climate_risk", "forecasting", "supply_chain"]
+    value_claim_zh: "把气候预测转化为食品农业企业的采购、选址、品种和供应链风险决策。"
+    reusable_angle_zh: "农业 AI 可以从田间管理延伸到企业经营和供应链韧性。"
+    caveats_zh: "气候预测存在不确定性，适合做概率风险管理，不应包装成确定性预言。"
+
+  - id: "CASEDB-007"
+    name: "Carbon Robotics LaserWeeder"
+    name_zh: "Carbon Robotics 激光除草机器人"
+    resource_ids: ["RES-0042"]
+    case_type: "commercial_product"
+    region: ["us"]
+    scenario_ids: ["SCENARIO-003", "SCENARIO-012"]
+    technologies: ["computer_vision", "robotics", "precision_application"]
+    value_claim_zh: "用视觉识别和激光执行构成非化学除草路径，适合讲农业机器人和投入品替代。"
+    reusable_angle_zh: "当 AI 连接到物理执行器，农业智能化会从建议系统进入自动作业阶段。"
+    caveats_zh: "设备成本、作物适配和作业速度是商业化评估重点。"
+
+  - id: "CASEDB-008"
+    name: "Trimble Agriculture"
+    name_zh: "Trimble 精准农业技术"
+    resource_ids: ["RES-0041"]
+    case_type: "commercial_ecosystem"
+    region: ["global"]
+    scenario_ids: ["SCENARIO-006", "SCENARIO-010"]
+    technologies: ["precision_agriculture", "guidance", "farm_management", "data_platform"]
+    value_claim_zh: "以定位、导航、农机和数据工作流为基础，体现精准农业的基础设施属性。"
+    reusable_angle_zh: "很多农业 AI 项目需要先接入定位、作业记录和农机数据，而不是直接训练模型。"
+    caveats_zh: "产品线复杂，引用时应指向具体页面和具体能力。"
+
+  - id: "CASEDB-009"
+    name: "Google Earth Engine"
+    name_zh: "Google Earth Engine 地球观测分析平台"
+    resource_ids: ["RES-0043"]
+    case_type: "cloud_geospatial_platform"
+    region: ["global"]
+    scenario_ids: ["SCENARIO-004", "SCENARIO-008"]
+    technologies: ["remote_sensing", "geospatial_ai", "data_platform"]
+    value_claim_zh: "把海量公开遥感数据和云端计算结合，显著降低遥感 AI 原型验证门槛。"
+    reusable_angle_zh: "咨询项目可以先用云端地理空间平台验证信号，再决定是否建设自有平台。"
+    caveats_zh: "正式商用需评估许可、配额、成本和数据出境/合规问题。"
+
+  - id: "CASEDB-010"
+    name: "WFP PRISM"
+    name_zh: "WFP PRISM 气候风险监测平台"
+    resource_ids: ["RES-0046"]
+    case_type: "public_risk_platform"
+    region: ["global"]
+    scenario_ids: ["SCENARIO-009", "SCENARIO-011"]
+    technologies: ["remote_sensing", "climate_risk", "vulnerability_data"]
+    value_claim_zh: "把灾害、暴露度和脆弱性数据整合进地图化风险监测。"
+    reusable_angle_zh: "农业 AI 风险平台不能只看天气和影像，还要叠加社会经济脆弱性。"
+    caveats_zh: "面向公共救助和灾害风险管理，商业农业保险项目需重新设计指标。"
