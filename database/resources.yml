@@ -1,0 +1,670 @@
+version: "0.1"
+updated_at: "2026-07-01"
+download_policy: "link_only"
+notes: "This database stores metadata and URLs only. External resources are not downloaded into this repository."
+
+resources:
+  - id: "RES-0001"
+    title: "OECD-FAO Agricultural Outlook 2026-2035"
+    title_zh: "OECD-FAO 农业展望 2026-2035"
+    url: "https://www.oecd.org/en/publications/oecd-fao-agricultural-outlook-2026-2035_47874669-en.html"
+    source_name: "OECD / FAO"
+    source_type: "official_international"
+    resource_type: "report"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: 2026
+    region: ["global"]
+    tags: ["market", "policy", "productivity", "food_security", "emissions"]
+    linked_material_ids: ["POL-001", "MKT-001", "ROI-001", "SRC-001"]
+    summary_zh: "全球农业中长期展望，用于判断产量、消费、贸易、价格、生产率和排放趋势。"
+    why_it_matters_zh: "适合作为农业 AI 项目的宏观开场：生产率提升和资源约束共同推动数据化、智能化需求。"
+    best_for: ["consulting_report", "market_context", "monthly_intelligence"]
+    local_downloaded: false
+
+  - id: "RES-0002"
+    title: "Climate-Smart Agriculture"
+    title_zh: "FAO 气候智慧型农业"
+    url: "https://www.fao.org/climate-smart-agriculture/en/"
+    source_name: "FAO"
+    source_type: "official_international"
+    resource_type: "policy_page"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["policy", "climate_risk", "resilience", "sustainability"]
+    linked_material_ids: ["POL-002", "TECH-008", "RISK-002", "SRC-002"]
+    summary_zh: "FAO 对气候智慧型农业的框架性说明，强调生产力、适应性和减排协同。"
+    why_it_matters_zh: "可把农业 AI 从单点效率工具提升为气候韧性和可持续转型工具。"
+    best_for: ["consulting_report", "market_context", "content_ip"]
+    local_downloaded: false
+
+  - id: "RES-0003"
+    title: "Digital Agriculture"
+    title_zh: "FAO 数字农业"
+    url: "https://www.fao.org/digital-agriculture/en/"
+    source_name: "FAO"
+    source_type: "official_international"
+    resource_type: "policy_page"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["digital_agriculture", "data_platform", "policy", "inclusion"]
+    linked_material_ids: ["POL-003", "DATA-001", "SRC-003"]
+    summary_zh: "FAO 数字农业入口，适合引用数字技术在农业中的角色、机会和包容性挑战。"
+    why_it_matters_zh: "帮助咨询报告说明农业 AI 不只是模型问题，还包括基础设施、数字鸿沟和治理能力。"
+    best_for: ["consulting_report", "monthly_intelligence", "risk_control"]
+    local_downloaded: false
+
+  - id: "RES-0004"
+    title: "FAOSTAT"
+    title_zh: "FAOSTAT 全球农业统计数据库"
+    url: "https://www.fao.org/faostat/"
+    source_name: "FAO"
+    source_type: "official_international"
+    resource_type: "data_portal"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["data_source", "market", "production", "trade", "food_security"]
+    linked_material_ids: ["DATA-008", "MKT-002", "SRC-004"]
+    summary_zh: "FAO 维护的全球农业统计数据入口，覆盖生产、贸易、食品安全、土地、投入品等主题。"
+    why_it_matters_zh: "可作为国际农业大数据平台的宏观结构化数据源，用于市场分析和模型特征补充。"
+    best_for: ["data_architecture", "market_context", "consulting_report"]
+    local_downloaded: false
+
+  - id: "RES-0005"
+    title: "The common agricultural policy at a glance"
+    title_zh: "欧盟共同农业政策概览"
+    url: "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en"
+    source_name: "European Commission"
+    source_type: "government"
+    resource_type: "policy_page"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["eu"]
+    tags: ["policy", "eu", "subsidy", "sustainability", "farm_income"]
+    linked_material_ids: ["POL-004", "POL-005", "SRC-005"]
+    summary_zh: "欧盟共同农业政策的官方概览，涵盖粮食安全、农民收入、环境和农村发展。"
+    why_it_matters_zh: "适合解释欧洲农业数字化为什么常与补贴、合规、环境指标和数据治理绑定。"
+    best_for: ["consulting_report", "market_context", "monthly_intelligence"]
+    local_downloaded: false
+
+  - id: "RES-0006"
+    title: "Digitalisation in agriculture and rural areas"
+    title_zh: "欧盟农业与农村地区数字化"
+    url: "https://agriculture.ec.europa.eu/overview-vision-agriculture-food/digitalisation_en"
+    source_name: "European Commission"
+    source_type: "government"
+    resource_type: "policy_page"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["eu"]
+    tags: ["policy", "digital_agriculture", "data_platform", "rural_connectivity"]
+    linked_material_ids: ["POL-006", "DATA-002", "SRC-006"]
+    summary_zh: "欧盟农业数字化政策入口，强调数字技术、数据、农村连接和创新生态。"
+    why_it_matters_zh: "可作为农业 AI 政策导向部分的欧洲样板，连接平台建设、数据共享和公共服务。"
+    best_for: ["consulting_report", "monthly_intelligence", "data_architecture"]
+    local_downloaded: false
+
+  - id: "RES-0007"
+    title: "Digitalising the European agricultural sector"
+    title_zh: "欧盟农业部门数字化政策"
+    url: "https://digital-strategy.ec.europa.eu/en/policies/digitalisation-agriculture"
+    source_name: "European Commission"
+    source_type: "government"
+    resource_type: "policy_page"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["eu"]
+    tags: ["policy", "digital_agriculture", "data_space", "innovation"]
+    linked_material_ids: ["POL-007", "DATA-003", "SRC-007"]
+    summary_zh: "欧盟数字战略下的农业数字化页面，适合提取数据空间、创新项目和政策方向。"
+    why_it_matters_zh: "帮助把农业 AI 项目放进更大的数字基础设施和数据共享政策框架。"
+    best_for: ["consulting_report", "monthly_intelligence", "data_architecture"]
+    local_downloaded: false
+
+  - id: "RES-0008"
+    title: "Common European data spaces for agriculture and mobility"
+    title_zh: "欧洲农业和出行公共数据空间"
+    url: "https://digital-strategy.ec.europa.eu/en/library/common-european-data-spaces-agriculture-and-mobility"
+    source_name: "European Commission"
+    source_type: "government"
+    resource_type: "policy_page"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["eu"]
+    tags: ["data_space", "data_governance", "interoperability", "eu"]
+    linked_material_ids: ["DATA-004", "CASE-003", "STD-003", "SRC-008"]
+    summary_zh: "欧洲农业数据空间相关官方资料，用于理解跨主体农业数据共享和治理模式。"
+    why_it_matters_zh: "是农业大数据 + AI 平台从企业系统走向行业基础设施的关键参考。"
+    best_for: ["data_architecture", "consulting_report", "benchmark_case"]
+    local_downloaded: false
+
+  - id: "RES-0009"
+    title: "Study on digitalisation in EU agriculture"
+    title_zh: "欧盟农业数字化状态研究"
+    url: "https://agriculture.ec.europa.eu/media/news/new-study-highlights-state-play-digitalisation-eu-agriculture-2025-09-19_en"
+    source_name: "European Commission"
+    source_type: "government"
+    resource_type: "report"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: 2025
+    region: ["eu"]
+    tags: ["digital_agriculture", "adoption", "policy", "market"]
+    linked_material_ids: ["MKT-003", "POL-008", "RISK-001", "SRC-009"]
+    summary_zh: "欧盟农业数字化现状研究新闻入口，可作为采用率、差距和政策建议线索。"
+    why_it_matters_zh: "适合支撑“技术成熟不等于行业普及”的观点，提醒项目关注农场端采用成本。"
+    best_for: ["market_context", "risk_control", "monthly_intelligence"]
+    local_downloaded: false
+
+  - id: "RES-0010"
+    title: "AIM for Climate"
+    title_zh: "农业创新使命：气候农业创新倡议"
+    url: "https://www.aimforclimate.org/"
+    source_name: "AIM for Climate"
+    source_type: "official_international"
+    resource_type: "project"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["climate_risk", "innovation", "policy", "investment"]
+    linked_material_ids: ["POL-009", "MKT-004", "SRC-010"]
+    summary_zh: "围绕气候智慧农业和食品系统创新的国际合作倡议。"
+    why_it_matters_zh: "适合说明农业 AI 的国际合作和创新资金方向，尤其是气候风险、韧性和减排场景。"
+    best_for: ["market_context", "monthly_intelligence", "content_ip"]
+    local_downloaded: false
+
+  - id: "RES-0011"
+    title: "NASA Harvest"
+    title_zh: "NASA Harvest 全球农业与粮食安全项目"
+    url: "https://www.nasaharvest.org/"
+    source_name: "NASA Harvest"
+    source_type: "public_research"
+    resource_type: "project"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["remote_sensing", "food_security", "crop_monitoring", "public_research"]
+    linked_material_ids: ["DATA-005", "CASE-004", "TECH-003", "SRC-011"]
+    summary_zh: "NASA 支持的农业遥感与粮食安全项目，连接卫星数据、科研模型和公共决策。"
+    why_it_matters_zh: "是农业遥感和粮食安全 AI 应用的高质量标杆，可用于讲清公共价值和技术路径。"
+    best_for: ["benchmark_case", "data_architecture", "consulting_report"]
+    local_downloaded: false
+
+  - id: "RES-0012"
+    title: "NASA Acres"
+    title_zh: "NASA Acres 美国农业遥感项目"
+    url: "https://www.nasaacres.org/"
+    source_name: "NASA Acres"
+    source_type: "public_research"
+    resource_type: "project"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: 2023
+    region: ["us"]
+    tags: ["remote_sensing", "crop_monitoring", "sustainability", "public_research"]
+    linked_material_ids: ["DATA-006", "CASE-005", "SRC-012"]
+    summary_zh: "美国农业场景下的 NASA 遥感应用项目，围绕生产、土地利用、可持续和工具建设展开。"
+    why_it_matters_zh: "可作为国家级农业遥感基础设施如何服务农业 AI 的案例。"
+    best_for: ["benchmark_case", "data_architecture", "content_ip"]
+    local_downloaded: false
+
+  - id: "RES-0013"
+    title: "GEOGLAM Crop Monitor"
+    title_zh: "GEOGLAM 作物监测"
+    url: "https://www.cropmonitor.org/"
+    source_name: "GEOGLAM"
+    source_type: "official_international"
+    resource_type: "data_portal"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["remote_sensing", "crop_monitoring", "food_security", "monthly_intelligence"]
+    linked_material_ids: ["DATA-007", "VIS-002", "SRC-013"]
+    summary_zh: "提供全球作物条件监测、月度简报和遥感指标入口。"
+    why_it_matters_zh: "适合做月度农业 AI 情报中的作物监测和粮食安全数据源。"
+    best_for: ["monthly_intelligence", "data_architecture", "consulting_report"]
+    local_downloaded: false
+
+  - id: "RES-0014"
+    title: "Copernicus Sentinel-2"
+    title_zh: "哥白尼 Sentinel-2 卫星数据"
+    url: "https://dataspace.copernicus.eu/data-collections/copernicus-sentinel-missions/sentinel-2"
+    source_name: "Copernicus Data Space Ecosystem"
+    source_type: "government"
+    resource_type: "data_portal"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global", "eu"]
+    tags: ["remote_sensing", "satellite", "crop_monitoring", "data_source"]
+    linked_material_ids: ["DATA-009", "TECH-004", "SRC-014"]
+    summary_zh: "高频、多光谱地球观测数据，是作物识别、长势监测、灾害评估和产量估计的基础数据源之一。"
+    why_it_matters_zh: "农业 AI 数据底座常以 Sentinel-2 等公开遥感数据作为低成本广覆盖入口。"
+    best_for: ["data_architecture", "technology_selection", "consulting_report"]
+    local_downloaded: false
+
+  - id: "RES-0015"
+    title: "Landsat"
+    title_zh: "NASA/USGS Landsat 遥感数据"
+    url: "https://science.nasa.gov/mission/landsat/"
+    source_name: "NASA / USGS"
+    source_type: "government"
+    resource_type: "data_portal"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global", "us"]
+    tags: ["remote_sensing", "satellite", "long_term_archive", "data_source"]
+    linked_material_ids: ["DATA-010", "TECH-004", "SRC-015"]
+    summary_zh: "长期连续地球观测数据源，适合做历史变化、土地利用和长期农业趋势分析。"
+    why_it_matters_zh: "可补足农业 AI 对长时间序列训练和历史基线判断的需求。"
+    best_for: ["data_architecture", "technology_selection", "market_context"]
+    local_downloaded: false
+
+  - id: "RES-0016"
+    title: "OpenET"
+    title_zh: "OpenET 蒸散发数据平台"
+    url: "https://etdata.org/"
+    source_name: "OpenET"
+    source_type: "public_research"
+    resource_type: "data_portal"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["us"]
+    tags: ["remote_sensing", "irrigation", "water_management", "evapotranspiration"]
+    linked_material_ids: ["DATA-011", "SCN-001", "ROI-002", "SRC-016"]
+    summary_zh: "基于卫星的蒸散发数据服务，面向灌溉、水资源管理和政策决策。"
+    why_it_matters_zh: "是智能灌溉 ROI 论证和水资源管理场景的重要参考。"
+    best_for: ["benchmark_case", "roi_model", "data_architecture"]
+    local_downloaded: false
+
+  - id: "RES-0017"
+    title: "NASA POWER"
+    title_zh: "NASA POWER 气象与太阳辐射数据服务"
+    url: "https://power.larc.nasa.gov/docs/"
+    source_name: "NASA POWER"
+    source_type: "government"
+    resource_type: "documentation"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["weather", "climate", "api", "data_source", "modeling"]
+    linked_material_ids: ["DATA-012", "TECH-005", "SRC-017"]
+    summary_zh: "NASA POWER 的数据、API 和方法文档入口，提供农业建模常用气象和太阳辐射变量。"
+    why_it_matters_zh: "可作为缺少本地气象站数据时的补充数据源，用于作物模型、风险预警和时序预测。"
+    best_for: ["data_architecture", "technology_selection", "monthly_intelligence"]
+    local_downloaded: false
+
+  - id: "RES-0018"
+    title: "ERA5 hourly data on single levels"
+    title_zh: "ERA5 全球小时级再分析数据"
+    url: "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels"
+    source_name: "Copernicus Climate Data Store"
+    source_type: "government"
+    resource_type: "data_portal"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global", "eu"]
+    tags: ["weather", "climate", "reanalysis", "modeling", "data_source"]
+    linked_material_ids: ["DATA-013", "TECH-005", "SRC-018"]
+    summary_zh: "全球再分析气象数据，适合作为农业时序建模、气候风险和历史天气基线。"
+    why_it_matters_zh: "能为跨国家农业 AI 项目提供统一气象背景，降低不同地区数据口径不一致的问题。"
+    best_for: ["data_architecture", "technology_selection", "risk_control"]
+    local_downloaded: false
+
+  - id: "RES-0019"
+    title: "WorldClim"
+    title_zh: "WorldClim 全球气候数据"
+    url: "https://www.worldclim.org/"
+    source_name: "WorldClim"
+    source_type: "public_research"
+    resource_type: "data_portal"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["climate", "data_source", "spatial_modeling", "risk"]
+    linked_material_ids: ["DATA-014", "RISK-003", "SRC-019"]
+    summary_zh: "全球气候栅格数据入口，可用于生态适宜性、风险评估和长期气候背景分析。"
+    why_it_matters_zh: "适合补充农业 AI 项目中的区域适宜性、气候风险和长期趋势判断。"
+    best_for: ["data_architecture", "risk_control", "consulting_report"]
+    local_downloaded: false
+
+  - id: "RES-0020"
+    title: "SoilGrids"
+    title_zh: "SoilGrids 全球土壤属性数据"
+    url: "https://soilgrids.org/"
+    source_name: "ISRIC"
+    source_type: "public_research"
+    resource_type: "data_portal"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["soil", "data_source", "spatial_modeling", "crop_modeling"]
+    linked_material_ids: ["DATA-015", "TECH-006", "SRC-020"]
+    summary_zh: "全球土壤属性数据服务，可用于土壤背景、地块画像、作物适宜性和产量建模。"
+    why_it_matters_zh: "农业 AI 的地块级建模不能只看影像和天气，土壤数据是解释差异和做长期建议的关键层。"
+    best_for: ["data_architecture", "technology_selection", "consulting_report"]
+    local_downloaded: false
+
+  - id: "RES-0021"
+    title: "ISO 11783-1:2017"
+    title_zh: "ISO 11783 农林机械串行控制与通信数据网络"
+    url: "https://www.iso.org/standard/57556.html"
+    source_name: "ISO"
+    source_type: "standards_body"
+    resource_type: "standard"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: 2017
+    region: ["global"]
+    tags: ["standard", "interoperability", "machinery", "iot"]
+    linked_material_ids: ["STD-001", "DATA-016", "SRC-021"]
+    summary_zh: "农林机械电子控制和通信网络相关标准，是理解 ISOBUS 生态的重要入口。"
+    why_it_matters_zh: "农业大数据落地到农机作业时，互操作标准决定数据是否能稳定进入平台。"
+    best_for: ["data_architecture", "technology_selection", "risk_control"]
+    local_downloaded: false
+
+  - id: "RES-0022"
+    title: "ISOBUS Data Dictionary"
+    title_zh: "ISOBUS 数据字典"
+    url: "https://www.isobus.net/isobus/"
+    source_name: "AEF / ISOBUS"
+    source_type: "standards_body"
+    resource_type: "standard"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["standard", "interoperability", "machinery", "data_dictionary"]
+    linked_material_ids: ["STD-002", "DATA-017", "SRC-022"]
+    summary_zh: "ISOBUS 生态中的数据字典和兼容性信息入口。"
+    why_it_matters_zh: "适合支撑农机数据接入、字段标准化和跨品牌设备互联的咨询建议。"
+    best_for: ["data_architecture", "technology_selection", "consulting_report"]
+    local_downloaded: false
+
+  - id: "RES-0023"
+    title: "AgGateway ADAPT Framework"
+    title_zh: "AgGateway ADAPT 农业数据互操作框架"
+    url: "https://adaptframework.org/"
+    source_name: "AgGateway"
+    source_type: "standards_body"
+    resource_type: "standard"
+    quality_tier: "A"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global", "us"]
+    tags: ["standard", "interoperability", "farm_management", "data_model"]
+    linked_material_ids: ["STD-003", "DATA-018", "SRC-023"]
+    summary_zh: "面向农业软件和设备数据交换的开源/行业框架。"
+    why_it_matters_zh: "可作为农业数据平台字段统一、作业记录映射和供应商集成的技术参考。"
+    best_for: ["data_architecture", "technology_selection", "risk_control"]
+    local_downloaded: false
+
+  - id: "RES-0024"
+    title: "John Deere See & Spray Gen 2"
+    title_zh: "John Deere See & Spray Gen 2 精准喷洒"
+    url: "https://www.deere.com/en/sprayers/see-spray-gen-2/"
+    source_name: "John Deere"
+    source_type: "company_official"
+    resource_type: "case"
+    quality_tier: "B"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global", "us"]
+    tags: ["computer_vision", "precision_application", "machinery", "case"]
+    linked_material_ids: ["CASE-001", "SCN-003", "ROI-003", "SRC-024"]
+    summary_zh: "面向田间杂草识别和精准喷洒的商业化案例。"
+    why_it_matters_zh: "可用于说明 AI 从识别走向变量作业和投入品节省，是农业 AI 可见 ROI 的代表案例。"
+    best_for: ["benchmark_case", "content_ip", "roi_model"]
+    local_downloaded: false
+
+  - id: "RES-0025"
+    title: "CropX Agronomic Farm Management System"
+    title_zh: "CropX 农艺农场管理系统"
+    url: "https://cropx.com/"
+    source_name: "CropX"
+    source_type: "company_official"
+    resource_type: "case"
+    quality_tier: "B"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["iot", "irrigation", "farm_management", "decision_support"]
+    linked_material_ids: ["CASE-002", "SCN-001", "ROI-004", "SRC-025"]
+    summary_zh: "结合土壤传感器、数据平台和农艺建议的农场管理系统。"
+    why_it_matters_zh: "可作为物联网 + AI 在灌溉、施肥和农事决策中的商业化样本。"
+    best_for: ["benchmark_case", "technology_selection", "roi_model"]
+    local_downloaded: false
+
+  - id: "RES-0026"
+    title: "ClimateAi"
+    title_zh: "ClimateAi 农业气候风险智能平台"
+    url: "https://climate.ai/"
+    source_name: "ClimateAi"
+    source_type: "company_official"
+    resource_type: "case"
+    quality_tier: "B"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global"]
+    tags: ["climate_risk", "forecasting", "supply_chain", "food_agriculture"]
+    linked_material_ids: ["CASE-006", "SCN-007", "RISK-004", "SRC-026"]
+    summary_zh: "面向食品和农业供应链的 AI 气候洞察与风险预测平台。"
+    why_it_matters_zh: "适合作为农业 AI 从田间生产扩展到采购、供应链和风险管理的案例。"
+    best_for: ["benchmark_case", "market_context", "risk_control"]
+    local_downloaded: false
+
+  - id: "RES-0027"
+    title: "xFarm Technologies"
+    title_zh: "xFarm 农场管理与农业数字化平台"
+    url: "https://www.xfarm.ag/"
+    source_name: "xFarm Technologies"
+    source_type: "company_official"
+    resource_type: "case"
+    quality_tier: "B"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global", "eu"]
+    tags: ["farm_management", "iot", "satellite", "decision_support", "interoperability"]
+    linked_material_ids: ["CASE-007", "SCN-006", "DATA-019", "SRC-027"]
+    summary_zh: "农场管理平台，整合传感器、卫星、农机和农事建议。"
+    why_it_matters_zh: "可作为欧洲农业 SaaS/平台化服务的案例，展示农业 AI 如何嵌入日常农事工作流。"
+    best_for: ["benchmark_case", "data_architecture", "content_ip"]
+    local_downloaded: false
+
+  - id: "RES-0028"
+    title: "Climate FieldView"
+    title_zh: "Climate FieldView 数字农业平台"
+    url: "https://climate.com/fieldview/"
+    source_name: "Climate LLC / Bayer"
+    source_type: "company_official"
+    resource_type: "case"
+    quality_tier: "B"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: null
+    region: ["global", "us"]
+    tags: ["farm_management", "data_platform", "field_data", "decision_support"]
+    linked_material_ids: ["CASE-008", "DATA-020", "SCN-006", "SRC-028"]
+    summary_zh: "面向田间数据管理、农事记录和决策支持的数字农业平台。"
+    why_it_matters_zh: "适合说明农业 AI 商业化常以农场管理数据入口为基础，而不是独立模型工具。"
+    best_for: ["benchmark_case", "data_architecture", "market_context"]
+    local_downloaded: false
+
+  - id: "RES-0029"
+    title: "Artificial Intelligence in Agriculture: A Survey"
+    title_zh: "农业人工智能综述"
+    url: "https://arxiv.org/abs/2507.22101"
+    source_name: "arXiv"
+    source_type: "academic"
+    resource_type: "paper"
+    quality_tier: "C"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: 2025
+    region: ["global"]
+    tags: ["survey", "modeling", "computer_vision", "remote_sensing", "generative_ai"]
+    linked_material_ids: ["TECH-001", "TECH-002", "SRC-029"]
+    summary_zh: "农业 AI 综述类资源，可用于梳理技术版图和典型任务。"
+    why_it_matters_zh: "适合搭建咨询报告中的技术地图，但正式引用前需核验论文版本和同行评审状态。"
+    best_for: ["technology_selection", "consulting_report", "content_ip"]
+    local_downloaded: false
+
+  - id: "RES-0030"
+    title: "Unlocking the Potential of Artificial Intelligence in Agriculture"
+    title_zh: "释放农业人工智能潜力"
+    url: "https://arxiv.org/abs/2603.23289"
+    source_name: "arXiv"
+    source_type: "academic"
+    resource_type: "paper"
+    quality_tier: "C"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: 2026
+    region: ["global"]
+    tags: ["survey", "adoption", "risk", "modeling", "data_governance"]
+    linked_material_ids: ["TECH-009", "RISK-005", "SRC-030"]
+    summary_zh: "围绕农业 AI 潜力、应用和挑战的研究资料。"
+    why_it_matters_zh: "适合补充行业落地难点，包括数据、采用、可信度和跨场景泛化问题。"
+    best_for: ["technology_selection", "risk_control", "consulting_report"]
+    local_downloaded: false
+
+  - id: "RES-0031"
+    title: "Affordable Precision Agriculture with Edge AI and TinyML"
+    title_zh: "基于边缘 AI 和 TinyML 的低成本精准农业"
+    url: "https://arxiv.org/abs/2603.15085"
+    source_name: "arXiv"
+    source_type: "academic"
+    resource_type: "paper"
+    quality_tier: "C"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: 2026
+    region: ["global"]
+    tags: ["edge_ai", "tinyml", "iot", "precision_agriculture", "cost"]
+    linked_material_ids: ["TECH-010", "SCN-008", "ROI-005", "SRC-031"]
+    summary_zh: "聚焦边缘 AI、TinyML 和低成本精准农业的研究资料。"
+    why_it_matters_zh: "适合为算力资源配置和低成本试点方案提供技术线索。"
+    best_for: ["technology_selection", "roi_model", "content_ip"]
+    local_downloaded: false
+
+  - id: "RES-0032"
+    title: "AgriTrust"
+    title_zh: "AgriTrust 农业可信 AI 相关研究"
+    url: "https://arxiv.org/abs/2511.05572"
+    source_name: "arXiv"
+    source_type: "academic"
+    resource_type: "paper"
+    quality_tier: "C"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: 2025
+    region: ["global"]
+    tags: ["trust_safety", "evaluation", "risk", "generative_ai"]
+    linked_material_ids: ["RISK-006", "TECH-011", "SRC-032"]
+    summary_zh: "农业 AI 可信度、评估或安全相关研究资料。"
+    why_it_matters_zh: "可用于提醒客户：农业 AI 输出需要置信度、审计和专家复核机制，不能直接替代农艺决策。"
+    best_for: ["risk_control", "technology_selection", "consulting_report"]
+    local_downloaded: false
+
+  - id: "RES-0033"
+    title: "AgriEval"
+    title_zh: "AgriEval 农业 AI 评测基准"
+    url: "https://arxiv.org/abs/2507.21773"
+    source_name: "arXiv"
+    source_type: "academic"
+    resource_type: "paper"
+    quality_tier: "C"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: 2025
+    region: ["global"]
+    tags: ["evaluation", "benchmark", "generative_ai", "trust_safety"]
+    linked_material_ids: ["TECH-012", "RISK-007", "SRC-033"]
+    summary_zh: "农业 AI/农业大模型评测方向的研究资料。"
+    why_it_matters_zh: "适合作为农技助手、知识问答和生成式 AI 项目验收指标的参考。"
+    best_for: ["technology_selection", "risk_control", "roi_model"]
+    local_downloaded: false
+
+  - id: "RES-0034"
+    title: "Sentinel-2 for Crop Yield Estimation"
+    title_zh: "基于 Sentinel-2 的作物产量估计研究"
+    url: "https://arxiv.org/abs/2603.23779"
+    source_name: "arXiv"
+    source_type: "academic"
+    resource_type: "paper"
+    quality_tier: "C"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: 2026
+    region: ["global"]
+    tags: ["remote_sensing", "yield_estimation", "modeling", "crop_monitoring"]
+    linked_material_ids: ["TECH-013", "SCN-004", "DATA-021", "SRC-034"]
+    summary_zh: "使用 Sentinel-2 等遥感数据进行作物产量估计的研究线索。"
+    why_it_matters_zh: "适合补充产量预测场景的技术路线和数据需求说明。"
+    best_for: ["technology_selection", "consulting_report", "content_ip"]
+    local_downloaded: false
+
+  - id: "RES-0035"
+    title: "Smart Connected Farms"
+    title_zh: "智能互联农场研究"
+    url: "https://arxiv.org/abs/2312.12338"
+    source_name: "arXiv"
+    source_type: "academic"
+    resource_type: "paper"
+    quality_tier: "C"
+    verification_status: "verified"
+    verified_at: "2026-07-01"
+    publication_year: 2023
+    region: ["global"]
+    tags: ["iot", "farm_management", "data_platform", "interoperability"]
+    linked_material_ids: ["TECH-014", "DATA-022", "SCN-006", "SRC-035"]
+    summary_zh: "智能互联农场相关研究线索，涉及传感器、连接、平台和智能决策。"
+    why_it_matters_zh: "适合作为农业大数据平台架构和 IoT 接入层设计的技术背景。"
+    best_for: ["technology_selection", "data_architecture", "consulting_report"]
+    local_downloaded: false

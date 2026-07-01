@@ -17,12 +17,26 @@ International Agricultural Big Data + AI Consulting Knowledge Base
 
 该文件既可以作为咨询报告底稿，也可以作为自动写文案、生成 PPT、制作短视频脚本和月度行业简报的素材源。
 
+结构化 database 文件：
+
+- [database/resources.yml](./database/resources.yml)：机器可读资源索引，记录外部资源链接、来源类型、可信度、标签、用途和对应素材编号。
+- [database/tags.yml](./database/tags.yml)：统一标签字典，定义资源类型、来源类型、应用场景、技术标签和可信度等级。
+- [database/README.md](./database/README.md)：database schema、追加规则和质量控制说明。
+
+当前采用“链接索引 + 元数据”的方式管理外部资源：GitHub 仓库中不下载外部 PDF、网页、图片或数据集，只保存可核验链接、摘要、分类和使用建议。
+
 ## 内容结构
 
 主文档分为两层：
 
 1. 报告底稿层：第 0-7 章，适合直接用于咨询报告、提案、行业简报。
 2. 素材 database 层：第 8 章，按素材编号组织，适合检索、复用和持续追加。
+
+结构化 database 与主文档互补：
+
+1. 主文档负责表达、报告结构和可直接改写的内容。
+2. `database/resources.yml` 负责保存一手来源、标签、可信度和机器可读索引。
+3. `linked_material_ids` 字段把外部资源与主文档第 8 章的 `POL`、`MKT`、`TECH`、`DATA` 等素材编号连接起来。
 
 ### 报告底稿层
 
@@ -100,6 +114,22 @@ International Agricultural Big Data + AI Consulting Knowledge Base
 
 新增素材可以继续追加到第 8 章，并用对应编号纳入索引。
 
+### 5. 用结构化 database 自动生成内容
+
+如果后续用脚本、RAG 工具或文案工具自动生成内容，建议优先读取：
+
+1. `database/resources.yml`：获取来源、链接、摘要、标签、适用场景和可信度。
+2. `database/tags.yml`：统一分类口径，避免同义标签混乱。
+3. `农业AI技术咨询_资料库与报告底稿.md` 第 8 章：获取可直接改写的素材正文。
+
+常见筛选方式：
+
+- 咨询报告：筛选 `best_for` 包含 `consulting_report` 的资源。
+- 月度情报：筛选 `best_for` 包含 `monthly_intelligence` 的资源。
+- 短视频/公众号：筛选 `best_for` 包含 `content_ip` 的资源。
+- 技术方案：筛选 `tags` 包含 `data_platform`、`remote_sensing`、`iot`、`modeling`、`interoperability` 的资源。
+- 案例库：筛选 `resource_type` 为 `case` 的资源。
+
 ## 当前覆盖主题
 
 - 农业 AI 技术地图：CV、遥感、时序预测、生成式 AI、知识图谱、强化学习、数字孪生、机器人、育种 AI。
@@ -137,7 +167,8 @@ International Agricultural Big Data + AI Consulting Knowledge Base
 
 维护原则：
 
-- 优先追加到第 8 章，而不是散落在多个位置。
+- 新增一手资源时，优先追加到 `database/resources.yml`，再根据需要补充主文档第 8 章。
+- 新增可直接改写的观点、话术、图表页和咨询模板时，追加到主文档第 8 章。
 - 每条素材尽量包含来源或“待核验”标记。
 - 对外引用前保留来源链接，避免只保留二手转述。
 - 对市场规模、政策、公司产品能力等易变化信息定期更新。
