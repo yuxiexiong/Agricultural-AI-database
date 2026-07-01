@@ -105,3 +105,43 @@ claims:
     use_for: ["content_ip", "technology_selection", "risk_control"]
     content_angle_zh: "适合用于农业大模型章节：农业 AI 的关键不是会说，而是能把科研、数据、农艺规则和现实决策连接成产品。"
     caution_zh: "CGIAR AI Hub 是公共科研与产品化方向案例，不能直接代表所有商业农业大模型的成熟度。"
+
+  - id: "CLAIM-014"
+    claim_zh: "智能灌溉的高质量数据底座应把 ET、作物需水、地面水文、地下水储量和干旱监测分层组合，而不是只看单一传感器或单一影像指标。"
+    evidence_level: "strong"
+    resource_ids: ["RES-0016", "RES-0048", "RES-0057", "RES-0058", "RES-0059", "RES-0060", "RES-0062"]
+    use_for: ["roi_model", "consulting_report", "technology_selection"]
+    content_angle_zh: "适合写智能灌溉方案：先建立水分决策链，再讨论传感器、模型和灌溉设备。"
+    caution_zh: "跨区域使用时必须区分美国数据、全球遥感数据和本地水权/取水制度，不能把数据可得性等同于可执行建议。"
+
+  - id: "CLAIM-015"
+    claim_zh: "作物长势监测和产量预测更适合采用多源校验：遥感时间序列给空间信号，作物历和农业气象给生育阶段，官方进度/产量统计给回测口径。"
+    evidence_level: "strong"
+    resource_ids: ["RES-0013", "RES-0014", "RES-0015", "RES-0063", "RES-0064", "RES-0065", "RES-0066", "RES-0077"]
+    use_for: ["consulting_report", "technology_selection", "monthly_intelligence"]
+    content_angle_zh: "适合解释为什么产量预测不是单张卫星图分类，而是多源时间序列和口径校验。"
+    caution_zh: "官方统计通常是区域尺度，不能直接作为地块级标签；地块级预测仍需本地样本和边界数据。"
+
+  - id: "CLAIM-016"
+    claim_zh: "区域作物适宜性和农业投资选址不能只看自然适宜性；还要叠加现实生产格局、土地覆盖、基础设施、市场和农村家庭约束。"
+    evidence_level: "strong"
+    resource_ids: ["RES-0049", "RES-0069", "RES-0070", "RES-0071", "RES-0072"]
+    use_for: ["consulting_report", "market_context", "technology_selection"]
+    content_angle_zh: "适合写投资选址章节：哪里能种是一层，哪里值得投是另一层。"
+    caution_zh: "公开宏观和空间数据只能做初筛，不能替代土地权属、政策、物流、用工和客户访谈尽调。"
+
+  - id: "CLAIM-017"
+    claim_zh: "农业 AI ROI 评估应从成本、价格、收入、投入品和生产率基准出发，再测试技术改善假设，而不是直接套用企业宣传中的节省比例。"
+    evidence_level: "strong"
+    resource_ids: ["RES-0051", "RES-0052", "RES-0073", "RES-0074", "RES-0075", "RES-0076", "RES-0077", "RES-0078"]
+    use_for: ["roi_model", "consulting_report", "risk_control"]
+    content_angle_zh: "适合做 ROI 模型开场：先问这类农场的钱花在哪里、收入来自哪里、价格波动多大，再讨论 AI 能改善哪一项。"
+    caution_zh: "USDA 数据主要适用于美国；跨国项目必须寻找本地成本、价格和经营数据替代。"
+
+  - id: "CLAIM-018"
+    claim_zh: "农场管理平台和农机互操作的长期价值取决于地理要素、传感器观测、元数据和作业记录能否按标准沉淀，而不只是能接入一个设备或一个 App。"
+    evidence_level: "strong"
+    resource_ids: ["RES-0021", "RES-0022", "RES-0023", "RES-0040", "RES-0079", "RES-0080", "RES-0081", "RES-0082"]
+    use_for: ["data_architecture", "technology_selection", "consulting_report"]
+    content_angle_zh: "适合写数据底座观点：平台早期省掉元数据和接口标准，后期会在多品牌、多地块、多模型扩展时还债。"
+    caution_zh: "标准只能降低技术摩擦，不能自动解决数据权属、商业激励和供应商封闭生态问题。"

@@ -711,3 +711,743 @@ resources:
   - "为美国农业遥感模型调用土地覆盖背景层"
   - "支撑土地利用变化和环境风险章节"
   local_downloaded: false
+- id: RES-0057
+  title: AQUASTAT
+  title_zh: FAO AQUASTAT 全球水与农业信息系统
+  url: https://www.fao.org/aquastat/en/
+  source_name: FAO
+  source_type: official_international
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - water_resources
+  - irrigation
+  - agriculture_water
+  - official_statistics
+  - data_source
+  linked_material_ids:
+  - DATA-040
+  - SCN-001
+  - SRC-057
+  summary_zh: FAO 的全球水与农业信息系统，提供国家层面的水资源、取水、灌溉和农业用水统计与地图入口。
+  why_it_matters_zh: 可为智能灌溉和水资源管理场景提供宏观水资源约束、区域对比和政策背景。
+  best_for:
+  - consulting_report
+  - data_architecture
+  - risk_control
+  callable_use_cases:
+  - "为水资源约束和灌溉潜力章节调用国家级统计"
+  - "校准智能灌溉 ROI 叙述中的水资源背景"
+  local_downloaded: false
+- id: RES-0058
+  title: U.S. Drought Monitor
+  title_zh: 美国干旱监测 USDM
+  url: https://droughtmonitor.unl.edu/
+  source_name: National Drought Mitigation Center / USDA / NOAA
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - us
+  tags:
+  - drought
+  - water_management
+  - risk_monitoring
+  - gis_data
+  - agriculture_weather
+  linked_material_ids:
+  - DATA-041
+  - SCN-001
+  - SCN-009
+  - SRC-058
+  summary_zh: 美国每周发布的干旱强度、范围、GIS 数据和影响说明，联合 NDMC、USDA 和 NOAA 维护。
+  why_it_matters_zh: 适合在美国农业项目中把灌溉需求、旱情、牧草/作物压力和风险监测连接起来。
+  best_for:
+  - monthly_intelligence
+  - risk_control
+  - consulting_report
+  callable_use_cases:
+  - "生成美国旱情和农业影响月报"
+  - "为灌溉、水权和灾害风险场景提供干旱基线"
+  local_downloaded: false
+- id: RES-0059
+  title: USGS Water Data for the Nation
+  title_zh: USGS 全国水文数据
+  url: https://waterdata.usgs.gov/nwis
+  source_name: U.S. Geological Survey
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - us
+  tags:
+  - hydrology
+  - streamflow
+  - groundwater
+  - water_quality
+  - api
+  linked_material_ids:
+  - DATA-042
+  - SCN-001
+  - SRC-059
+  summary_zh: USGS 全国水文站点和水资源数据入口，覆盖径流、地下水、水质和站点观测等。
+  why_it_matters_zh: 可补足遥感 ET 之外的水文实测层，支持流域、取水和区域水资源咨询。
+  best_for:
+  - data_architecture
+  - risk_control
+  - consulting_report
+  callable_use_cases:
+  - "为美国流域水资源和灌溉约束调用水文站数据"
+  - "与 OpenET/USDM 组合做水资源风险底座"
+  local_downloaded: false
+- id: RES-0060
+  title: GRACE Tellus Data Portal
+  title_zh: NASA/JPL GRACE Tellus 重力卫星水储量数据
+  url: https://grace.jpl.nasa.gov/data/get-data/
+  source_name: NASA Jet Propulsion Laboratory
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - groundwater
+  - water_storage
+  - drought
+  - remote_sensing
+  - climate_risk
+  linked_material_ids:
+  - DATA-043
+  - SCN-001
+  - SRC-060
+  summary_zh: NASA/JPL GRACE Tellus 提供陆地水储量、地下水和干旱相关遥感数据入口。
+  why_it_matters_zh: 适合把灌溉和作物风险放到区域地下水和长期水储量变化背景中分析。
+  best_for:
+  - risk_control
+  - consulting_report
+  - data_architecture
+  callable_use_cases:
+  - "为地下水压力和长期水资源风险章节提供遥感数据源"
+  - "与地面水文站和 ET 数据互补"
+  local_downloaded: false
+- id: RES-0061
+  title: Drought.gov
+  title_zh: NOAA/NIDIS 美国干旱门户
+  url: https://www.drought.gov/
+  source_name: NOAA National Integrated Drought Information System
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - us
+  tags:
+  - drought
+  - climate_risk
+  - water_management
+  - decision_support
+  - early_warning
+  linked_material_ids:
+  - DATA-044
+  - SCN-001
+  - SCN-009
+  - SRC-061
+  summary_zh: 美国国家综合干旱信息系统门户，汇集干旱监测、预测、影响和决策支持资源。
+  why_it_matters_zh: 适合为水资源管理、气候风险和供应链韧性报告提供官方干旱情报入口。
+  best_for:
+  - monthly_intelligence
+  - risk_control
+  - consulting_report
+  callable_use_cases:
+  - "生成美国干旱风险简报"
+  - "为农业水资源和供应链风险场景提供官方入口"
+  local_downloaded: false
+- id: RES-0062
+  title: CROPWAT
+  title_zh: FAO CROPWAT 作物需水与灌溉计划软件
+  url: https://www.fao.org/land-water/databases-and-software/cropwat/en/
+  source_name: FAO
+  source_type: official_international
+  resource_type: software
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - irrigation
+  - crop_water_requirement
+  - decision_support
+  - water_management
+  - software
+  linked_material_ids:
+  - DATA-045
+  - SCN-001
+  - SRC-062
+  summary_zh: FAO 用于计算作物需水量、灌溉需求和灌溉计划的经典工具。
+  why_it_matters_zh: 可为智能灌溉场景提供农艺规则和可解释计算框架，避免只依赖黑箱模型。
+  best_for:
+  - technology_selection
+  - roi_model
+  - consulting_report
+  callable_use_cases:
+  - "为灌溉建议模型提供作物需水计算参考"
+  - "解释 ET、作物阶段和灌溉计划之间的关系"
+  local_downloaded: false
+- id: RES-0063
+  title: Harmonized Landsat Sentinel-2
+  title_zh: NASA HLS Harmonized Landsat Sentinel-2 数据产品
+  url: https://hls.gsfc.nasa.gov/
+  source_name: NASA
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - remote_sensing
+  - crop_monitoring
+  - satellite
+  - analysis_ready_data
+  - vegetation_indices
+  linked_material_ids:
+  - DATA-046
+  - SCN-004
+  - SRC-063
+  summary_zh: NASA 将 Landsat 与 Sentinel-2 卫星观测协调为高频、分析就绪的地表反射率和植被指数数据产品。
+  why_it_matters_zh: 适合提升作物长势监测、物候识别和产量预测的时间频率与数据一致性。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - consulting_report
+  callable_use_cases:
+  - "为作物长势监测构建高频遥感特征"
+  - "作为 Sentinel 与 Landsat 融合方案的官方来源"
+  local_downloaded: false
+- id: RES-0064
+  title: USDA FAS Crop Explorer
+  title_zh: USDA FAS Crop Explorer 全球作物监测入口
+  url: https://ipad.fas.usda.gov/cropexplorer/
+  source_name: USDA Foreign Agricultural Service
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  - us
+  tags:
+  - crop_monitoring
+  - crop_calendar
+  - production_maps
+  - food_security
+  - remote_sensing
+  linked_material_ids:
+  - DATA-047
+  - SCN-004
+  - SRC-064
+  summary_zh: USDA FAS 国际生产评估部门的作物监测入口，包含作物日历、生产地图、Crop Explorer、GLAM 等工具链接。
+  why_it_matters_zh: 适合为全球作物长势和产量预测补充作物历、区域生产分布和官方监测线索。
+  best_for:
+  - monthly_intelligence
+  - consulting_report
+  - data_architecture
+  callable_use_cases:
+  - "为国家/区域作物监测调用作物历和生产地图"
+  - "支撑产量预测报告中的 USDA 官方监测来源"
+  local_downloaded: false
+- id: RES-0065
+  title: USDA NASS Crop Progress and Condition
+  title_zh: USDA NASS 作物进度与长势状况
+  url: https://www.nass.usda.gov/Charts_and_Maps/Crop_Progress_%26_Condition/
+  source_name: USDA National Agricultural Statistics Service
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - us
+  tags:
+  - crop_condition
+  - crop_progress
+  - official_statistics
+  - yield_context
+  - agriculture_weather
+  linked_material_ids:
+  - DATA-048
+  - SCN-004
+  - SRC-065
+  summary_zh: USDA NASS 提供美国作物播种、出苗、生育进度和长势评级等图表与数据入口。
+  why_it_matters_zh: 可作为美国作物产量预测和长势监测的官方标签/校验来源之一。
+  best_for:
+  - monthly_intelligence
+  - consulting_report
+  - data_architecture
+  callable_use_cases:
+  - "校验美国作物长势模型输出"
+  - "生成美国作物进度和长势周/月报"
+  local_downloaded: false
+- id: RES-0066
+  title: JRC MARS Agri4Cast
+  title_zh: 欧盟 JRC MARS Agri4Cast 作物监测
+  url: https://agri4cast.jrc.ec.europa.eu/
+  source_name: European Commission Joint Research Centre
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - eu
+  - global
+  tags:
+  - crop_monitoring
+  - agrometeorology
+  - yield_forecast
+  - eu
+  - model_features
+  linked_material_ids:
+  - DATA-049
+  - SCN-004
+  - SRC-066
+  summary_zh: 欧盟 JRC MARS/Agri4Cast 作物监测系统，面向农业气象、作物状态和产量预测分析。
+  why_it_matters_zh: 适合为欧洲作物长势和产量预测场景提供官方监测与建模参考。
+  best_for:
+  - monthly_intelligence
+  - consulting_report
+  - technology_selection
+  callable_use_cases:
+  - "为欧盟作物监测和产量预测报告提供官方来源"
+  - "参考农业气象到产量预测的建模链条"
+  local_downloaded: false
+- id: RES-0067
+  title: Anomaly Hotspots of Agricultural Production
+  title_zh: 欧盟 JRC ASAP 农业生产异常热点
+  url: https://mars.jrc.ec.europa.eu/asap/
+  source_name: European Commission Joint Research Centre
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - crop_monitoring
+  - anomaly_detection
+  - food_security
+  - early_warning
+  - remote_sensing
+  linked_material_ids:
+  - DATA-050
+  - SCN-004
+  - SCN-009
+  - SRC-067
+  summary_zh: JRC ASAP 用遥感和农业气象数据识别农业生产异常热点，服务粮食安全预警。
+  why_it_matters_zh: 可为作物监测、产量风险和粮食安全月报提供异常检测样板。
+  best_for:
+  - monthly_intelligence
+  - risk_control
+  - consulting_report
+  callable_use_cases:
+  - "为区域作物异常和粮食安全风险生成预警线索"
+  - "作为农业遥感异常检测方案参考"
+  local_downloaded: false
+- id: RES-0068
+  title: FAO Earth Map
+  title_zh: FAO Earth Map 地理空间分析平台
+  url: https://www.fao.org/earthmap/
+  source_name: FAO
+  source_type: official_international
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - geospatial_ai
+  - land_monitoring
+  - remote_sensing
+  - spatial_analysis
+  - data_platform
+  linked_material_ids:
+  - DATA-051
+  - SCN-006
+  - SCN-013
+  - SRC-068
+  summary_zh: FAO 面向地理空间和遥感数据分析的在线平台，适合公共部门和咨询原型使用。
+  why_it_matters_zh: 可作为农业数据底座和区域选址分析的公共地理空间工具样板。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - consulting_report
+  callable_use_cases:
+  - "快速探索区域土地、植被和空间指标"
+  - "为农业投资选址搭建公共数据原型"
+  local_downloaded: false
+- id: RES-0069
+  title: World Development Indicators
+  title_zh: 世界银行 World Development Indicators
+  url: https://databank.worldbank.org/source/world-development-indicators
+  source_name: World Bank
+  source_type: official_international
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - macroeconomics
+  - infrastructure
+  - market_access
+  - country_context
+  - data_source
+  linked_material_ids:
+  - DATA-052
+  - SCN-013
+  - SRC-069
+  summary_zh: 世界银行 DataBank 中的全球发展指标，覆盖人口、经济、基础设施、贸易和部分农业相关指标。
+  why_it_matters_zh: 区域农业投资选址不能只看土壤和气候，还要叠加市场规模、基础设施和国家发展背景。
+  best_for:
+  - market_context
+  - consulting_report
+  - data_architecture
+  callable_use_cases:
+  - "为区域选址和市场进入章节补充国家级宏观指标"
+  - "建立农业投资筛选中的非农艺约束层"
+  local_downloaded: false
+- id: RES-0070
+  title: Living Standards Measurement Study
+  title_zh: 世界银行 LSMS 生活水平测量研究
+  url: https://microdata.worldbank.org/index.php/catalog/lsms
+  source_name: World Bank
+  source_type: official_international
+  resource_type: data_catalog
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - household_survey
+  - rural_livelihoods
+  - farm_household
+  - survey_data
+  - market_context
+  linked_material_ids:
+  - DATA-053
+  - SCN-013
+  - SCN-014
+  - SRC-070
+  summary_zh: 世界银行 LSMS 微观数据目录，包含多国生活水平、农业和农村家庭调查数据。
+  why_it_matters_zh: 可为小农户、农村市场和区域投资选址补充微观经营与家庭约束信息。
+  best_for:
+  - market_context
+  - consulting_report
+  - risk_control
+  callable_use_cases:
+  - "为农业投资选址加入农村家庭和市场约束"
+  - "为小农户普惠 AI 服务寻找微观调查线索"
+  local_downloaded: false
+- id: RES-0071
+  title: Spatial Production Allocation Model
+  title_zh: IFPRI SPAM 空间化作物生产分配模型
+  url: https://www.ifpri.org/project/spatial-production-allocation-model-spam
+  source_name: IFPRI
+  source_type: public_research
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - crop_distribution
+  - production_allocation
+  - spatial_modeling
+  - crop_suitability
+  - food_security
+  linked_material_ids:
+  - DATA-054
+  - SCN-013
+  - SRC-071
+  summary_zh: IFPRI 的全球空间化作物生产分配模型，用于估计作物面积、产量和产量在空间上的分布。
+  why_it_matters_zh: 可为区域作物适宜性和农业投资选址提供“现实生产格局”对照层。
+  best_for:
+  - consulting_report
+  - data_architecture
+  - market_context
+  callable_use_cases:
+  - "把 GAEZ 潜在适宜性与现实作物生产分布对比"
+  - "支撑国家/区域作物机会地图"
+  local_downloaded: false
+- id: RES-0072
+  title: Copernicus Global Dynamic Land Cover
+  title_zh: Copernicus 全球动态土地覆盖
+  url: https://land.copernicus.eu/en/products/global-dynamic-land-cover
+  source_name: Copernicus Land Monitoring Service
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  - eu
+  tags:
+  - land_cover
+  - remote_sensing
+  - crop_suitability
+  - environmental_context
+  - geospatial_ai
+  linked_material_ids:
+  - DATA-055
+  - SCN-013
+  - SRC-072
+  summary_zh: Copernicus 全球动态土地覆盖产品，为全球土地覆盖、土地利用和环境背景分析提供基础层。
+  why_it_matters_zh: 区域选址需要先排除非农地、生态敏感区和土地覆盖约束，不能只看气候潜力。
+  best_for:
+  - data_architecture
+  - consulting_report
+  - risk_control
+  callable_use_cases:
+  - "为区域作物适宜性加入土地覆盖约束"
+  - "补充农业投资选址中的环境背景层"
+  local_downloaded: false
+- id: RES-0073
+  title: USDA ERS Commodity Costs and Returns
+  title_zh: USDA ERS 农产品成本与收益
+  url: https://www.ers.usda.gov/data-products/commodity-costs-and-returns/
+  source_name: USDA Economic Research Service
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - us
+  tags:
+  - farm_finance
+  - production_cost
+  - roi
+  - commodity
+  - official_statistics
+  linked_material_ids:
+  - DATA-056
+  - ROI-008
+  - SCN-014
+  - SRC-073
+  summary_zh: USDA ERS 提供美国主要农产品的成本与收益估算、历史序列和生产成本预测。
+  why_it_matters_zh: 农业 AI ROI 评估需要以作物成本结构和利润敏感项为基线，而不是只引用供应商节省比例。
+  best_for:
+  - roi_model
+  - consulting_report
+  - market_context
+  callable_use_cases:
+  - "为美国作物 ROI 模型调用成本与收益基准"
+  - "评估灌溉、变量作业和投入品优化对利润的影响"
+  local_downloaded: false
+- id: RES-0074
+  title: USDA ERS Farm Income and Wealth Statistics
+  title_zh: USDA ERS 农场收入与财富统计
+  url: https://www.ers.usda.gov/data-products/farm-income-and-wealth-statistics/
+  source_name: USDA Economic Research Service
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - us
+  tags:
+  - farm_income
+  - farm_finance
+  - wealth
+  - roi
+  - official_statistics
+  linked_material_ids:
+  - DATA-057
+  - ROI-009
+  - SCN-014
+  - SRC-074
+  summary_zh: USDA ERS 农场收入、资产负债、现金收入和部门财务状况统计入口。
+  why_it_matters_zh: 可为客户支付能力、经营压力、技术采纳和宏观 ROI 假设提供美国官方背景。
+  best_for:
+  - roi_model
+  - market_context
+  - consulting_report
+  callable_use_cases:
+  - "建立美国农场经营基准和支付能力假设"
+  - "支撑农业 AI 市场进入和 ROI 敏感性分析"
+  local_downloaded: false
+- id: RES-0075
+  title: USDA ERS Fertilizer Use and Price
+  title_zh: USDA ERS 化肥使用与价格数据
+  url: https://www.ers.usda.gov/data-products/fertilizer-use-and-price/
+  source_name: USDA Economic Research Service
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - us
+  tags:
+  - fertilizer
+  - input_cost
+  - roi
+  - production_practices
+  - official_statistics
+  linked_material_ids:
+  - DATA-058
+  - ROI-010
+  - SCN-014
+  - SRC-075
+  summary_zh: USDA ERS 化肥使用与价格数据产品，提供肥料投入和价格相关统计。
+  why_it_matters_zh: 精准施肥、变量作业和经营基准需要投入品价格作为 ROI 敏感项。
+  best_for:
+  - roi_model
+  - consulting_report
+  - market_context
+  callable_use_cases:
+  - "为变量作业和投入品优化 ROI 模型补充化肥价格基线"
+  - "分析投入品成本波动对农业 AI 价值的影响"
+  local_downloaded: false
+- id: RES-0076
+  title: USDA NASS Agricultural Prices Program
+  title_zh: USDA NASS 农产品价格调查
+  url: https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Prices/
+  source_name: USDA National Agricultural Statistics Service
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - us
+  tags:
+  - prices
+  - commodity
+  - farm_finance
+  - roi
+  - official_statistics
+  linked_material_ids:
+  - DATA-059
+  - ROI-011
+  - SCN-014
+  - SRC-076
+  summary_zh: USDA NASS 农产品价格调查项目，提供农产品价格和相关统计的官方入口。
+  why_it_matters_zh: ROI 评估中收益端对价格非常敏感，价格数据可避免只按单一年份或企业假设估算。
+  best_for:
+  - roi_model
+  - market_context
+  - consulting_report
+  callable_use_cases:
+  - "为农场 ROI 模型补充价格基准"
+  - "构建不同价格情景下的技术投资敏感性分析"
+  local_downloaded: false
+- id: RES-0077
+  title: USDA NASS Crop Production
+  title_zh: USDA NASS 作物生产调查
+  url: https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Crop_Production/
+  source_name: USDA National Agricultural Statistics Service
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - us
+  tags:
+  - crop_production
+  - yield
+  - production
+  - official_statistics
+  - benchmarking
+  linked_material_ids:
+  - DATA-060
+  - SCN-004
+  - SCN-014
+  - SRC-077
+  summary_zh: USDA NASS 作物生产调查和报告入口，覆盖面积、产量、单产等官方统计。
+  why_it_matters_zh: 可为产量预测模型验证、经营基准和区域市场评估提供美国官方产量口径。
+  best_for:
+  - consulting_report
+  - roi_model
+  - monthly_intelligence
+  callable_use_cases:
+  - "为美国作物产量预测和经营基准调用官方产量数据"
+  - "校验区域单产和产量变化趋势"
+  local_downloaded: false
+- id: RES-0078
+  title: Agricultural Productivity in the United States
+  title_zh: USDA ERS 美国农业生产率数据
+  url: https://www.ers.usda.gov/data-products/agricultural-productivity-in-the-us/
+  source_name: USDA Economic Research Service
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - us
+  tags:
+  - productivity
+  - total_factor_productivity
+  - benchmarking
+  - roi
+  - official_statistics
+  linked_material_ids:
+  - DATA-061
+  - ROI-012
+  - SCN-014
+  - SRC-078
+  summary_zh: USDA ERS 美国农业生产率数据产品，适合分析长期生产率、投入产出和技术变化背景。
+  why_it_matters_zh: 可把单个 AI 项目的 ROI 放入更长期的农业生产率提升和投入效率讨论中。
+  best_for:
+  - market_context
+  - roi_model
+  - consulting_report
+  callable_use_cases:
+  - "为农业 AI 报告提供长期生产率背景"
+  - "区分单项目 ROI 和行业生产率趋势"
+  local_downloaded: false

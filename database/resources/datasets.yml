@@ -254,3 +254,183 @@ datasets:
     best_use: ["land_cover_context", "remote_sensing_features", "environmental_risk"]
     limitations_zh: "覆盖美国，30 米土地覆盖适合背景层，不等同于作物类型或地块边界。"
     consulting_angle_zh: "适合为美国农业遥感和地块周边环境分析补充土地覆盖背景。"
+
+  - id: "DATASET-022"
+    name: "FAO AQUASTAT"
+    name_zh: "FAO AQUASTAT 全球水与农业信息系统"
+    resource_ids: ["RES-0057"]
+    data_domain: ["water_resources", "irrigation", "agricultural_water_use", "country_statistics"]
+    spatial_scale: ["country", "region", "global"]
+    temporal_scale: ["annual", "multi_year"]
+    access_pattern: "web_portal_maps_download"
+    best_use: ["water_context", "irrigation_strategy", "policy_background"]
+    limitations_zh: "偏国家和区域尺度，不适合直接生成地块级灌溉建议。"
+    consulting_angle_zh: "适合把智能灌溉从单地块 ROI 扩展到区域水资源约束和政策背景。"
+
+  - id: "DATASET-023"
+    name: "U.S. Drought Monitor"
+    name_zh: "美国干旱监测 USDM"
+    resource_ids: ["RES-0058"]
+    data_domain: ["drought", "risk_monitoring", "agricultural_impacts"]
+    spatial_scale: ["county", "state", "region", "us"]
+    temporal_scale: ["weekly", "archive"]
+    access_pattern: "web_maps_gis_download_api"
+    best_use: ["drought_monitoring", "irrigation_context", "monthly_intelligence"]
+    limitations_zh: "覆盖美国，且干旱等级是综合判断，不是单一传感器观测值。"
+    consulting_angle_zh: "适合为灌溉、水权、灾害风险和作物压力提供官方旱情背景。"
+
+  - id: "DATASET-024"
+    name: "USGS Water Data for the Nation"
+    name_zh: "USGS 全国水文数据"
+    resource_ids: ["RES-0059"]
+    data_domain: ["streamflow", "groundwater", "water_quality", "hydrology"]
+    spatial_scale: ["station", "basin", "state", "us"]
+    temporal_scale: ["real_time", "daily", "historical"]
+    access_pattern: "web_portal_api_download"
+    best_use: ["basin_water_context", "irrigation_constraints", "risk_monitoring"]
+    limitations_zh: "美国水文站网络数据，跨国项目需要寻找当地水文机构或全球替代数据。"
+    consulting_angle_zh: "适合把遥感 ET 与地面水文观测结合，形成更稳健的水资源判断。"
+
+  - id: "DATASET-025"
+    name: "GRACE Tellus"
+    name_zh: "NASA/JPL GRACE Tellus 水储量数据"
+    resource_ids: ["RES-0060"]
+    data_domain: ["terrestrial_water_storage", "groundwater", "drought", "remote_sensing"]
+    spatial_scale: ["region", "basin", "global"]
+    temporal_scale: ["monthly", "multi_year"]
+    access_pattern: "data_portal_download"
+    best_use: ["groundwater_risk", "drought_context", "climate_risk"]
+    limitations_zh: "空间尺度较粗，适合区域水储量背景，不适合单个农场决策。"
+    consulting_angle_zh: "适合说明农业用水风险不只在地块，也在地下水和流域长期趋势。"
+
+  - id: "DATASET-026"
+    name: "NASA HLS"
+    name_zh: "NASA Harmonized Landsat Sentinel-2"
+    resource_ids: ["RES-0063"]
+    data_domain: ["satellite_imagery", "surface_reflectance", "vegetation_indices", "crop_monitoring"]
+    spatial_scale: ["field", "region", "global"]
+    temporal_scale: ["sub_weekly", "time_series"]
+    access_pattern: "earthdata_lp_daac_cloud_catalog"
+    best_use: ["crop_monitoring", "phenology", "yield_estimation", "disaster_assessment"]
+    limitations_zh: "仍受云、地块边界和地面标签质量影响；需要与气象、土壤和历史产量结合。"
+    consulting_angle_zh: "适合作为作物长势监测和产量预测的高频公开遥感底座。"
+
+  - id: "DATASET-027"
+    name: "USDA FAS Crop Explorer"
+    name_zh: "USDA FAS Crop Explorer"
+    resource_ids: ["RES-0064"]
+    data_domain: ["crop_calendar", "production_maps", "global_crop_monitoring", "food_security"]
+    spatial_scale: ["country", "region", "global"]
+    temporal_scale: ["seasonal", "monthly", "archive"]
+    access_pattern: "web_portal_maps_reports"
+    best_use: ["crop_calendar_context", "monthly_intelligence", "yield_forecast_context"]
+    limitations_zh: "更适合区域和国家级监测，不直接替代地块级模型。"
+    consulting_angle_zh: "适合为全球作物产量预测补充作物历、生产地图和 USDA 监测口径。"
+
+  - id: "DATASET-028"
+    name: "USDA NASS Crop Progress and Condition"
+    name_zh: "USDA NASS 作物进度与长势"
+    resource_ids: ["RES-0065"]
+    data_domain: ["crop_progress", "crop_condition", "official_statistics", "yield_context"]
+    spatial_scale: ["state", "us"]
+    temporal_scale: ["weekly", "seasonal", "archive"]
+    access_pattern: "web_charts_reports_quickstats"
+    best_use: ["us_crop_monitoring", "model_validation", "monthly_intelligence"]
+    limitations_zh: "覆盖美国，且作物长势评级是调查统计口径，不能直接当作遥感像素标签。"
+    consulting_angle_zh: "适合校验美国作物监测模型，并为产量预测报告提供官方长势背景。"
+
+  - id: "DATASET-029"
+    name: "JRC MARS Agri4Cast"
+    name_zh: "欧盟 JRC MARS Agri4Cast"
+    resource_ids: ["RES-0066"]
+    data_domain: ["agrometeorology", "crop_monitoring", "yield_forecast", "model_features"]
+    spatial_scale: ["region", "country", "eu", "global_context"]
+    temporal_scale: ["dekadal", "monthly", "seasonal"]
+    access_pattern: "web_portal_reports_data"
+    best_use: ["eu_crop_monitoring", "yield_forecast_reference", "agrometeorology"]
+    limitations_zh: "主要服务欧盟和相关区域监测，跨区复用需核验作物、气象和模型口径。"
+    consulting_angle_zh: "适合作为农业气象到产量预测的官方链条参考。"
+
+  - id: "DATASET-030"
+    name: "World Development Indicators"
+    name_zh: "世界银行 WDI 全球发展指标"
+    resource_ids: ["RES-0069"]
+    data_domain: ["macroeconomics", "infrastructure", "market_access", "country_context"]
+    spatial_scale: ["country", "region", "global"]
+    temporal_scale: ["annual", "multi_year"]
+    access_pattern: "databank_api_download"
+    best_use: ["site_selection", "market_context", "country_diagnostics"]
+    limitations_zh: "国家级指标不能替代项目地尽调；部分指标存在缺失和口径变化。"
+    consulting_angle_zh: "适合把农业投资选址从自然适宜性扩展到市场、基础设施和国家发展背景。"
+
+  - id: "DATASET-031"
+    name: "World Bank LSMS"
+    name_zh: "世界银行 LSMS 微观调查数据"
+    resource_ids: ["RES-0070"]
+    data_domain: ["household_survey", "rural_livelihoods", "farm_household", "microdata"]
+    spatial_scale: ["household", "survey_region", "country"]
+    temporal_scale: ["survey_wave", "panel_optional"]
+    access_pattern: "microdata_catalog_request_download"
+    best_use: ["smallholder_context", "market_segmentation", "investment_constraints"]
+    limitations_zh: "微观数据使用需注意访问权限、匿名化、抽样口径和国家差异。"
+    consulting_angle_zh: "适合为小农户和区域投资选址补充经营、家庭和市场约束。"
+
+  - id: "DATASET-032"
+    name: "IFPRI SPAM"
+    name_zh: "IFPRI SPAM 空间化作物生产数据"
+    resource_ids: ["RES-0071"]
+    data_domain: ["crop_distribution", "harvested_area", "production", "yield", "spatial_modeling"]
+    spatial_scale: ["grid", "region", "country", "global"]
+    temporal_scale: ["model_years"]
+    access_pattern: "web_portal_download"
+    best_use: ["crop_suitability", "site_selection", "production_baseline"]
+    limitations_zh: "模型化空间分配数据存在不确定性，需与本地统计和遥感产品交叉核验。"
+    consulting_angle_zh: "适合把潜在适宜性与现实生产格局进行对照，筛选更可信的投资区域。"
+
+  - id: "DATASET-033"
+    name: "Copernicus Global Dynamic Land Cover"
+    name_zh: "Copernicus 全球动态土地覆盖"
+    resource_ids: ["RES-0072"]
+    data_domain: ["land_cover", "land_use", "environmental_context", "remote_sensing"]
+    spatial_scale: ["pixel", "region", "country", "global"]
+    temporal_scale: ["annual_or_product_version"]
+    access_pattern: "copernicus_land_portal_download"
+    best_use: ["site_selection", "environmental_screening", "geospatial_features"]
+    limitations_zh: "土地覆盖不等同于作物类型或土地权属；投资选址仍需本地规划和法律尽调。"
+    consulting_angle_zh: "适合为农业投资选址增加土地覆盖和环境约束层。"
+
+  - id: "DATASET-034"
+    name: "USDA ERS Commodity Costs and Returns"
+    name_zh: "USDA ERS 农产品成本与收益"
+    resource_ids: ["RES-0073"]
+    data_domain: ["production_cost", "returns", "commodity", "farm_finance"]
+    spatial_scale: ["us", "production_region"]
+    temporal_scale: ["annual", "historical", "forecast"]
+    access_pattern: "downloadable_csv_xlsx_visualization"
+    best_use: ["roi_benchmark", "cost_benefit_model", "commodity_margin"]
+    limitations_zh: "美国作物和畜牧成本口径，跨国项目不能直接套用；需按作物和区域选择数据表。"
+    consulting_angle_zh: "适合把 AI 节水、节肥、节药或增产假设转化成可审计的成本收益模型。"
+
+  - id: "DATASET-035"
+    name: "USDA ERS Farm Income and Wealth Statistics"
+    name_zh: "USDA ERS 农场收入与财富统计"
+    resource_ids: ["RES-0074"]
+    data_domain: ["farm_income", "assets", "debt", "cash_receipts", "farm_finance"]
+    spatial_scale: ["us", "state_optional", "sector"]
+    temporal_scale: ["annual", "forecast", "historical"]
+    access_pattern: "web_tables_download"
+    best_use: ["farm_benchmarking", "market_context", "adoption_readiness"]
+    limitations_zh: "部门和宏观财务指标不能替代单个农场账本；跨国迁移需重新寻找本地口径。"
+    consulting_angle_zh: "适合判断客户支付能力、经营压力和技术采纳的宏观背景。"
+
+  - id: "DATASET-036"
+    name: "USDA ERS Fertilizer Use and Price"
+    name_zh: "USDA ERS 化肥使用与价格"
+    resource_ids: ["RES-0075"]
+    data_domain: ["fertilizer", "input_cost", "production_practices", "prices"]
+    spatial_scale: ["us", "crop_optional"]
+    temporal_scale: ["annual", "historical"]
+    access_pattern: "web_data_product_download"
+    best_use: ["input_cost_roi", "precision_application", "farm_benchmarking"]
+    limitations_zh: "主要覆盖美国，且投入品价格与地区、采购合同和时间强相关。"
+    consulting_angle_zh: "适合为变量施肥、投入品优化和 ROI 敏感性分析提供成本基线。"

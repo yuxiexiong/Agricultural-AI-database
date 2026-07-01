@@ -121,3 +121,125 @@ resources:
   - technology_selection
   - risk_control
   local_downloaded: false
+- id: RES-0079
+  title: OGC SensorThings API
+  title_zh: OGC SensorThings API 传感器与物联网数据标准
+  url: https://www.ogc.org/standards/sensorthings/
+  source_name: Open Geospatial Consortium
+  source_type: standards_body
+  resource_type: standard
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - standard
+  - iot
+  - sensor_data
+  - geospatial_ai
+  - interoperability
+  linked_material_ids:
+  - STD-008
+  - SCN-006
+  - SCN-010
+  - SRC-079
+  summary_zh: OGC 面向传感器、观测和物联网数据的开放 API 标准，适合管理带位置和时间属性的观测数据。
+  why_it_matters_zh: 农场管理平台接入土壤墒情、气象站、设备遥测等数据时，需要统一传感器和观测模型。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - risk_control
+  local_downloaded: false
+- id: RES-0080
+  title: OGC API - Features
+  title_zh: OGC API Features 地理要素接口标准
+  url: https://ogcapi.ogc.org/features/
+  source_name: Open Geospatial Consortium
+  source_type: standards_body
+  resource_type: standard
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - standard
+  - geospatial_ai
+  - api
+  - field_boundary
+  - interoperability
+  linked_material_ids:
+  - STD-009
+  - SCN-006
+  - SCN-010
+  - SRC-080
+  summary_zh: OGC 面向地理要素访问的现代 API 标准，可用于地块、作业区、行政区和空间对象服务。
+  why_it_matters_zh: 农业数据底座需要稳定暴露地块边界、作业记录和区域图层，OGC API 可降低系统集成成本。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - consulting_report
+  local_downloaded: false
+- id: RES-0081
+  title: ISO 19115-1:2014
+  title_zh: ISO 19115-1 地理信息元数据标准
+  url: https://www.iso.org/standard/53798.html
+  source_name: ISO
+  source_type: standards_body
+  resource_type: standard
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 2014
+  region:
+  - global
+  tags:
+  - standard
+  - metadata
+  - geospatial_ai
+  - data_governance
+  - interoperability
+  linked_material_ids:
+  - STD-010
+  - SCN-006
+  - SRC-081
+  summary_zh: ISO 地理信息元数据基础标准，用于描述空间数据集、服务、质量、范围和责任信息。
+  why_it_matters_zh: 农业遥感、土壤、地块和水资源数据进入平台前，需要元数据来保留来源、尺度、许可和质量口径。
+  best_for:
+  - data_architecture
+  - risk_control
+  - consulting_report
+  local_downloaded: false
+- id: RES-0082
+  title: Semantic Sensor Network Ontology
+  title_zh: W3C/OGC 语义传感器网络本体
+  url: https://www.w3.org/TR/vocab-ssn/
+  source_name: W3C / OGC
+  source_type: standards_body
+  resource_type: standard
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 2017
+  region:
+  - global
+  tags:
+  - standard
+  - ontology
+  - sensor_data
+  - knowledge_graph
+  - interoperability
+  linked_material_ids:
+  - STD-011
+  - SCN-006
+  - SRC-082
+  summary_zh: W3C 与 OGC 的语义传感器网络本体，描述传感器、观测、采样、系统和部署之间的关系。
+  why_it_matters_zh: 适合农业知识图谱和物联网数据治理，帮助把传感器读数、地块、设备和农艺事件连接起来。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - risk_control
+  local_downloaded: false

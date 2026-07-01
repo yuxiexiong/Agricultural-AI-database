@@ -246,3 +246,571 @@ resources:
   - content_ip
   - technology_selection
   local_downloaded: false
+- id: RES-0083
+  title: xarvio FIELD MANAGER
+  title_zh: xarvio FIELD MANAGER 数字作物管理平台
+  url: https://www.xarvio.com/global/en/products/field-manager.html
+  source_name: BASF Digital Farming / xarvio
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  - eu
+  tags:
+  - farm_management
+  - variable_rate_application
+  - crop_protection
+  - satellite
+  - decision_support
+  linked_material_ids:
+  - CASE-014
+  - SCN-003
+  - SCN-006
+  - SRC-083
+  summary_zh: xarvio FIELD MANAGER 提供地块监测、变量播种/施肥/植保、卫星生物量图、天气和农机终端连接等能力。
+  why_it_matters_zh: 适合作为“农场管理平台 + 变量作业 + 农机连接”的欧洲商业案例。
+  best_for:
+  - benchmark_case
+  - data_architecture
+  - content_ip
+  local_downloaded: false
+- id: RES-0084
+  title: Taranis Crop Intelligence
+  title_zh: Taranis 叶片级作物智能平台
+  url: https://www.taranis.com/
+  source_name: Taranis
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  - us
+  tags:
+  - crop_monitoring
+  - computer_vision
+  - scouting
+  - pest_disease
+  - generative_ai
+  linked_material_ids:
+  - CASE-015
+  - SCN-004
+  - SCN-002
+  - SRC-084
+  summary_zh: Taranis 聚焦叶片级图像、作物侦察、病虫草害和营养缺陷识别，并提供面向农艺顾问和种植者的工作流。
+  why_it_matters_zh: 可作为高分辨率视觉侦察从“发现问题”进入农艺服务和客户沟通的案例。
+  best_for:
+  - benchmark_case
+  - content_ip
+  - technology_selection
+  local_downloaded: false
+- id: RES-0085
+  title: DroneDeploy Agriculture
+  title_zh: DroneDeploy 农业无人机测绘与作物洞察
+  url: https://www.dronedeploy.com/solutions/agriculture/
+  source_name: DroneDeploy
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - drone
+  - crop_monitoring
+  - stand_count
+  - ndvi
+  - field_documentation
+  linked_material_ids:
+  - CASE-016
+  - SCN-004
+  - SCN-008
+  - SRC-085
+  summary_zh: DroneDeploy 农业方案支持无人机航测、站苗计数、NDVI/植被健康图层、管理分区、VRA shapefile 导出和多平台集成。
+  why_it_matters_zh: 适合说明无人机/近地遥感如何补充卫星影像，服务作物长势、灾损和田间记录。
+  best_for:
+  - benchmark_case
+  - technology_selection
+  - content_ip
+  local_downloaded: false
+- id: RES-0086
+  title: Corvian Enterprise Technology for Agriculture
+  title_zh: Corvian 农业企业技术平台
+  url: https://corvian.com/
+  source_name: Corvian
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  - north_america
+  tags:
+  - farm_management
+  - data_intelligence
+  - insurance
+  - lending
+  - sustainability
+  linked_material_ids:
+  - CASE-017
+  - SCN-006
+  - SCN-011
+  - SRC-086
+  summary_zh: Corvian 由 Farmers Edge 页面跳转而来，覆盖企业技术、数据智能、可持续合规、农业保险/信贷和数字农艺等能力。
+  why_it_matters_zh: 适合作为农场数据平台向保险、金融、合规和企业服务扩展的生态案例。
+  best_for:
+  - benchmark_case
+  - data_architecture
+  - market_context
+  local_downloaded: false
+- id: RES-0087
+  title: EOSDA Crop Monitoring
+  title_zh: EOSDA 作物监测平台
+  url: https://eos.com/products/crop-monitoring/
+  source_name: EOS Data Analytics
+  source_type: company_official
+  resource_type: product_page
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - crop_monitoring
+  - satellite
+  - remote_sensing
+  - field_analytics
+  - geospatial_ai
+  linked_material_ids:
+  - CASE-018
+  - SCN-004
+  - SCN-008
+  - SRC-087
+  summary_zh: EOSDA Crop Monitoring 是商业化作物遥感监测平台，面向地块监测、植被指数、天气和农业分析工作流。
+  why_it_matters_zh: 可作为公开遥感数据之外的商业遥感平台案例，帮助比较自建与购买服务的边界。
+  best_for:
+  - benchmark_case
+  - technology_selection
+  - market_context
+  local_downloaded: false
+- id: RES-0088
+  title: Ecorobotix ARA620 UHP Sprayer
+  title_zh: Ecorobotix ARA620 超高精度 AI 喷洒机
+  url: https://ecorobotix.com/crop-care/ara-620-uhp-sprayer/
+  source_name: Ecorobotix
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  - eu
+  tags:
+  - precision_application
+  - computer_vision
+  - robotics
+  - weed_control
+  - crop_protection
+  linked_material_ids:
+  - CASE-019
+  - SCN-003
+  - SCN-012
+  - SRC-088
+  summary_zh: ARA620 使用 Plant-by-Plant AI 和高精度喷头进行植物级识别与定点施药，强调作物保护产品减量和作业记录。
+  why_it_matters_zh: 是精准喷洒从“喷头控制”升级到植物级识别和合规追踪的商业案例。
+  best_for:
+  - benchmark_case
+  - content_ip
+  - roi_model
+  local_downloaded: false
+- id: RES-0089
+  title: AGRIVI Digital Agriculture Solutions
+  title_zh: AGRIVI 数字农业与农食价值链平台
+  url: https://www.agrivi.com/
+  source_name: AGRIVI
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  - eu
+  tags:
+  - farm_management
+  - supply_chain
+  - traceability
+  - ai_advisor
+  - interoperability
+  linked_material_ids:
+  - CASE-020
+  - SCN-006
+  - SCN-005
+  - SRC-089
+  summary_zh: AGRIVI 覆盖 farm management、供应链、溯源、AI 农艺助手和设备/IoT/ERP 连接。
+  why_it_matters_zh: 适合说明农业 SaaS 如何从农场记录扩展到食品企业、投入品企业和公共部门服务。
+  best_for:
+  - benchmark_case
+  - data_architecture
+  - content_ip
+  local_downloaded: false
+- id: RES-0090
+  title: Agworld Farm Management Software
+  title_zh: Agworld 农场管理与农艺协作软件
+  url: https://www.agworld.com/us/
+  source_name: Agworld / Semios Group
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - us
+  - global
+  tags:
+  - farm_management
+  - agronomy_workflow
+  - planning
+  - compliance
+  - precision_agriculture
+  linked_material_ids:
+  - CASE-021
+  - SCN-006
+  - SRC-090
+  summary_zh: Agworld 面向种植者、农艺师、服务商和承包商，覆盖计划、调度、精准农艺、洞察、合规和生态集成。
+  why_it_matters_zh: 适合作为农艺服务协作型 FMS 案例，说明平台价值来自多人协作和记录闭环。
+  best_for:
+  - benchmark_case
+  - data_architecture
+  - market_context
+  local_downloaded: false
+- id: RES-0091
+  title: Regrow Agriculture Resilience Platform
+  title_zh: Regrow 农业韧性与可持续数据平台
+  url: https://www.regrow.ag/
+  source_name: Regrow
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - climate_risk
+  - sustainability
+  - supply_chain
+  - mrv
+  - regenerative_agriculture
+  linked_material_ids:
+  - CASE-022
+  - SCN-007
+  - SCN-006
+  - SRC-091
+  summary_zh: Regrow 面向农业韧性、供应链可持续、MRV 和再生农业项目的数据平台。
+  why_it_matters_zh: 适合作为气候风险与供应链韧性从“预测”走向“可持续项目核算”的案例。
+  best_for:
+  - benchmark_case
+  - risk_control
+  - market_context
+  local_downloaded: false
+- id: RES-0092
+  title: Source.ag
+  title_zh: Source.ag 温室 AI 运营与产量预测平台
+  url: https://www.source.ag/
+  source_name: Source.ag
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  - eu
+  tags:
+  - greenhouse
+  - yield_forecast
+  - irrigation_control
+  - ai_decision_support
+  - farm_management
+  linked_material_ids:
+  - CASE-023
+  - SCN-001
+  - SCN-004
+  - SCN-006
+  - SRC-092
+  summary_zh: Source.ag 面向温室种植，提供数据工作区、收获预测、栽培管理和灌溉控制等 AI 解决方案。
+  why_it_matters_zh: 可作为受控环境农业中 AI 从预测进入运营控制的案例，补足露天大田以外的商业形态。
+  best_for:
+  - benchmark_case
+  - technology_selection
+  - content_ip
+  local_downloaded: false
+- id: RES-0093
+  title: Semios
+  title_zh: Semios 特种作物传感器、虫害与灌溉服务
+  url: https://semios.com/
+  source_name: Semios
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - north_america
+  - global
+  tags:
+  - specialty_crops
+  - pest_management
+  - irrigation
+  - climate_monitoring
+  - field_services
+  linked_material_ids:
+  - CASE-024
+  - SCN-001
+  - SCN-002
+  - SRC-093
+  summary_zh: Semios 面向特种作物，提供气候监测、虫害/病害管理、霜冻、灌溉、植物胁迫和田间服务。
+  why_it_matters_zh: 适合说明高价值特种作物场景中“传感器 + 农艺服务 + 运维”比单独模型更重要。
+  best_for:
+  - benchmark_case
+  - risk_control
+  - technology_selection
+  local_downloaded: false
+- id: RES-0094
+  title: Arable
+  title_zh: Arable 水资源管理与作物智能平台
+  url: https://www.arable.com/
+  source_name: Arable
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  - us
+  tags:
+  - water_stewardship
+  - crop_intelligence
+  - irrigation
+  - field_sensing
+  - api
+  linked_material_ids:
+  - CASE-025
+  - SCN-001
+  - SCN-004
+  - SRC-094
+  summary_zh: Arable 通过田间传感、作物水分使用、灌溉数据和应用/API 支持水资源管理和作物智能。
+  why_it_matters_zh: 是企业水资源目标与农户灌溉优化连接的商业案例，可补充 OpenET/WaPOR 等公共数据源。
+  best_for:
+  - benchmark_case
+  - roi_model
+  - data_architecture
+  local_downloaded: false
+- id: RES-0095
+  title: Cropin
+  title_zh: Cropin 智能农业云与 Agri AI 平台
+  url: https://www.cropin.com/
+  source_name: Cropin
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - agriculture_cloud
+  - data_hub
+  - genai
+  - farm_management
+  - traceability
+  linked_material_ids:
+  - CASE-026
+  - SCN-005
+  - SCN-006
+  - SRC-095
+  summary_zh: Cropin 提供农业云、农场应用、数据中台和 AI/GenAI 智能产品，覆盖农场数字化、远程监测、灌溉调度和产量优化等。
+  why_it_matters_zh: 适合作为农业 AI 平台化和大模型产品化方向的商业生态样本。
+  best_for:
+  - benchmark_case
+  - data_architecture
+  - content_ip
+  local_downloaded: false
+- id: RES-0096
+  title: Phytech Manna Irrigation
+  title_zh: Phytech / Manna 灌溉智能平台
+  url: https://www.phytech.com/manna
+  source_name: Phytech / Manna
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - irrigation
+  - satellite
+  - decision_support
+  - automation
+  - water_efficiency
+  linked_material_ids:
+  - CASE-027
+  - SCN-001
+  - SRC-096
+  summary_zh: Manna/Phytech 将卫星模型、田间工具、灌溉建议和自动化组合为灌溉智能解决方案。
+  why_it_matters_zh: 适合作为商业智能灌溉案例，补充公共 ET 数据到农场执行层之间的产品形态。
+  best_for:
+  - benchmark_case
+  - roi_model
+  - technology_selection
+  local_downloaded: false
+- id: RES-0097
+  title: Netafim GrowSphere
+  title_zh: Netafim GrowSphere 精准灌溉与施肥操作系统
+  url: https://www.netafim.com/en/digital-farming/
+  source_name: Netafim
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - irrigation
+  - fertigation
+  - digital_farming
+  - controllers
+  - water_efficiency
+  linked_material_ids:
+  - CASE-028
+  - SCN-001
+  - SRC-097
+  summary_zh: Netafim GrowSphere 面向精准灌溉和施肥，覆盖 crop advisor、控制器、监测和支持等数字工具。
+  why_it_matters_zh: 适合作为“灌溉设备企业 + 数字操作系统”的案例，连接硬件、施肥和灌溉决策。
+  best_for:
+  - benchmark_case
+  - roi_model
+  - data_architecture
+  local_downloaded: false
+- id: RES-0098
+  title: FarmQA
+  title_zh: FarmQA 农艺侦察与建议工作流
+  url: https://farmqa.com/
+  source_name: FarmQA
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - us
+  - global
+  tags:
+  - agronomy_workflow
+  - scouting
+  - recommendations
+  - satellite
+  - farm_management
+  linked_material_ids:
+  - CASE-029
+  - SCN-002
+  - SCN-005
+  - SCN-006
+  - SRC-098
+  summary_zh: FarmQA 提供面向农艺师和农业服务商的侦察、建议、处方、计划、地图、卫星影像和报告工具。
+  why_it_matters_zh: 适合说明农业知识助手和农技服务平台应嵌入侦察、建议和报告工作流，而不是只做问答。
+  best_for:
+  - benchmark_case
+  - content_ip
+  - risk_control
+  local_downloaded: false
+- id: RES-0099
+  title: Sentera
+  title_zh: Sentera 高分辨率作物影像与精准农业洞察
+  url: https://sentera.com/
+  source_name: Sentera
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - us
+  - global
+  tags:
+  - crop_monitoring
+  - high_resolution_imagery
+  - ai
+  - sensors
+  - precision_agriculture
+  linked_material_ids:
+  - CASE-030
+  - SCN-004
+  - SCN-008
+  - SRC-099
+  summary_zh: Sentera 提供高分辨率影像、AI、数据科学、传感器和 FieldAgent/SmartScript 等精准农业产品。
+  why_it_matters_zh: 适合补充“作物监测不仅有卫星，也有无人机/传感器级高分辨率数据”的商业案例。
+  best_for:
+  - benchmark_case
+  - technology_selection
+  - content_ip
+  local_downloaded: false
+- id: RES-0100
+  title: Traction Advanced Farm Management
+  title_zh: Traction / Conservis / Granular Business 高级农场经营管理
+  url: https://www.tractionag.com/role/advanced-farm-management
+  source_name: Traction Ag
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - us
+  tags:
+  - farm_management
+  - farm_finance
+  - crop_planning
+  - work_orders
+  - reporting
+  linked_material_ids:
+  - CASE-031
+  - SCN-006
+  - SCN-014
+  - SRC-100
+  summary_zh: Traction 的高级农场管理页面整合 Conservis 和 Granular Business 能力，覆盖粮食合同、作物计划与预算、工单、实时经营报告和合规记录。
+  why_it_matters_zh: 适合作为农场管理平台与经营基准/ROI 评估结合的商业案例。
+  best_for:
+  - benchmark_case
+  - roi_model
+  - data_architecture
+  local_downloaded: false
