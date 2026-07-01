@@ -1,0 +1,215 @@
+---
+version: '0.1'
+updated_at: '2026-07-01'
+download_policy: link_only
+notes: Split from the original source catalog. Stores metadata and URLs only.
+resources:
+- id: RES-0029
+  title: 'Artificial Intelligence in Agriculture: A Survey'
+  title_zh: 农业人工智能综述
+  url: https://arxiv.org/abs/2507.22101
+  source_name: arXiv
+  source_type: academic
+  resource_type: paper
+  quality_tier: C
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 2025
+  region:
+  - global
+  tags:
+  - survey
+  - modeling
+  - computer_vision
+  - remote_sensing
+  - generative_ai
+  linked_material_ids:
+  - TECH-001
+  - TECH-002
+  - SRC-029
+  summary_zh: 农业 AI 综述类资源，可用于梳理技术版图和典型任务。
+  why_it_matters_zh: 适合搭建咨询报告中的技术地图，但正式引用前需核验论文版本和同行评审状态。
+  best_for:
+  - technology_selection
+  - consulting_report
+  - content_ip
+  local_downloaded: false
+- id: RES-0030
+  title: Unlocking the Potential of Artificial Intelligence in Agriculture
+  title_zh: 释放农业人工智能潜力
+  url: https://arxiv.org/abs/2603.23289
+  source_name: arXiv
+  source_type: academic
+  resource_type: paper
+  quality_tier: C
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 2026
+  region:
+  - global
+  tags:
+  - survey
+  - adoption
+  - risk
+  - modeling
+  - data_governance
+  linked_material_ids:
+  - TECH-009
+  - RISK-005
+  - SRC-030
+  summary_zh: 围绕农业 AI 潜力、应用和挑战的研究资料。
+  why_it_matters_zh: 适合补充行业落地难点，包括数据、采用、可信度和跨场景泛化问题。
+  best_for:
+  - technology_selection
+  - risk_control
+  - consulting_report
+  local_downloaded: false
+- id: RES-0031
+  title: Affordable Precision Agriculture with Edge AI and TinyML
+  title_zh: 基于边缘 AI 和 TinyML 的低成本精准农业
+  url: https://arxiv.org/abs/2603.15085
+  source_name: arXiv
+  source_type: academic
+  resource_type: paper
+  quality_tier: C
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 2026
+  region:
+  - global
+  tags:
+  - edge_ai
+  - tinyml
+  - iot
+  - precision_agriculture
+  - cost
+  linked_material_ids:
+  - TECH-010
+  - SCN-008
+  - ROI-005
+  - SRC-031
+  summary_zh: 聚焦边缘 AI、TinyML 和低成本精准农业的研究资料。
+  why_it_matters_zh: 适合为算力资源配置和低成本试点方案提供技术线索。
+  best_for:
+  - technology_selection
+  - roi_model
+  - content_ip
+  local_downloaded: false
+- id: RES-0032
+  title: AgriTrust
+  title_zh: AgriTrust 农业可信 AI 相关研究
+  url: https://arxiv.org/abs/2511.05572
+  source_name: arXiv
+  source_type: academic
+  resource_type: paper
+  quality_tier: C
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 2025
+  region:
+  - global
+  tags:
+  - trust_safety
+  - evaluation
+  - risk
+  - generative_ai
+  linked_material_ids:
+  - RISK-006
+  - TECH-011
+  - SRC-032
+  summary_zh: 农业 AI 可信度、评估或安全相关研究资料。
+  why_it_matters_zh: 可用于提醒客户：农业 AI 输出需要置信度、审计和专家复核机制，不能直接替代农艺决策。
+  best_for:
+  - risk_control
+  - technology_selection
+  - consulting_report
+  local_downloaded: false
+- id: RES-0033
+  title: AgriEval
+  title_zh: AgriEval 农业 AI 评测基准
+  url: https://arxiv.org/abs/2507.21773
+  source_name: arXiv
+  source_type: academic
+  resource_type: paper
+  quality_tier: C
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 2025
+  region:
+  - global
+  tags:
+  - evaluation
+  - benchmark
+  - generative_ai
+  - trust_safety
+  linked_material_ids:
+  - TECH-012
+  - RISK-007
+  - SRC-033
+  summary_zh: 农业 AI/农业大模型评测方向的研究资料。
+  why_it_matters_zh: 适合作为农技助手、知识问答和生成式 AI 项目验收指标的参考。
+  best_for:
+  - technology_selection
+  - risk_control
+  - roi_model
+  local_downloaded: false
+- id: RES-0034
+  title: Sentinel-2 for Crop Yield Estimation
+  title_zh: 基于 Sentinel-2 的作物产量估计研究
+  url: https://arxiv.org/abs/2603.23779
+  source_name: arXiv
+  source_type: academic
+  resource_type: paper
+  quality_tier: C
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 2026
+  region:
+  - global
+  tags:
+  - remote_sensing
+  - yield_estimation
+  - modeling
+  - crop_monitoring
+  linked_material_ids:
+  - TECH-013
+  - SCN-004
+  - DATA-021
+  - SRC-034
+  summary_zh: 使用 Sentinel-2 等遥感数据进行作物产量估计的研究线索。
+  why_it_matters_zh: 适合补充产量预测场景的技术路线和数据需求说明。
+  best_for:
+  - technology_selection
+  - consulting_report
+  - content_ip
+  local_downloaded: false
+- id: RES-0035
+  title: Smart Connected Farms
+  title_zh: 智能互联农场研究
+  url: https://arxiv.org/abs/2312.12338
+  source_name: arXiv
+  source_type: academic
+  resource_type: paper
+  quality_tier: C
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 2023
+  region:
+  - global
+  tags:
+  - iot
+  - farm_management
+  - data_platform
+  - interoperability
+  linked_material_ids:
+  - TECH-014
+  - DATA-022
+  - SCN-006
+  - SRC-035
+  summary_zh: 智能互联农场相关研究线索，涉及传感器、连接、平台和智能决策。
+  why_it_matters_zh: 适合作为农业大数据平台架构和 IoT 接入层设计的技术背景。
+  best_for:
+  - technology_selection
+  - data_architecture
+  - consulting_report
+  local_downloaded: false

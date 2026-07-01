@@ -1,19 +1,37 @@
 # Agricultural AI Database Index
 
-这个目录是农业 AI 咨询和内容生产的结构化资料库。它采用“总资源索引 + 专题表”的方式组织：`resources.yml` 记录来源，其他表把来源转化为数据源、案例、场景、观点和企业生态。
+这个目录是农业 AI 咨询和内容生产的结构化资料库。它不再采用单一大表，而是按 schema、resources、knowledge 和 multimodal 分层管理。
 
 ## 快速入口
 
-| 文件 | 内容 | 当前用途 |
+| 路径 | 内容 | 当前用途 |
 |---|---|---|
-| [`resources.yml`](./resources.yml) | 外部资源总索引 | 查来源、链接、可信度、标签 |
-| [`datasets.yml`](./datasets.yml) | 数据源库 | 做数据底座、平台方案、模型特征设计 |
-| [`cases.yml`](./cases.yml) | 标杆案例库 | 做 PPT 案例页、短视频拆解、客户教育 |
-| [`scenarios.yml`](./scenarios.yml) | 应用场景库 | 做试点设计、方案范围、ROI 验收 |
-| [`claims.yml`](./claims.yml) | 可引用观点库 | 写报告主张、公众号观点、演讲提纲 |
-| [`vendors.yml`](./vendors.yml) | 企业/项目生态库 | 做竞品观察、生态地图、月度动态 |
-| [`tags.yml`](./tags.yml) | 标签字典 | 统一分类、筛选和自动化口径 |
-| [`README.md`](./README.md) | Schema 说明 | 维护规则、字段解释、质量等级 |
+| [`schema/`](./schema/) | 标签、字段、质量规则 | 统一分类、字段和复核口径 |
+| [`resources/`](./resources/) | 外部来源和资源卡片 | 查来源、数据源、案例、论文、企业生态 |
+| [`knowledge/`](./knowledge/) | 观点和场景 | 写报告主张、方案场景、IP 内容 |
+| [`multimodal/`](./multimodal/) | 多模态元数据 | 管理图片、视频、PDF、图表和数据文件 |
+| [`README.md`](./README.md) | database 层说明 | 读取顺序和关系规则 |
+
+## Resources 层
+
+| 文件 | 内容 |
+|---|---|
+| [`resources/policy_reports.yml`](./resources/policy_reports.yml) | 政策、国际组织页面、趋势报告 |
+| [`resources/data_sources.yml`](./resources/data_sources.yml) | 数据平台、API、公开数据目录、词表、文献索引 |
+| [`resources/standards.yml`](./resources/standards.yml) | 标准、互操作框架、数据规范 |
+| [`resources/case_sources.yml`](./resources/case_sources.yml) | 企业案例、产品页面、商业平台来源 |
+| [`resources/papers.yml`](./resources/papers.yml) | 论文、预印本、综述 |
+| [`resources/projects.yml`](./resources/projects.yml) | 公共项目、国际合作项目、开源项目 |
+| [`resources/datasets.yml`](./resources/datasets.yml) | 数据源二次结构化卡片 |
+| [`resources/cases.yml`](./resources/cases.yml) | 标杆案例二次结构化卡片 |
+| [`resources/vendors.yml`](./resources/vendors.yml) | 企业和项目生态观察 |
+
+## Knowledge 层
+
+| 文件 | 内容 |
+|---|---|
+| [`knowledge/claims.yml`](./knowledge/claims.yml) | 可引用观点，绑定来源和 caution |
+| [`knowledge/scenarios.yml`](./knowledge/scenarios.yml) | 应用场景，包含数据需求、AI 方法、业务价值、风险和试点 |
 
 ## 使用方式
 
@@ -21,55 +39,36 @@
 
 优先读取：
 
-1. `claims.yml`：抽取可引用观点。
-2. `scenarios.yml`：选择落地场景、数据需求和试点路径。
-3. `cases.yml`：补充国际标杆案例。
-4. `resources.yml`：追溯来源和可信度。
+1. `knowledge/claims.yml`
+2. `knowledge/scenarios.yml`
+3. `resources/policy_reports.yml`
+4. `resources/cases.yml`
+5. `resources/data_sources.yml`
 
 ### 做农业 AI IP 内容
 
 优先读取：
 
-1. `claims.yml` 的 `content_angle_zh`。
-2. `cases.yml` 的 `reusable_angle_zh`。
-3. `scenarios.yml` 的 `business_value_zh` 和 `implementation_risks_zh`。
-4. 主文档第 8 章的 `COPY` 和 `VIS` 素材。
+1. `knowledge/claims.yml` 的 `content_angle_zh`
+2. `resources/cases.yml` 的 `reusable_angle_zh`
+3. `knowledge/scenarios.yml` 的 `business_value_zh` 和 `implementation_risks_zh`
+4. `../materials/copywriting/`
+5. `../materials/visuals/`
 
 ### 做技术方案
 
 优先读取：
 
-1. `datasets.yml`：明确可用数据、尺度、限制和接入方式。
-2. `scenarios.yml`：明确数据需求、AI 方法和试点边界。
-3. `vendors.yml`：观察可参考的产品生态。
-4. `resources.yml`：核验来源。
-
-## 推荐筛选字段
-
-| 目标 | 推荐筛选 |
-|---|---|
-| 客户咨询报告 | `best_for: consulting_report`、`fit_for: consulting_report` |
-| 月度行业情报 | `best_for: monthly_intelligence` |
-| 公众号/短视频 | `use_for: content_ip`、`content_angle_zh` |
-| 技术选型 | `best_for: technology_selection`、`ai_methods` |
-| 数据底座设计 | `best_for: data_architecture`、`data_domain`、`access_pattern` |
-| ROI 测算 | `fit_for: roi_model`、`business_value_zh` |
-| 风险控制 | `use_for: risk_control`、`caution_zh`、`implementation_risks_zh` |
-
-## 当前第一轮重点
-
-本轮按“咨询报告 50% + IP 内容 30% + 技术方案 20%”扩展，优先覆盖：
-
-- 国际组织与政策背景：FAO、OECD-FAO、European Commission、AIM for Climate、WFP。
-- 公共数据源：FAOSTAT、Sentinel-2、Landsat、ERA5、NASA POWER、SoilGrids、OpenET、USDA Quick Stats、CropScape。
-- 标准与互操作：ISO 11783、ISOBUS、AgGateway ADAPT、STAC、AGROVOC。
-- 标杆案例：John Deere、CropX、xFarm、ClimateAi、OpenET、Google Earth Engine、Carbon Robotics。
-- 技术趋势：遥感 AI、边缘 AI、农业大模型评估、可信 AI、农机数据互操作。
+1. `knowledge/scenarios.yml`
+2. `resources/datasets.yml`
+3. `resources/data_sources.yml`
+4. `resources/standards.yml`
+5. `schema/fields.yml`
 
 ## 维护提醒
 
-- 新增外部来源：先加 `resources.yml`，再在专题表中引用 `resource_ids`。
-- 新增观点：必须绑定至少一个 `resource_ids`，并填写 `caution_zh`。
-- 新增案例：必须写清楚 `value_claim_zh` 和 `caveats_zh`，避免把企业宣传当作已验证事实。
-- 新增场景：必须写清楚数据需求、AI 方法、业务价值、落地风险和第一阶段试点。
-- 对政策、企业产品、市场规模和“最新”信息，应按 `refresh_cycles` 定期复核。
+- 新增外部来源：先加到 `resources/` 对应文件。
+- 新增观点：写入 `knowledge/claims.yml`，必须绑定 `resource_ids` 和 `caution_zh`。
+- 新增场景：写入 `knowledge/scenarios.yml`，必须写清数据需求、AI 方法、业务价值、风险和第一阶段试点。
+- 新增人类可读素材：写入 `../materials/` 对应分类。
+- 新增多模态资源：先写入 `multimodal/` 元数据文件，不默认下载本体。

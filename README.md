@@ -5,185 +5,102 @@ International Agricultural Big Data + AI Consulting Knowledge Base
 
 ## 项目定位
 
-这个 repository 是一个面向“农业 AI”咨询与内容生产的资料库，用于支持国际农业大数据 + 人工智能场景下的技术咨询、行业研究、标杆案例整理和 IP 内容生产。
+这个 repository 是一个面向“农业 AI”咨询与内容生产的长期资料库，用于支持国际农业大数据 + 人工智能场景下的技术咨询、行业研究、标杆案例整理、月度情报和 IP 内容生产。
 
-核心问题是：农业行业并不只是“缺 AI 模型”，更常见的瓶颈是数据分散、标准不统一、场景复杂、ROI 难量化，以及模型建议无法进入真实农事工作流。本资料库围绕这些问题，把政策、市场、技术路线、数据源、标准、案例、应用场景、ROI 测算和可复用话术整理成一个可持续扩展的 database。
+核心判断：农业行业并不只是“缺 AI 模型”，更常见的瓶颈是数据分散、标准不统一、场景复杂、ROI 难量化，以及模型建议无法进入真实农事工作流。
 
-## 主文档
+本仓库采用分层结构管理资料，避免单一长文档无限膨胀。
 
-当前核心资料库文件：
+## 快速入口
 
-- [农业AI技术咨询_资料库与报告底稿.md](./农业AI技术咨询_资料库与报告底稿.md)
+| 路径 | 用途 |
+|---|---|
+| [DATABASE_GUIDE.md](./DATABASE_GUIDE.md) | 资料库总纲：目录职责、编号规则、质量等级、多模态规则、更新流程 |
+| [database/index.md](./database/index.md) | 结构化 database 导航 |
+| [database/resources/](./database/resources/) | 外部来源、数据源、案例、企业和论文索引 |
+| [database/knowledge/](./database/knowledge/) | 可引用观点和应用场景 |
+| [database/schema/](./database/schema/) | 标签、字段和质量规则 |
+| [database/multimodal/](./database/multimodal/) | 图片、视频、PDF、图表等多模态资源元数据 |
+| [materials/](./materials/) | 人类可读素材卡片，按政策、市场、技术、案例、ROI 等分类 |
+| [reports/](./reports/) | 咨询报告、月报和实施方案模板 |
+| [archive/](./archive/) | 历史底稿和旧结构备份 |
 
-该文件既可以作为咨询报告底稿，也可以作为自动写文案、生成 PPT、制作短视频脚本和月度行业简报的素材源。
+## 当前结构
 
-结构化 database 文件：
-
-- [database/index.md](./database/index.md)：GitHub 可读的 database 目录页，适合快速浏览资料库结构。
-- [database/resources.yml](./database/resources.yml)：机器可读资源索引，记录外部资源链接、来源类型、可信度、标签、用途和对应素材编号。
-- [database/datasets.yml](./database/datasets.yml)：数据源库，记录遥感、气象、土壤、统计、文献和语义数据源。
-- [database/cases.yml](./database/cases.yml)：标杆案例库，记录产品/项目案例、价值主张、可复用角度和限制。
-- [database/scenarios.yml](./database/scenarios.yml)：应用场景库，记录数据需求、AI 方法、业务价值、风险和试点建议。
-- [database/claims.yml](./database/claims.yml)：可引用观点库，每条观点绑定来源和使用边界。
-- [database/vendors.yml](./database/vendors.yml)：企业/项目生态库，用于竞品观察和月度情报。
-- [database/tags.yml](./database/tags.yml)：统一标签字典，定义资源类型、来源类型、应用场景、技术标签和可信度等级。
-- [database/README.md](./database/README.md)：database schema、追加规则和质量控制说明。
-
-当前采用“链接索引 + 元数据”的方式管理外部资源：GitHub 仓库中不下载外部 PDF、网页、图片或数据集，只保存可核验链接、摘要、分类和使用建议。
-
-## 内容结构
-
-主文档分为两层：
-
-1. 报告底稿层：第 0-7 章，适合直接用于咨询报告、提案、行业简报。
-2. 素材 database 层：第 8 章，按素材编号组织，适合检索、复用和持续追加。
-
-结构化 database 与主文档互补：
-
-1. 主文档负责表达、报告结构和可直接改写的内容。
-2. `database/resources.yml` 负责保存一手来源、标签、可信度和机器可读索引。
-3. `linked_material_ids` 字段把外部资源与主文档第 8 章的 `POL`、`MKT`、`TECH`、`DATA` 等素材编号连接起来。
-
-### 报告底稿层
-
-| 章节 | 内容 | 适合用途 |
-|---|---|---|
-| 0 | 全局认知框架 | 报告开场、IP 定位、核心观点 |
-| 1 | 行业适配咨询 | AI 技术选型、数据采集、建模适配 |
-| 2 | 产业信息与行业动态 | 政策、趋势、案例、市场需求 |
-| 3 | 落地实操咨询 | 算法优化、平台架构、算力配置、难点方案 |
-| 4 | 咨询交付物模板 | 技术选型报告、月报、实施方案、案例库 |
-| 5 | IP 内容选题库 | 公众号、短视频、讲稿、销售内容 |
-| 6 | 可引用来源与素材索引 | 官方、机构、企业、研究来源 |
-| 7 | 对甲方项目的建议定位 | 项目包装、第一阶段交付、传播主线 |
-
-### 素材 database 层
-
-第 8 章使用统一编号，便于检索和自动化处理。
-
-| 前缀 | 类型 | 示例用途 |
-|---|---|---|
-| `POL` | 政策与监管 | 政策背景、国际比较、合规建议 |
-| `MKT` | 市场与宏观数据 | 路演开场、市场机会、行业趋势 |
-| `TECH` | 技术路线 | 技术选型、方案设计、科普内容 |
-| `DATA` | 数据源与数据治理 | 数据底座、平台建设、可行性分析 |
-| `STD` | 标准与互操作 | 农机通信、数据标准、系统互联 |
-| `CASE` | 标杆案例 | PPT 案例页、短视频拆解、客户教育 |
-| `SCN` | 应用场景 | 试点设计、产品规划、咨询交付 |
-| `ROI` | 价值测算 | 商业论证、报价依据、试点验收 |
-| `RISK` | 风险与反方观点 | 项目避坑、可信度、边界管理 |
-| `COPY` | 可改写话术 | 公众号、短视频、销售话术 |
-| `VIS` | 图表/PPT 素材 | 架构图、价值链图、报告页面 |
-| `SRC` | 来源索引 | 核验、引用、后续更新 |
+```text
+Agri AI/
+├── README.md
+├── DATABASE_GUIDE.md
+├── database/
+│   ├── index.md
+│   ├── schema/
+│   ├── resources/
+│   ├── knowledge/
+│   └── multimodal/
+├── materials/
+├── reports/
+└── archive/
+```
 
 ## 如何使用
 
-### 1. 写咨询报告
+### 写咨询报告
 
-建议从第 0-4 章抽取内容：
+优先读取：
 
-- 用第 0 章写项目背景和核心判断。
-- 用第 1 章写技术选型和可行性分析。
-- 用第 2 章写政策、趋势、案例和市场需求。
-- 用第 3 章写落地架构、算力、算法和风险应对。
-- 用第 4 章组装交付物结构。
+1. [reports/consulting_report_outline.md](./reports/consulting_report_outline.md)
+2. [database/knowledge/claims.yml](./database/knowledge/claims.yml)
+3. [database/knowledge/scenarios.yml](./database/knowledge/scenarios.yml)
+4. [database/resources/](./database/resources/)
 
-### 2. 做农业 AI IP 内容
+### 做农业 AI IP 内容
 
-建议优先使用：
+优先读取：
 
-- 第 5 章：选题库。
-- 第 8.12 节：`COPY` 话术素材。
-- 第 8.8 节：`CASE` 标杆案例。
-- 第 8.13 节：`VIS` 图表和 PPT 页面素材。
+1. `database/knowledge/claims.yml` 的 `content_angle_zh`
+2. `database/resources/cases.yml` 的案例拆解
+3. `materials/copywriting/`
+4. `materials/visuals/`
 
-### 3. 做甲方项目方案
+### 做技术方案
 
-建议按这个顺序检索：
+优先读取：
 
-1. `SCN`：确定应用场景。
-2. `DATA`：判断数据基础。
-3. `TECH`：选择技术路线。
-4. `ROI`：设计验收指标。
-5. `RISK`：提前写入风险和应对方案。
-6. `SRC`：补充可引用来源。
+1. `database/knowledge/scenarios.yml`
+2. `database/resources/datasets.yml`
+3. `database/resources/data_sources.yml`
+4. `database/resources/standards.yml`
+5. [reports/implementation_plan_template.md](./reports/implementation_plan_template.md)
 
-### 4. 做月度行业情报
+### 做月度行业情报
 
-建议沿用第 4.2 节的月报结构：
+优先读取：
 
-- 政策更新。
-- 技术趋势。
-- 新增标杆案例。
-- 市场需求变化。
-- 对甲方的启示。
-
-新增素材可以继续追加到第 8 章，并用对应编号纳入索引。
-
-### 5. 用结构化 database 自动生成内容
-
-如果后续用脚本、RAG 工具或文案工具自动生成内容，建议优先读取：
-
-1. `database/resources.yml`：获取来源、链接、摘要、标签、适用场景和可信度。
-2. `database/claims.yml`：获取可直接用于报告或 IP 内容的观点。
-3. `database/scenarios.yml`：获取场景化数据需求、AI 方法、价值和风险。
-4. `database/cases.yml`：获取标杆案例和可复用表达角度。
-5. `database/datasets.yml`：获取数据源、尺度、接入方式和限制。
-6. `database/tags.yml`：统一分类口径，避免同义标签混乱。
-7. `农业AI技术咨询_资料库与报告底稿.md` 第 8 章：获取可直接改写的素材正文。
-
-常见筛选方式：
-
-- 咨询报告：筛选 `best_for` 包含 `consulting_report` 的资源。
-- 月度情报：筛选 `best_for` 包含 `monthly_intelligence` 的资源。
-- 短视频/公众号：筛选 `best_for` 包含 `content_ip` 的资源。
-- 技术方案：筛选 `tags` 包含 `data_platform`、`remote_sensing`、`iot`、`modeling`、`interoperability` 的资源。
-- 案例库：筛选 `resource_type` 为 `case` 的资源。
+1. [reports/monthly_intelligence_template.md](./reports/monthly_intelligence_template.md)
+2. `database/resources/policy_reports.yml`
+3. `database/resources/case_sources.yml`
+4. `database/resources/vendors.yml`
 
 ## 当前覆盖主题
 
-- 农业 AI 技术地图：CV、遥感、时序预测、生成式 AI、知识图谱、强化学习、数字孪生、机器人、育种 AI。
-- 农业数据底座：遥感、IoT、农机、气象、农艺记录、市场与供应链、生物育种数据。
-- 国际政策与趋势：FAO、OECD-FAO、欧盟 CAP、欧盟农业数据空间、AIM for Climate。
-- 公开数据源：Copernicus Sentinel-2、NASA Landsat、NASA Harvest、FAOSTAT、SoilGrids。
-- 标准与互操作：ISO 11783 / ISOBUS、ISOBUS Data Dictionary、AgGateway ADAPT。
-- 标杆案例：John Deere See & Spray、CropX、欧盟农业数据空间、NASA Harvest。
-- 应用场景：智能灌溉、病虫害预警、精准喷洒、产量预测、质量分级、农技助手、农业保险、畜牧监测、供应链溯源。
+- 农业 AI 技术地图：计算机视觉、遥感、时序预测、生成式 AI、知识图谱、边缘 AI、机器人、数字孪生。
+- 农业数据底座：遥感、IoT、农机、气象、土壤、农艺记录、市场与供应链、文献和词表。
+- 国际政策与趋势：FAO、OECD-FAO、欧盟 CAP、欧盟农业数据空间、AIM for Climate、WFP。
+- 公开数据源：Sentinel-2、Landsat、NASA POWER、ERA5、OpenET、FAOSTAT、SoilGrids、USDA Quick Stats、CropScape。
+- 标准与互操作：ISO 11783 / ISOBUS、ISOBUS Data Dictionary、AgGateway ADAPT、STAC、AGROVOC。
+- 标杆案例：John Deere See & Spray、CropX、xFarm、ClimateAi、OpenET、Google Earth Engine、Carbon Robotics。
+- 应用场景：智能灌溉、病虫害预警、精准喷洒、产量预测、农技助手、农业保险、供应链风险、农机互操作。
 
-## 来源与可信度说明
+## 维护原则
 
-资料库优先使用以下类型来源：
+- 新增资料先读 [DATABASE_GUIDE.md](./DATABASE_GUIDE.md)。
+- 外部来源进入 `database/resources/`，不要混入报告正文。
+- 可复用观点进入 `database/knowledge/claims.yml`，并绑定来源。
+- 应用场景进入 `database/knowledge/scenarios.yml`，并写清数据、方法、价值、风险和试点。
+- 人类可读素材进入 `materials/`，按类型分文件。
+- 多模态资源先进入 `database/multimodal/` 做元数据索引，不默认下载本体。
+- 历史长文档只作为 archive，不再作为主维护入口。
 
-- 官方与国际组织：FAO、OECD、European Commission、NASA。
-- 标准与行业组织：ISO、ISOBUS、AgGateway。
-- 企业官方页面：John Deere、CropX 等。
-- 研究论文与技术报告：用于补充前沿趋势和方法论。
+## Repository Status
 
-部分市场规模数字、国内地方案例和行业报告数据来自早期内容底稿，已在主文档中标注为“建议对外交付前二次核验”。正式用于客户交付、合同附件、融资材料或公开发布前，应重新核验原始来源。
-
-## 维护规则
-
-新增素材建议遵循以下格式：
-
-```text
-#### TYPE-编号：标题
-
-素材类型：
-核心信息：
-可用角度：
-适合话术：
-来源：
-```
-
-维护原则：
-
-- 新增一手资源时，优先追加到 `database/resources.yml`，再根据需要补充主文档第 8 章。
-- 新增可直接改写的观点、话术、图表页和咨询模板时，追加到主文档第 8 章。
-- 每条素材尽量包含来源或“待核验”标记。
-- 对外引用前保留来源链接，避免只保留二手转述。
-- 对市场规模、政策、公司产品能力等易变化信息定期更新。
-- 对高风险建议，例如农药、兽药、疾病诊断、金融保险，不直接输出未经专家确认的结论。
-
-## Repository status
-
-当前仓库是资料库型项目，不包含代码运行环境。主要交付物是 Markdown 文档，可直接在 GitHub 阅读，也可复制到文档工具、PPT 工具或自动文案生成工具中使用。
+当前仓库是资料库型项目，不包含代码运行环境。主要交付物是 Markdown 与 YAML，可直接在 GitHub 阅读，也可被脚本、RAG 工具或文案生成工具读取。

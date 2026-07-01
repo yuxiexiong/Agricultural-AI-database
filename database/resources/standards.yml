@@ -1,0 +1,123 @@
+---
+version: '0.1'
+updated_at: '2026-07-01'
+download_policy: link_only
+notes: Split from the original source catalog. Stores metadata and URLs only.
+resources:
+- id: RES-0021
+  title: ISO 11783-1:2017
+  title_zh: ISO 11783 农林机械串行控制与通信数据网络
+  url: https://www.iso.org/standard/57556.html
+  source_name: ISO
+  source_type: standards_body
+  resource_type: standard
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 2017
+  region:
+  - global
+  tags:
+  - standard
+  - interoperability
+  - machinery
+  - iot
+  linked_material_ids:
+  - STD-001
+  - DATA-016
+  - SRC-021
+  summary_zh: 农林机械电子控制和通信网络相关标准，是理解 ISOBUS 生态的重要入口。
+  why_it_matters_zh: 农业大数据落地到农机作业时，互操作标准决定数据是否能稳定进入平台。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - risk_control
+  local_downloaded: false
+- id: RES-0022
+  title: ISOBUS Data Dictionary
+  title_zh: ISOBUS 数据字典
+  url: https://www.isobus.net/isobus/
+  source_name: AEF / ISOBUS
+  source_type: standards_body
+  resource_type: standard
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - standard
+  - interoperability
+  - machinery
+  - data_dictionary
+  linked_material_ids:
+  - STD-002
+  - DATA-017
+  - SRC-022
+  summary_zh: ISOBUS 生态中的数据字典和兼容性信息入口。
+  why_it_matters_zh: 适合支撑农机数据接入、字段标准化和跨品牌设备互联的咨询建议。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - consulting_report
+  local_downloaded: false
+- id: RES-0023
+  title: AgGateway ADAPT Framework
+  title_zh: AgGateway ADAPT 农业数据互操作框架
+  url: https://adaptframework.org/
+  source_name: AgGateway
+  source_type: standards_body
+  resource_type: standard
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  - us
+  tags:
+  - standard
+  - interoperability
+  - farm_management
+  - data_model
+  linked_material_ids:
+  - STD-003
+  - DATA-018
+  - SRC-023
+  summary_zh: 面向农业软件和设备数据交换的开源/行业框架。
+  why_it_matters_zh: 可作为农业数据平台字段统一、作业记录映射和供应商集成的技术参考。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - risk_control
+  local_downloaded: false
+- id: RES-0040
+  title: 'STAC: SpatioTemporal Asset Catalogs'
+  title_zh: STAC 时空资产目录规范
+  url: https://stacspec.org/en
+  source_name: STAC Community
+  source_type: open_source
+  resource_type: standard
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - geospatial_ai
+  - data_catalog
+  - interoperability
+  - standard
+  linked_material_ids:
+  - STD-004
+  - DATA-027
+  - SRC-040
+  summary_zh: 面向遥感和时空数据的开放目录规范，用统一结构描述、索引和发现地理空间资产。
+  why_it_matters_zh: 农业遥感平台要管理 Sentinel、Landsat、商业影像和派生产品时，STAC 是重要的数据目录参考。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - risk_control
+  local_downloaded: false

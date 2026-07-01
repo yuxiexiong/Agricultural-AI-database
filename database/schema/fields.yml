@@ -1,0 +1,73 @@
+version: "0.1"
+updated_at: "2026-07-01"
+
+common_fields:
+  id: "唯一编号，不复用"
+  title: "原始标题或英文标题"
+  title_zh: "中文标题或中文解释"
+  url: "原始来源链接"
+  source_name: "来源机构、企业、项目或平台"
+  source_type: "来源类型，参考 tags.yml"
+  resource_type: "资源类型，参考 tags.yml"
+  quality_tier: "可信度等级，A-D"
+  verification_status: "核验状态"
+  verified_at: "最近核验日期，YYYY-MM-DD"
+  region: "适用地区"
+  tags: "检索标签"
+  resource_ids: "关联来源编号列表"
+  scenario_ids: "关联场景编号列表"
+  summary_zh: "中文摘要"
+  why_it_matters_zh: "对农业 AI 咨询/IP 的价值"
+  caution_zh: "使用风险或边界"
+  local_downloaded: "是否已下载本体到本地"
+
+required_by_file:
+  resources:
+    - id
+    - title
+    - title_zh
+    - url
+    - source_name
+    - source_type
+    - resource_type
+    - quality_tier
+    - verification_status
+    - verified_at
+    - region
+    - tags
+    - summary_zh
+    - why_it_matters_zh
+    - best_for
+    - local_downloaded
+  claims:
+    - id
+    - claim_zh
+    - evidence_level
+    - resource_ids
+    - use_for
+    - content_angle_zh
+    - caution_zh
+  scenarios:
+    - id
+    - name_zh
+    - priority
+    - fit_for
+    - data_needs
+    - ai_methods
+    - resource_ids
+    - business_value_zh
+    - implementation_risks_zh
+    - first_pilot_zh
+  multimodal:
+    - id
+    - media_type
+    - title
+    - source_url
+    - source_name
+    - license_or_usage_note
+    - local_downloaded
+    - local_path
+    - related_resource_ids
+    - description_zh
+    - best_for
+    - risk_note_zh

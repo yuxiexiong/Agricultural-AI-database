@@ -1,0 +1,244 @@
+---
+version: '0.1'
+updated_at: '2026-07-01'
+download_policy: link_only
+notes: Split from the original source catalog. Stores metadata and URLs only.
+resources:
+- id: RES-0001
+  title: OECD-FAO Agricultural Outlook 2026-2035
+  title_zh: OECD-FAO 农业展望 2026-2035
+  url: https://www.oecd.org/en/publications/oecd-fao-agricultural-outlook-2026-2035_47874669-en.html
+  source_name: OECD / FAO
+  source_type: official_international
+  resource_type: report
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 2026
+  region:
+  - global
+  tags:
+  - market
+  - policy
+  - productivity
+  - food_security
+  - emissions
+  linked_material_ids:
+  - POL-001
+  - MKT-001
+  - ROI-001
+  - SRC-001
+  summary_zh: 全球农业中长期展望，用于判断产量、消费、贸易、价格、生产率和排放趋势。
+  why_it_matters_zh: 适合作为农业 AI 项目的宏观开场：生产率提升和资源约束共同推动数据化、智能化需求。
+  best_for:
+  - consulting_report
+  - market_context
+  - monthly_intelligence
+  local_downloaded: false
+- id: RES-0002
+  title: Climate-Smart Agriculture
+  title_zh: FAO 气候智慧型农业
+  url: https://www.fao.org/climate-smart-agriculture/en/
+  source_name: FAO
+  source_type: official_international
+  resource_type: policy_page
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - policy
+  - climate_risk
+  - resilience
+  - sustainability
+  linked_material_ids:
+  - POL-002
+  - TECH-008
+  - RISK-002
+  - SRC-002
+  summary_zh: FAO 对气候智慧型农业的框架性说明，强调生产力、适应性和减排协同。
+  why_it_matters_zh: 可把农业 AI 从单点效率工具提升为气候韧性和可持续转型工具。
+  best_for:
+  - consulting_report
+  - market_context
+  - content_ip
+  local_downloaded: false
+- id: RES-0003
+  title: Digital Agriculture
+  title_zh: FAO 数字农业
+  url: https://www.fao.org/digital-agriculture/en/
+  source_name: FAO
+  source_type: official_international
+  resource_type: policy_page
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - digital_agriculture
+  - data_platform
+  - policy
+  - inclusion
+  linked_material_ids:
+  - POL-003
+  - DATA-001
+  - SRC-003
+  summary_zh: FAO 数字农业入口，适合引用数字技术在农业中的角色、机会和包容性挑战。
+  why_it_matters_zh: 帮助咨询报告说明农业 AI 不只是模型问题，还包括基础设施、数字鸿沟和治理能力。
+  best_for:
+  - consulting_report
+  - monthly_intelligence
+  - risk_control
+  local_downloaded: false
+- id: RES-0005
+  title: The common agricultural policy at a glance
+  title_zh: 欧盟共同农业政策概览
+  url: https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en
+  source_name: European Commission
+  source_type: government
+  resource_type: policy_page
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - eu
+  tags:
+  - policy
+  - eu
+  - subsidy
+  - sustainability
+  - farm_income
+  linked_material_ids:
+  - POL-004
+  - POL-005
+  - SRC-005
+  summary_zh: 欧盟共同农业政策的官方概览，涵盖粮食安全、农民收入、环境和农村发展。
+  why_it_matters_zh: 适合解释欧洲农业数字化为什么常与补贴、合规、环境指标和数据治理绑定。
+  best_for:
+  - consulting_report
+  - market_context
+  - monthly_intelligence
+  local_downloaded: false
+- id: RES-0006
+  title: Digitalisation in agriculture and rural areas
+  title_zh: 欧盟农业与农村地区数字化
+  url: https://agriculture.ec.europa.eu/overview-vision-agriculture-food/digitalisation_en
+  source_name: European Commission
+  source_type: government
+  resource_type: policy_page
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - eu
+  tags:
+  - policy
+  - digital_agriculture
+  - data_platform
+  - rural_connectivity
+  linked_material_ids:
+  - POL-006
+  - DATA-002
+  - SRC-006
+  summary_zh: 欧盟农业数字化政策入口，强调数字技术、数据、农村连接和创新生态。
+  why_it_matters_zh: 可作为农业 AI 政策导向部分的欧洲样板，连接平台建设、数据共享和公共服务。
+  best_for:
+  - consulting_report
+  - monthly_intelligence
+  - data_architecture
+  local_downloaded: false
+- id: RES-0007
+  title: Digitalising the European agricultural sector
+  title_zh: 欧盟农业部门数字化政策
+  url: https://digital-strategy.ec.europa.eu/en/policies/digitalisation-agriculture
+  source_name: European Commission
+  source_type: government
+  resource_type: policy_page
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - eu
+  tags:
+  - policy
+  - digital_agriculture
+  - data_space
+  - innovation
+  linked_material_ids:
+  - POL-007
+  - DATA-003
+  - SRC-007
+  summary_zh: 欧盟数字战略下的农业数字化页面，适合提取数据空间、创新项目和政策方向。
+  why_it_matters_zh: 帮助把农业 AI 项目放进更大的数字基础设施和数据共享政策框架。
+  best_for:
+  - consulting_report
+  - monthly_intelligence
+  - data_architecture
+  local_downloaded: false
+- id: RES-0008
+  title: Common European data spaces for agriculture and mobility
+  title_zh: 欧洲农业和出行公共数据空间
+  url: https://digital-strategy.ec.europa.eu/en/library/common-european-data-spaces-agriculture-and-mobility
+  source_name: European Commission
+  source_type: government
+  resource_type: policy_page
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - eu
+  tags:
+  - data_space
+  - data_governance
+  - interoperability
+  - eu
+  linked_material_ids:
+  - DATA-004
+  - CASE-003
+  - STD-003
+  - SRC-008
+  summary_zh: 欧洲农业数据空间相关官方资料，用于理解跨主体农业数据共享和治理模式。
+  why_it_matters_zh: 是农业大数据 + AI 平台从企业系统走向行业基础设施的关键参考。
+  best_for:
+  - data_architecture
+  - consulting_report
+  - benchmark_case
+  local_downloaded: false
+- id: RES-0009
+  title: Study on digitalisation in EU agriculture
+  title_zh: 欧盟农业数字化状态研究
+  url: https://agriculture.ec.europa.eu/media/news/new-study-highlights-state-play-digitalisation-eu-agriculture-2025-09-19_en
+  source_name: European Commission
+  source_type: government
+  resource_type: report
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 2025
+  region:
+  - eu
+  tags:
+  - digital_agriculture
+  - adoption
+  - policy
+  - market
+  linked_material_ids:
+  - MKT-003
+  - POL-008
+  - RISK-001
+  - SRC-009
+  summary_zh: 欧盟农业数字化现状研究新闻入口，可作为采用率、差距和政策建议线索。
+  why_it_matters_zh: 适合支撑“技术成熟不等于行业普及”的观点，提醒项目关注农场端采用成本。
+  best_for:
+  - market_context
+  - risk_control
+  - monthly_intelligence
+  local_downloaded: false

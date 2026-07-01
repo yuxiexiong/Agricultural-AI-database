@@ -1,0 +1,37 @@
+version: "0.1"
+updated_at: "2026-07-01"
+
+quality_tiers:
+  A:
+    definition_zh: "国际组织、政府、标准组织、公共数据集、权威科研项目等一手来源。"
+    allowed_uses: ["consulting_report", "client_delivery", "market_context", "policy_background"]
+    caution_zh: "仍需注意发布日期、地区适用性和指标口径。"
+  B:
+    definition_zh: "企业官网、产品官网、项目官网等一手商业来源。"
+    allowed_uses: ["benchmark_case", "content_ip", "market_signal", "vendor_watch"]
+    caution_zh: "不把企业宣传效果数字当作独立验证事实。"
+  C:
+    definition_zh: "论文、预印本、开源项目、技术综述。"
+    allowed_uses: ["technology_selection", "method_reference", "trend_tracking"]
+    caution_zh: "正式引用前核验版本、评审状态、实验范围和可复现性。"
+  D:
+    definition_zh: "媒体、二手市场报告、未核验材料。"
+    allowed_uses: ["lead_discovery"]
+    caution_zh: "不得作为关键结论的唯一依据。"
+
+evidence_levels:
+  strong:
+    definition_zh: "有 A 级来源支撑，或多个来源相互印证。"
+    external_delivery: "可用于报告主论据。"
+  moderate:
+    definition_zh: "有 B/C 级来源支撑，但仍需限定语气。"
+    external_delivery: "适合趋势、案例和方法论，不宜单独支撑关键承诺。"
+  weak:
+    definition_zh: "线索级证据或待核验信息。"
+    external_delivery: "仅内部研究使用。"
+
+refresh_cycles:
+  quarterly: "政策、企业产品、市场动态、活跃项目"
+  semiannual: "数据源、标准生态、案例库"
+  annual: "稳定公共数据、经典标准、长期背景"
+  event_driven: "重大政策、融资并购、产品发布、灾害事件后复核"

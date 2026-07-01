@@ -1,0 +1,419 @@
+---
+version: '0.1'
+updated_at: '2026-07-01'
+download_policy: link_only
+notes: Split from the original source catalog. Stores metadata and URLs only.
+resources:
+- id: RES-0004
+  title: FAOSTAT
+  title_zh: FAOSTAT 全球农业统计数据库
+  url: https://www.fao.org/faostat/
+  source_name: FAO
+  source_type: official_international
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - data_source
+  - market
+  - production
+  - trade
+  - food_security
+  linked_material_ids:
+  - DATA-008
+  - MKT-002
+  - SRC-004
+  summary_zh: FAO 维护的全球农业统计数据入口，覆盖生产、贸易、食品安全、土地、投入品等主题。
+  why_it_matters_zh: 可作为国际农业大数据平台的宏观结构化数据源，用于市场分析和模型特征补充。
+  best_for:
+  - data_architecture
+  - market_context
+  - consulting_report
+  local_downloaded: false
+- id: RES-0013
+  title: GEOGLAM Crop Monitor
+  title_zh: GEOGLAM 作物监测
+  url: https://www.cropmonitor.org/
+  source_name: GEOGLAM
+  source_type: official_international
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - remote_sensing
+  - crop_monitoring
+  - food_security
+  - monthly_intelligence
+  linked_material_ids:
+  - DATA-007
+  - VIS-002
+  - SRC-013
+  summary_zh: 提供全球作物条件监测、月度简报和遥感指标入口。
+  why_it_matters_zh: 适合做月度农业 AI 情报中的作物监测和粮食安全数据源。
+  best_for:
+  - monthly_intelligence
+  - data_architecture
+  - consulting_report
+  local_downloaded: false
+- id: RES-0014
+  title: Copernicus Sentinel-2
+  title_zh: 哥白尼 Sentinel-2 卫星数据
+  url: https://dataspace.copernicus.eu/data-collections/copernicus-sentinel-missions/sentinel-2
+  source_name: Copernicus Data Space Ecosystem
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  - eu
+  tags:
+  - remote_sensing
+  - satellite
+  - crop_monitoring
+  - data_source
+  linked_material_ids:
+  - DATA-009
+  - TECH-004
+  - SRC-014
+  summary_zh: 高频、多光谱地球观测数据，是作物识别、长势监测、灾害评估和产量估计的基础数据源之一。
+  why_it_matters_zh: 农业 AI 数据底座常以 Sentinel-2 等公开遥感数据作为低成本广覆盖入口。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - consulting_report
+  local_downloaded: false
+- id: RES-0015
+  title: Landsat
+  title_zh: NASA/USGS Landsat 遥感数据
+  url: https://science.nasa.gov/mission/landsat/
+  source_name: NASA / USGS
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  - us
+  tags:
+  - remote_sensing
+  - satellite
+  - long_term_archive
+  - data_source
+  linked_material_ids:
+  - DATA-010
+  - TECH-004
+  - SRC-015
+  summary_zh: 长期连续地球观测数据源，适合做历史变化、土地利用和长期农业趋势分析。
+  why_it_matters_zh: 可补足农业 AI 对长时间序列训练和历史基线判断的需求。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - market_context
+  local_downloaded: false
+- id: RES-0016
+  title: OpenET
+  title_zh: OpenET 蒸散发数据平台
+  url: https://etdata.org/
+  source_name: OpenET
+  source_type: public_research
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - us
+  tags:
+  - remote_sensing
+  - irrigation
+  - water_management
+  - evapotranspiration
+  linked_material_ids:
+  - DATA-011
+  - SCN-001
+  - ROI-002
+  - SRC-016
+  summary_zh: 基于卫星的蒸散发数据服务，面向灌溉、水资源管理和政策决策。
+  why_it_matters_zh: 是智能灌溉 ROI 论证和水资源管理场景的重要参考。
+  best_for:
+  - benchmark_case
+  - roi_model
+  - data_architecture
+  local_downloaded: false
+- id: RES-0017
+  title: NASA POWER
+  title_zh: NASA POWER 气象与太阳辐射数据服务
+  url: https://power.larc.nasa.gov/docs/
+  source_name: NASA POWER
+  source_type: government
+  resource_type: documentation
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - weather
+  - climate
+  - api
+  - data_source
+  - modeling
+  linked_material_ids:
+  - DATA-012
+  - TECH-005
+  - SRC-017
+  summary_zh: NASA POWER 的数据、API 和方法文档入口，提供农业建模常用气象和太阳辐射变量。
+  why_it_matters_zh: 可作为缺少本地气象站数据时的补充数据源，用于作物模型、风险预警和时序预测。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - monthly_intelligence
+  local_downloaded: false
+- id: RES-0018
+  title: ERA5 hourly data on single levels
+  title_zh: ERA5 全球小时级再分析数据
+  url: https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels
+  source_name: Copernicus Climate Data Store
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  - eu
+  tags:
+  - weather
+  - climate
+  - reanalysis
+  - modeling
+  - data_source
+  linked_material_ids:
+  - DATA-013
+  - TECH-005
+  - SRC-018
+  summary_zh: 全球再分析气象数据，适合作为农业时序建模、气候风险和历史天气基线。
+  why_it_matters_zh: 能为跨国家农业 AI 项目提供统一气象背景，降低不同地区数据口径不一致的问题。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - risk_control
+  local_downloaded: false
+- id: RES-0019
+  title: WorldClim
+  title_zh: WorldClim 全球气候数据
+  url: https://www.worldclim.org/
+  source_name: WorldClim
+  source_type: public_research
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - climate
+  - data_source
+  - spatial_modeling
+  - risk
+  linked_material_ids:
+  - DATA-014
+  - RISK-003
+  - SRC-019
+  summary_zh: 全球气候栅格数据入口，可用于生态适宜性、风险评估和长期气候背景分析。
+  why_it_matters_zh: 适合补充农业 AI 项目中的区域适宜性、气候风险和长期趋势判断。
+  best_for:
+  - data_architecture
+  - risk_control
+  - consulting_report
+  local_downloaded: false
+- id: RES-0020
+  title: SoilGrids
+  title_zh: SoilGrids 全球土壤属性数据
+  url: https://soilgrids.org/
+  source_name: ISRIC
+  source_type: public_research
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - soil
+  - data_source
+  - spatial_modeling
+  - crop_modeling
+  linked_material_ids:
+  - DATA-015
+  - TECH-006
+  - SRC-020
+  summary_zh: 全球土壤属性数据服务，可用于土壤背景、地块画像、作物适宜性和产量建模。
+  why_it_matters_zh: 农业 AI 的地块级建模不能只看影像和天气，土壤数据是解释差异和做长期建议的关键层。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - consulting_report
+  local_downloaded: false
+- id: RES-0036
+  title: USDA NASS Quick Stats
+  title_zh: USDA NASS Quick Stats 农业统计查询工具
+  url: https://quickstats.nass.usda.gov/
+  source_name: USDA National Agricultural Statistics Service
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - us
+  tags:
+  - data_source
+  - ag_statistics
+  - production
+  - prices
+  - market
+  linked_material_ids:
+  - DATA-023
+  - MKT-005
+  - SRC-036
+  summary_zh: 美国 USDA NASS 的农业统计查询入口，覆盖作物、畜牧、价格、经济、环境等维度。
+  why_it_matters_zh: 适合作为美国农业市场、产量、价格和农场结构分析的权威数据源。
+  best_for:
+  - market_context
+  - data_architecture
+  - consulting_report
+  local_downloaded: false
+- id: RES-0037
+  title: USDA CropScape / Cropland Data Layer
+  title_zh: USDA CropScape / CDL 作物图层
+  url: https://nassgeodata.gmu.edu/CropScape/
+  source_name: USDA NASS / George Mason University
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - us
+  tags:
+  - remote_sensing
+  - crop_type_map
+  - land_cover
+  - data_source
+  linked_material_ids:
+  - DATA-024
+  - TECH-015
+  - SRC-037
+  summary_zh: 美国作物类型和农地覆盖数据入口，常用于作物识别、遥感标签和地理空间分析。
+  why_it_matters_zh: 是讲解农业 AI 训练标签、作物分类和公共遥感数据产品的高质量案例。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - benchmark_case
+  local_downloaded: false
+- id: RES-0043
+  title: Google Earth Engine
+  title_zh: Google Earth Engine 地球观测数据与分析平台
+  url: https://earthengine.google.com/
+  source_name: Google
+  source_type: company_official
+  resource_type: data_catalog
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - remote_sensing
+  - geospatial_ai
+  - cloud_compute
+  - data_catalog
+  linked_material_ids:
+  - DATA-028
+  - TECH-017
+  - SRC-043
+  summary_zh: 云端地球观测数据和分析平台，包含大量公开遥感与地理空间数据目录。
+  why_it_matters_zh: 适合农业遥感 AI 原型验证、特征工程和快速可行性分析。
+  best_for:
+  - technology_selection
+  - data_architecture
+  - benchmark_case
+  local_downloaded: false
+- id: RES-0044
+  title: FAO AGRIS
+  title_zh: FAO AGRIS 国际农业科技文献系统
+  url: https://agris.fao.org/
+  source_name: FAO
+  source_type: official_international
+  resource_type: data_catalog
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - literature
+  - data_catalog
+  - agricultural_research
+  - knowledge_base
+  linked_material_ids:
+  - DATA-029
+  - SRC-044
+  summary_zh: FAO 维护的农业科学技术文献与书目记录平台，覆盖多语言、多国家、多类型资料。
+  why_it_matters_zh: 适合为农业 AI 报告、综述和政策分析补充全球农业研究线索。
+  best_for:
+  - consulting_report
+  - monthly_intelligence
+  - content_ip
+  local_downloaded: false
+- id: RES-0045
+  title: AGROVOC
+  title_zh: AGROVOC 多语种农业词表
+  url: https://www.fao.org/agrovoc/
+  source_name: FAO
+  source_type: official_international
+  resource_type: vocabulary
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - vocabulary
+  - linked_data
+  - knowledge_graph
+  - interoperability
+  linked_material_ids:
+  - STD-006
+  - DATA-030
+  - SRC-045
+  summary_zh: FAO 的多语种农业词表和 Linked Open Data 资源，用于标准化农业概念、术语和关系。
+  why_it_matters_zh: 适合支撑农业知识图谱、多语言检索、元数据治理和跨系统语义互操作。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - risk_control
+  local_downloaded: false

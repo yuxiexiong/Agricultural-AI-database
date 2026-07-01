@@ -1,0 +1,152 @@
+---
+version: '0.1'
+updated_at: '2026-07-01'
+download_policy: link_only
+notes: Split from the original source catalog. Stores metadata and URLs only.
+resources:
+- id: RES-0010
+  title: AIM for Climate
+  title_zh: 农业创新使命：气候农业创新倡议
+  url: https://www.aimforclimate.org/
+  source_name: AIM for Climate
+  source_type: official_international
+  resource_type: project
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - climate_risk
+  - innovation
+  - policy
+  - investment
+  linked_material_ids:
+  - POL-009
+  - MKT-004
+  - SRC-010
+  summary_zh: 围绕气候智慧农业和食品系统创新的国际合作倡议。
+  why_it_matters_zh: 适合说明农业 AI 的国际合作和创新资金方向，尤其是气候风险、韧性和减排场景。
+  best_for:
+  - market_context
+  - monthly_intelligence
+  - content_ip
+  local_downloaded: false
+- id: RES-0011
+  title: NASA Harvest
+  title_zh: NASA Harvest 全球农业与粮食安全项目
+  url: https://www.nasaharvest.org/
+  source_name: NASA Harvest
+  source_type: public_research
+  resource_type: project
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - remote_sensing
+  - food_security
+  - crop_monitoring
+  - public_research
+  linked_material_ids:
+  - DATA-005
+  - CASE-004
+  - TECH-003
+  - SRC-011
+  summary_zh: NASA 支持的农业遥感与粮食安全项目，连接卫星数据、科研模型和公共决策。
+  why_it_matters_zh: 是农业遥感和粮食安全 AI 应用的高质量标杆，可用于讲清公共价值和技术路径。
+  best_for:
+  - benchmark_case
+  - data_architecture
+  - consulting_report
+  local_downloaded: false
+- id: RES-0012
+  title: NASA Acres
+  title_zh: NASA Acres 美国农业遥感项目
+  url: https://www.nasaacres.org/
+  source_name: NASA Acres
+  source_type: public_research
+  resource_type: project
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 2023
+  region:
+  - us
+  tags:
+  - remote_sensing
+  - crop_monitoring
+  - sustainability
+  - public_research
+  linked_material_ids:
+  - DATA-006
+  - CASE-005
+  - SRC-012
+  summary_zh: 美国农业场景下的 NASA 遥感应用项目，围绕生产、土地利用、可持续和工具建设展开。
+  why_it_matters_zh: 可作为国家级农业遥感基础设施如何服务农业 AI 的案例。
+  best_for:
+  - benchmark_case
+  - data_architecture
+  - content_ip
+  local_downloaded: false
+- id: RES-0038
+  title: FarmVibes.AI
+  title_zh: Microsoft FarmVibes.AI 农业与可持续地理空间 ML 工具
+  url: https://github.com/microsoft/farmvibes-ai
+  source_name: Microsoft
+  source_type: open_source
+  resource_type: project
+  quality_tier: C
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - geospatial_ai
+  - remote_sensing
+  - open_source
+  - modeling
+  linked_material_ids:
+  - TECH-016
+  - DATA-025
+  - SRC-038
+  summary_zh: 开源农业与可持续地理空间机器学习项目，适合做技术原型和方法参考。
+  why_it_matters_zh: 可为农业遥感、地理空间 ML 和原型系统提供工程化参考。
+  best_for:
+  - technology_selection
+  - data_architecture
+  - content_ip
+  local_downloaded: false
+- id: RES-0046
+  title: WFP PRISM
+  title_zh: WFP PRISM 气候风险监测系统
+  url: https://innovation.wfp.org/project/prism
+  source_name: World Food Programme
+  source_type: official_international
+  resource_type: project
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - climate_risk
+  - remote_sensing
+  - vulnerability
+  - risk_monitoring
+  linked_material_ids:
+  - CASE-012
+  - RISK-008
+  - SRC-046
+  summary_zh: WFP 气候风险监测项目，整合遥感灾害数据和社会经济脆弱性信息。
+  why_it_matters_zh: 适合农业风险、灾害预警、保险辅助和公共治理场景的案例参考。
+  best_for:
+  - benchmark_case
+  - risk_control
+  - monthly_intelligence
+  local_downloaded: false

@@ -1,0 +1,248 @@
+---
+version: '0.1'
+updated_at: '2026-07-01'
+download_policy: link_only
+notes: Split from the original source catalog. Stores metadata and URLs only.
+resources:
+- id: RES-0024
+  title: John Deere See & Spray Gen 2
+  title_zh: John Deere See & Spray Gen 2 精准喷洒
+  url: https://www.deere.com/en/sprayers/see-spray-gen-2/
+  source_name: John Deere
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  - us
+  tags:
+  - computer_vision
+  - precision_application
+  - machinery
+  - case
+  linked_material_ids:
+  - CASE-001
+  - SCN-003
+  - ROI-003
+  - SRC-024
+  summary_zh: 面向田间杂草识别和精准喷洒的商业化案例。
+  why_it_matters_zh: 可用于说明 AI 从识别走向变量作业和投入品节省，是农业 AI 可见 ROI 的代表案例。
+  best_for:
+  - benchmark_case
+  - content_ip
+  - roi_model
+  local_downloaded: false
+- id: RES-0025
+  title: CropX Agronomic Farm Management System
+  title_zh: CropX 农艺农场管理系统
+  url: https://cropx.com/
+  source_name: CropX
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - iot
+  - irrigation
+  - farm_management
+  - decision_support
+  linked_material_ids:
+  - CASE-002
+  - SCN-001
+  - ROI-004
+  - SRC-025
+  summary_zh: 结合土壤传感器、数据平台和农艺建议的农场管理系统。
+  why_it_matters_zh: 可作为物联网 + AI 在灌溉、施肥和农事决策中的商业化样本。
+  best_for:
+  - benchmark_case
+  - technology_selection
+  - roi_model
+  local_downloaded: false
+- id: RES-0026
+  title: ClimateAi
+  title_zh: ClimateAi 农业气候风险智能平台
+  url: https://climate.ai/
+  source_name: ClimateAi
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - climate_risk
+  - forecasting
+  - supply_chain
+  - food_agriculture
+  linked_material_ids:
+  - CASE-006
+  - SCN-007
+  - RISK-004
+  - SRC-026
+  summary_zh: 面向食品和农业供应链的 AI 气候洞察与风险预测平台。
+  why_it_matters_zh: 适合作为农业 AI 从田间生产扩展到采购、供应链和风险管理的案例。
+  best_for:
+  - benchmark_case
+  - market_context
+  - risk_control
+  local_downloaded: false
+- id: RES-0027
+  title: xFarm Technologies
+  title_zh: xFarm 农场管理与农业数字化平台
+  url: https://www.xfarm.ag/
+  source_name: xFarm Technologies
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  - eu
+  tags:
+  - farm_management
+  - iot
+  - satellite
+  - decision_support
+  - interoperability
+  linked_material_ids:
+  - CASE-007
+  - SCN-006
+  - DATA-019
+  - SRC-027
+  summary_zh: 农场管理平台，整合传感器、卫星、农机和农事建议。
+  why_it_matters_zh: 可作为欧洲农业 SaaS/平台化服务的案例，展示农业 AI 如何嵌入日常农事工作流。
+  best_for:
+  - benchmark_case
+  - data_architecture
+  - content_ip
+  local_downloaded: false
+- id: RES-0028
+  title: Climate FieldView
+  title_zh: Climate FieldView 数字农业平台
+  url: https://climate.com/fieldview/
+  source_name: Climate LLC / Bayer
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  - us
+  tags:
+  - farm_management
+  - data_platform
+  - field_data
+  - decision_support
+  linked_material_ids:
+  - CASE-008
+  - DATA-020
+  - SCN-006
+  - SRC-028
+  summary_zh: 面向田间数据管理、农事记录和决策支持的数字农业平台。
+  why_it_matters_zh: 适合说明农业 AI 商业化常以农场管理数据入口为基础，而不是独立模型工具。
+  best_for:
+  - benchmark_case
+  - data_architecture
+  - market_context
+  local_downloaded: false
+- id: RES-0039
+  title: Planet Agriculture
+  title_zh: Planet 农业遥感行业方案
+  url: https://www.planet.com/industries/agriculture/
+  source_name: Planet
+  source_type: company_official
+  resource_type: product_page
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - remote_sensing
+  - commercial_satellite
+  - crop_monitoring
+  - geospatial_ai
+  linked_material_ids:
+  - CASE-009
+  - DATA-026
+  - SRC-039
+  summary_zh: 商业卫星公司 Planet 的农业行业方案入口，适合了解高频遥感在农业中的商业应用。
+  why_it_matters_zh: 帮助区分公开遥感数据和商业高频影像在农业 AI 项目中的角色。
+  best_for:
+  - benchmark_case
+  - technology_selection
+  - market_context
+  local_downloaded: false
+- id: RES-0041
+  title: Trimble Agriculture
+  title_zh: Trimble 农业精准技术与农场管理方案
+  url: https://www.trimble.com/en/industries/agriculture
+  source_name: Trimble
+  source_type: company_official
+  resource_type: product_page
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - global
+  tags:
+  - precision_agriculture
+  - farm_management
+  - guidance
+  - data_platform
+  linked_material_ids:
+  - CASE-010
+  - STD-005
+  - SRC-041
+  summary_zh: Trimble 农业行业技术入口，覆盖精准农业、定位导航、农场管理和数字工作流。
+  why_it_matters_zh: 适合说明农业 AI 落地常依赖定位、农机、作业记录和农场管理系统等基础设施。
+  best_for:
+  - benchmark_case
+  - technology_selection
+  - data_architecture
+  local_downloaded: false
+- id: RES-0042
+  title: Carbon Robotics LaserWeeder
+  title_zh: Carbon Robotics LaserWeeder 激光除草机器人
+  url: https://carbonrobotics.com/laserweeder
+  source_name: Carbon Robotics
+  source_type: company_official
+  resource_type: case
+  quality_tier: B
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 
+  region:
+  - us
+  tags:
+  - robotics
+  - computer_vision
+  - precision_application
+  - weed_control
+  linked_material_ids:
+  - CASE-011
+  - SCN-009
+  - ROI-006
+  - SRC-042
+  summary_zh: 将视觉识别与激光除草执行结合的农业机器人产品案例。
+  why_it_matters_zh: 适合展示农业 AI 从识别/建议进入自动化执行层的趋势。
+  best_for:
+  - benchmark_case
+  - content_ip
+  - technology_selection
+  local_downloaded: false
