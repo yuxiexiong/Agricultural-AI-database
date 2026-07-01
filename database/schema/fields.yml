@@ -68,6 +68,39 @@ required_by_file:
     - local_downloaded
     - local_path
     - related_resource_ids
+    - scenario_ids
     - description_zh
+    - suitable_use_zh
+    - public_display
+    - public_display_note_zh
     - best_for
     - risk_note_zh
+  roi_models:
+    - id
+    - name_zh
+    - scenario_ids
+    - resource_ids
+    - value_driver_zh
+    - baseline_metrics
+    - improvement_levers
+    - formula_zh
+    - acceptance_metrics
+    - risk_boundary_zh
+  risks:
+    - id
+    - name_zh
+    - scenario_ids
+    - resource_ids
+    - severity
+    - risk_zh
+    - boundary_zh
+    - mitigation_zh
+  content_angles:
+    - id
+    - title_zh
+    - format
+    - scenario_ids
+    - resource_ids
+    - hook_zh
+    - core_points_zh
+    - avoid_zh

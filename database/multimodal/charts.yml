@@ -1,4 +1,173 @@
 version: "0.1"
 updated_at: "2026-07-01"
 download_policy: "link_only"
-charts: []
+charts:
+  - id: "CHART-001"
+    media_type: "chart"
+    title: "GEOGLAM Crop Monitor synthesis maps and production-weighted pie charts"
+    source_url: "https://www.cropmonitor.org/graphical-products"
+    source_name: "GEOGLAM Crop Monitor"
+    license_or_usage_note: "Licensed under CC BY 4.0 according to GEOGLAM Crop Monitor referencing guidelines."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0013", "RES-0063", "RES-0064"]
+    scenario_ids: ["SCENARIO-004", "SCENARIO-009"]
+    description_zh: "全球作物条件综合地图和按产量加权的作物状态饼图。"
+    suitable_use_zh: "月度粮食安全简报、作物长势监测、区域风险汇报。"
+    public_display: true
+    public_display_note_zh: "可按 CC BY 4.0 使用，但必须附作者、日期、标题、URL、许可和修改说明。"
+    best_for: ["monthly_intelligence", "consulting_report"]
+    risk_note_zh: "不能把区域图直接解释成单个农场损失。"
+
+  - id: "CHART-002"
+    media_type: "chart"
+    title: "OpenET Data Explorer visual outputs"
+    source_url: "https://explore.etdata.org/"
+    source_name: "OpenET"
+    license_or_usage_note: "OpenET visual outputs and site content require OpenET terms review; keep link-only unless reuse permission is clear."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0016", "RES-0057"]
+    scenario_ids: ["SCENARIO-001"]
+    description_zh: "OpenET Data Explorer 中按区域/地块查看 ET 历史模式和下载结果的可视化入口。"
+    suitable_use_zh: "智能灌溉、水资源管理、ET 解释和 ROI 假设。"
+    public_display: false
+    public_display_note_zh: "公开报告中建议用自制示意图替代原图截图。"
+    best_for: ["roi_model", "technology_selection"]
+    risk_note_zh: "OpenET 主要覆盖美国，跨国使用需标注限制。"
+
+  - id: "CHART-003"
+    media_type: "chart"
+    title: "USDA NASS Charts and Maps"
+    source_url: "https://www.nass.usda.gov/Charts_and_Maps/"
+    source_name: "USDA NASS"
+    license_or_usage_note: "Official USDA NASS chart and map portal; cite USDA NASS and specific chart/table where used."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0036", "RES-0051"]
+    scenario_ids: ["SCENARIO-014"]
+    description_zh: "NASS 按作物、畜牧、经济指标、县域地图和地理空间数据组织的图表入口。"
+    suitable_use_zh: "美国农业经营基准、市场背景、作物和价格图表线索。"
+    public_display: true
+    public_display_note_zh: "可公开引用官方链接和统计图，但需标注 USDA/NASS 和口径。"
+    best_for: ["roi_model", "market_context"]
+    risk_note_zh: "图表口径可能随报告年份和调查项目变化。"
+
+  - id: "CHART-004"
+    media_type: "chart"
+    title: "2022 Census of Agriculture web maps"
+    source_url: "https://www.nass.usda.gov/Publications/AgCensus/2022/index.php"
+    source_name: "USDA NASS"
+    license_or_usage_note: "Official USDA/NASS Ag Census online resource; cite USDA NASS and map product."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0051"]
+    scenario_ids: ["SCENARIO-014"]
+    description_zh: "2022 农业普查在线资源中的 Web Maps 和州县统计图表入口。"
+    suitable_use_zh: "农场规模结构、区域经营基准和市场进入图示。"
+    public_display: true
+    public_display_note_zh: "公开展示需保留 USDA/NASS 来源和年份。"
+    best_for: ["consulting_report", "roi_model"]
+    risk_note_zh: "美国县域地图不能直接迁移到其他国家。"
+
+  - id: "CHART-005"
+    media_type: "chart"
+    title: "USDA CropScape / Cropland Data Layer maps"
+    source_url: "https://nassgeodata.gmu.edu/CropScape/"
+    source_name: "USDA NASS / George Mason University"
+    license_or_usage_note: "Official NASS-linked geospatial tool; cite USDA NASS CDL/CropScape and year/layer."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0037"]
+    scenario_ids: ["SCENARIO-004", "SCENARIO-008"]
+    description_zh: "美国 Cropland Data Layer 的交互式作物类型地图入口。"
+    suitable_use_zh: "遥感标签、作物分类、美国地块背景图层。"
+    public_display: true
+    public_display_note_zh: "可公开引用工具链接；截图和地图输出需标明 CDL 年份和来源。"
+    best_for: ["technology_selection", "data_architecture"]
+    risk_note_zh: "CDL 覆盖美国，且作物类型精度因地区和作物而异。"
+
+  - id: "CHART-006"
+    media_type: "chart"
+    title: "FAOSTAT data visualizations"
+    source_url: "https://www.fao.org/faostat/en/#data"
+    source_name: "FAOSTAT"
+    license_or_usage_note: "FAO data portal; follow FAOSTAT/FAO citation and terms for charts and downloads."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0004"]
+    scenario_ids: ["SCENARIO-013", "SCENARIO-014"]
+    description_zh: "FAOSTAT 中农业生产、贸易、价格、土地和投入品等宏观数据可视化入口。"
+    suitable_use_zh: "国家/区域市场背景、作物结构、宏观数据图表。"
+    public_display: true
+    public_display_note_zh: "公开使用时保留 FAOSTAT 来源、指标、国家、年份和下载日期。"
+    best_for: ["market_context", "consulting_report"]
+    risk_note_zh: "宏观统计不适合直接支持地块级建议。"
+
+  - id: "CHART-007"
+    media_type: "chart"
+    title: "FAO AQUASTAT maps"
+    source_url: "https://www.fao.org/aquastat/en/"
+    source_name: "FAO AQUASTAT"
+    license_or_usage_note: "FAO AQUASTAT map and data portal; follow FAO terms and layer-specific citation."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0057"]
+    scenario_ids: ["SCENARIO-001", "SCENARIO-013"]
+    description_zh: "AQUASTAT 中水与农业相关地图、国家概况和数据分析入口。"
+    suitable_use_zh: "水资源、灌溉、国家级水约束和选址背景。"
+    public_display: true
+    public_display_note_zh: "公开使用需标明 FAO AQUASTAT、指标、国家/区域和日期。"
+    best_for: ["consulting_report", "market_context"]
+    risk_note_zh: "国家尺度数据不能替代流域或地块级水权判断。"
+
+  - id: "CHART-008"
+    media_type: "chart"
+    title: "FAO Hand-in-Hand Geospatial Platform"
+    source_url: "https://data.apps.fao.org/"
+    source_name: "FAO Hand-in-Hand"
+    license_or_usage_note: "FAO geospatial platform integrates multiple FAO data layers; verify layer-specific terms before reuse."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0047"]
+    scenario_ids: ["SCENARIO-013"]
+    description_zh: "FAO Hand-in-Hand 地理空间平台，整合土壤、土地、水、气候、作物、贸易和社会经济图层。"
+    suitable_use_zh: "农业投资选址、国家诊断、公共部门咨询图表线索。"
+    public_display: false
+    public_display_note_zh: "默认不直接转载平台截图；公开图表应自制并列明图层来源。"
+    best_for: ["consulting_report", "market_context"]
+    risk_note_zh: "多来源图层需逐项核验更新频率和许可。"
+
+  - id: "CHART-009"
+    media_type: "chart"
+    title: "World Bank Open Data and DataBank visualizations"
+    source_url: "https://data.worldbank.org/"
+    source_name: "World Bank Open Data"
+    license_or_usage_note: "World Bank Open Data portal; follow World Bank terms, indicator citation and data access notes."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0070"]
+    scenario_ids: ["SCENARIO-013", "SCENARIO-014"]
+    description_zh: "World Bank Open Data 和 DataBank 的国家、指标、主题和时间序列图表入口。"
+    suitable_use_zh: "市场接入、基础设施、农村发展和宏观背景图表。"
+    public_display: true
+    public_display_note_zh: "公开使用时标明 World Bank、指标代码、国家、年份和下载日期。"
+    best_for: ["market_context", "consulting_report"]
+    risk_note_zh: "宏观指标不能直接推出单个农业项目可行性。"
+
+  - id: "CHART-010"
+    media_type: "chart"
+    title: "Google Earth Engine Timelapse and data catalog visuals"
+    source_url: "https://earthengine.google.com/"
+    source_name: "Google Earth Engine"
+    license_or_usage_note: "Google product visuals and Timelapse materials governed by Google terms; keep link-only unless reuse rights are clear."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0043"]
+    scenario_ids: ["SCENARIO-004", "SCENARIO-008", "SCENARIO-013"]
+    description_zh: "Earth Engine 官网中的 Timelapse、数据目录和平台能力可视化入口。"
+    suitable_use_zh: "遥感原型、土地变化、地理空间 AI 架构解释。"
+    public_display: false
+    public_display_note_zh: "对外交付建议使用自制流程图，不直接搬运产品视觉。"
+    best_for: ["technology_selection", "data_architecture"]
+    risk_note_zh: "Google 产品图和界面截图需按品牌和产品条款处理。"

@@ -1,4 +1,173 @@
 version: "0.1"
 updated_at: "2026-07-01"
 download_policy: "link_only"
-images: []
+images:
+  - id: "IMG-001"
+    media_type: "image"
+    title: "NASA Harvest homepage and impact imagery"
+    source_url: "https://www.nasaharvest.org/"
+    source_name: "NASA Harvest"
+    license_or_usage_note: "NASA-related imagery may include NASA media or third-party materials; follow NASA media guidelines and page-level credits."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0011"]
+    scenario_ids: ["SCENARIO-004", "SCENARIO-009"]
+    description_zh: "NASA Harvest 官网用于展示卫星农业监测、粮食安全和区域项目的图片入口。"
+    suitable_use_zh: "报告封面候选、遥感农业章节配图线索。"
+    public_display: true
+    public_display_note_zh: "仅在确认具体图片来源和署名后公开展示；不得暗示 NASA 背书。"
+    best_for: ["consulting_report", "content_ip"]
+    risk_note_zh: "NASA 页面可能含第三方授权图片，使用前需逐张核对 credit。"
+
+  - id: "IMG-002"
+    media_type: "image"
+    title: "OpenET homepage and data explorer imagery"
+    source_url: "https://etdata.org/"
+    source_name: "OpenET"
+    license_or_usage_note: "OpenET site footer states all rights reserved; use links as references unless permission or terms allow reuse."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0016", "RES-0057"]
+    scenario_ids: ["SCENARIO-001"]
+    description_zh: "OpenET 官网展示 ET 数据、数据浏览器和水管理应用场景的图片。"
+    suitable_use_zh: "智能灌溉、水资源管理、ET 数据闭环章节的素材线索。"
+    public_display: false
+    public_display_note_zh: "默认不公开转载图片；可在报告中引用页面链接或重新绘制概念图。"
+    best_for: ["consulting_report", "roi_model"]
+    risk_note_zh: "不要下载站内图片直接放入商业交付物。"
+
+  - id: "IMG-003"
+    media_type: "image"
+    title: "FAO WaPOR portal map imagery"
+    source_url: "https://wapor.apps.fao.org/home/WAPOR_2/1"
+    source_name: "FAO WaPOR"
+    license_or_usage_note: "FAO portal content requires FAO terms and attribution review; keep link-only until reuse rights are confirmed."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0048"]
+    scenario_ids: ["SCENARIO-001"]
+    description_zh: "WaPOR 门户中的水生产力、蒸散发和区域地图界面。"
+    suitable_use_zh: "智能灌溉和区域水资源管理报告的官方图示线索。"
+    public_display: false
+    public_display_note_zh: "公开展示前核对 FAO 条款和具体地图图层许可。"
+    best_for: ["consulting_report", "technology_selection"]
+    risk_note_zh: "地图图层和底图可能来自不同来源，不能只按 FAO 总体署名处理。"
+
+  - id: "IMG-004"
+    media_type: "image"
+    title: "GEOGLAM Crop Monitor graphical products"
+    source_url: "https://www.cropmonitor.org/graphical-products"
+    source_name: "GEOGLAM Crop Monitor"
+    license_or_usage_note: "Licensed under CC BY 4.0 according to GEOGLAM Crop Monitor referencing guidelines."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0013", "RES-0063", "RES-0064"]
+    scenario_ids: ["SCENARIO-004", "SCENARIO-009"]
+    description_zh: "GEOGLAM Crop Monitor 的作物状态综合地图、生产加权饼图和早期预警图示。"
+    suitable_use_zh: "粮食安全月报、作物长势监测、全球作物条件解释。"
+    public_display: true
+    public_display_note_zh: "按 CC BY 4.0 标注作者、日期、标题、来源链接、许可和修改说明。"
+    best_for: ["monthly_intelligence", "consulting_report", "content_ip"]
+    risk_note_zh: "若裁剪或重绘，必须注明 changes made。"
+
+  - id: "IMG-005"
+    media_type: "image"
+    title: "Google Earth Engine platform imagery"
+    source_url: "https://earthengine.google.com/"
+    source_name: "Google Earth Engine"
+    license_or_usage_note: "Google site imagery and branding are governed by Google terms; keep link-only for commercial use."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0043"]
+    scenario_ids: ["SCENARIO-004", "SCENARIO-008"]
+    description_zh: "Earth Engine 官网展示卫星影像、数据目录、代码编辑器和地球观测分析能力。"
+    suitable_use_zh: "遥感原型、地理空间 AI、云端数据处理平台对比。"
+    public_display: false
+    public_display_note_zh: "公开交付优先用自制架构图替代官网截图。"
+    best_for: ["technology_selection", "data_architecture"]
+    risk_note_zh: "不要把 Google 产品截图当作可自由复用素材。"
+
+  - id: "IMG-006"
+    media_type: "image"
+    title: "Carbon Robotics LaserWeeder product images"
+    source_url: "https://carbonrobotics.com/laserweeder"
+    source_name: "Carbon Robotics"
+    license_or_usage_note: "Company official product imagery; all rights reserved unless explicit media-kit permission is provided."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0042"]
+    scenario_ids: ["SCENARIO-003", "SCENARIO-012"]
+    description_zh: "LaserWeeder 产品、田间作业和自主激光除草设备图片。"
+    suitable_use_zh: "农业机器人、精准除草、AI 连接物理执行器案例线索。"
+    public_display: false
+    public_display_note_zh: "公开展示需企业授权；内部研究可保留链接。"
+    best_for: ["benchmark_case", "content_ip"]
+    risk_note_zh: "产品性能数字和图片均为企业官方口径。"
+
+  - id: "IMG-007"
+    media_type: "image"
+    title: "Ecorobotix ARA620 product and setup images"
+    source_url: "https://ecorobotix.com/crop-care/ara-620-uhp-sprayer/"
+    source_name: "Ecorobotix"
+    license_or_usage_note: "Company official product imagery; reuse requires permission or media-kit terms."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0088"]
+    scenario_ids: ["SCENARIO-003", "SCENARIO-012"]
+    description_zh: "ARA620 喷洒机、摄像头、喷头、控制单元和植物级 AI 作业图示。"
+    suitable_use_zh: "植物级精准喷洒、AI 作业执行、变量施药案例线索。"
+    public_display: false
+    public_display_note_zh: "默认只引用链接；对外使用需核对 press/media 页面授权。"
+    best_for: ["benchmark_case", "roi_model", "content_ip"]
+    risk_note_zh: "页面含 ROI 和减量表述，引用时需保留适用条件。"
+
+  - id: "IMG-008"
+    media_type: "image"
+    title: "AGRIVI product screenshots and AI advisor imagery"
+    source_url: "https://www.agrivi.com/"
+    source_name: "AGRIVI"
+    license_or_usage_note: "Company official screenshots and marketing imagery; all rights reserved unless permission is granted."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0089"]
+    scenario_ids: ["SCENARIO-005", "SCENARIO-006"]
+    description_zh: "AGRIVI 官网中的 FMS、AI advisor、供应链、溯源和互操作产品图。"
+    suitable_use_zh: "农场管理平台、农业知识助手、农食价值链平台案例线索。"
+    public_display: false
+    public_display_note_zh: "商业报告可链接引用，不直接转载截图。"
+    best_for: ["benchmark_case", "data_architecture"]
+    risk_note_zh: "客户案例语句和产品图都属于企业材料。"
+
+  - id: "IMG-009"
+    media_type: "image"
+    title: "Cropin agriculture cloud product graphics"
+    source_url: "https://www.cropin.com/"
+    source_name: "Cropin"
+    license_or_usage_note: "Company official product and platform graphics; reuse requires permission."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0095"]
+    scenario_ids: ["SCENARIO-005", "SCENARIO-006"]
+    description_zh: "Cropin Cloud、Apps、Data Hub、Intelligence 和 GenAI 能力的官网图示。"
+    suitable_use_zh: "农业云、数据中台、GenAI 产品化方向案例线索。"
+    public_display: false
+    public_display_note_zh: "对外展示建议重画概念架构并引用来源链接。"
+    best_for: ["data_architecture", "technology_selection"]
+    risk_note_zh: "产品能力需以任务评测和客户场景验证。"
+
+  - id: "IMG-010"
+    media_type: "image"
+    title: "Netafim GrowSphere digital farming imagery"
+    source_url: "https://www.netafim.com/en/digital-farming/"
+    source_name: "Netafim"
+    license_or_usage_note: "Company official product imagery; reuse requires Netafim permission or explicit media terms."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0097"]
+    scenario_ids: ["SCENARIO-001"]
+    description_zh: "GrowSphere 精准灌溉、施肥、控制器和监测界面的图示线索。"
+    suitable_use_zh: "灌溉硬件企业数字化、智能灌溉操作系统案例。"
+    public_display: false
+    public_display_note_zh: "默认只存链接，不转载图片。"
+    best_for: ["benchmark_case", "roi_model"]
+    risk_note_zh: "灌溉基础设施差异会影响案例可迁移性。"

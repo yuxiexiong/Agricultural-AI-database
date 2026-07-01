@@ -122,3 +122,219 @@ cases:
     value_claim_zh: "把灾害、暴露度和脆弱性数据整合进地图化风险监测。"
     reusable_angle_zh: "农业 AI 风险平台不能只看天气和影像，还要叠加社会经济脆弱性。"
     caveats_zh: "面向公共救助和灾害风险管理，商业农业保险项目需重新设计指标。"
+
+  - id: "CASEDB-011"
+    name: "xarvio FIELD MANAGER"
+    name_zh: "xarvio FIELD MANAGER 数字作物管理平台"
+    resource_ids: ["RES-0083"]
+    case_type: "commercial_platform"
+    region: ["eu", "global"]
+    scenario_ids: ["SCENARIO-003", "SCENARIO-006", "SCENARIO-010"]
+    technologies: ["farm_management", "variable_rate_application", "satellite", "machinery_connectivity"]
+    value_claim_zh: "把地块监测、变量作业处方、农机终端连接和农艺建议放进同一平台。"
+    reusable_angle_zh: "农场数据底座的价值在于能把遥感、农艺模型和机器执行文件串成工作流。"
+    caveats_zh: "页面中的收益和减量数字属于企业试验/宣传口径，对外交付时应保留原始引用和适用条件。"
+
+  - id: "CASEDB-012"
+    name: "Taranis"
+    name_zh: "Taranis 叶片级作物智能"
+    resource_ids: ["RES-0084"]
+    case_type: "commercial_platform"
+    region: ["us", "global"]
+    scenario_ids: ["SCENARIO-002", "SCENARIO-004", "SCENARIO-005"]
+    technologies: ["computer_vision", "crop_scouting", "pest_disease_detection", "agronomy_workflow"]
+    value_claim_zh: "用高分辨率叶片级图像和 AI 洞察帮助农艺顾问发现病虫草害、营养问题和田间差异。"
+    reusable_angle_zh: "高质量图像识别要进入农艺顾问工作流，才能变成客户沟通和行动建议。"
+    caveats_zh: "病虫害识别不能直接替代专家诊断和处方，尤其不能自动输出用药建议。"
+
+  - id: "CASEDB-013"
+    name: "DroneDeploy Agriculture"
+    name_zh: "DroneDeploy 农业无人机测绘"
+    resource_ids: ["RES-0085"]
+    case_type: "commercial_platform"
+    region: ["global"]
+    scenario_ids: ["SCENARIO-004", "SCENARIO-008"]
+    technologies: ["drone_mapping", "ndvi", "stand_count", "field_documentation"]
+    value_claim_zh: "用无人机和近地影像生成作物健康、站苗计数、灾损记录和变量作业输入。"
+    reusable_angle_zh: "无人机数据适合补足卫星在空间分辨率、灾损取证和田间细节上的不足。"
+    caveats_zh: "无人机项目受飞手、法规、天气、硬件维护和单次采集成本影响。"
+
+  - id: "CASEDB-014"
+    name: "Corvian"
+    name_zh: "Corvian 农业企业数据与服务平台"
+    resource_ids: ["RES-0086"]
+    case_type: "commercial_platform"
+    region: ["north_america", "global"]
+    scenario_ids: ["SCENARIO-006", "SCENARIO-011"]
+    technologies: ["data_intelligence", "digital_agronomy", "insurance_workflow", "sustainability_compliance"]
+    value_claim_zh: "把农场数据、企业技术、保险/信贷、合规和数字农艺放在企业服务框架中。"
+    reusable_angle_zh: "农业数据平台可以从农场管理延伸到金融、保险、可持续和企业服务。"
+    caveats_zh: "金融和保险用途属于高风险场景，只能做辅助分析和流程工具，不能自动定价或自动拒保。"
+
+  - id: "CASEDB-015"
+    name: "EOSDA Crop Monitoring"
+    name_zh: "EOSDA 作物监测"
+    resource_ids: ["RES-0087"]
+    case_type: "commercial_platform"
+    region: ["global"]
+    scenario_ids: ["SCENARIO-004", "SCENARIO-008"]
+    technologies: ["satellite", "remote_sensing", "field_analytics", "crop_monitoring"]
+    value_claim_zh: "把卫星影像、植被指数、天气和地块分析打包为商业作物监测服务。"
+    reusable_angle_zh: "咨询中可以用它解释商业遥感服务如何降低自建遥感平台门槛。"
+    caveats_zh: "商业平台能力、价格、数据许可和可迁移性需按客户地区单独核验。"
+
+  - id: "CASEDB-016"
+    name: "Ecorobotix ARA"
+    name_zh: "Ecorobotix ARA 植物级 AI 精准喷洒"
+    resource_ids: ["RES-0088"]
+    case_type: "commercial_product"
+    region: ["eu", "global"]
+    scenario_ids: ["SCENARIO-003", "SCENARIO-012"]
+    technologies: ["computer_vision", "precision_spraying", "robotics", "rtk_gps"]
+    value_claim_zh: "通过摄像头、植物级 AI 和高精度喷头对作物或杂草进行定点喷洒。"
+    reusable_angle_zh: "精准喷洒的核心叙事是把 AI 识别结果直接连接到剂量、喷头和作业记录。"
+    caveats_zh: "企业减量和 ROI 数字需按作物、杂草压力、药剂、速度和地区条件验证。"
+
+  - id: "CASEDB-017"
+    name: "AGRIVI"
+    name_zh: "AGRIVI 数字农业价值链平台"
+    resource_ids: ["RES-0089"]
+    case_type: "commercial_platform"
+    region: ["eu", "global"]
+    scenario_ids: ["SCENARIO-005", "SCENARIO-006"]
+    technologies: ["farm_management", "traceability", "ai_advisor", "supply_chain"]
+    value_claim_zh: "覆盖农场管理、供应链、溯源、AI 农艺互动和 IoT/ERP 连接。"
+    reusable_angle_zh: "农业 SaaS 可从农场记录入口延伸到食品企业、投入品企业和公共部门。"
+    caveats_zh: "客户案例中的收益数字属于企业材料，不能作为独立验证结论。"
+
+  - id: "CASEDB-018"
+    name: "Agworld"
+    name_zh: "Agworld 农艺协作和农场管理"
+    resource_ids: ["RES-0090"]
+    case_type: "commercial_platform"
+    region: ["us", "global"]
+    scenario_ids: ["SCENARIO-006"]
+    technologies: ["farm_management", "planning", "compliance", "precision_agronomy"]
+    value_claim_zh: "围绕种植者、农艺师、服务商和承包商的计划、执行、记录和合规协作。"
+    reusable_angle_zh: "农场管理平台的粘性来自多人协作和服务网络，而不只是数据看板。"
+    caveats_zh: "平台规模数字和客户覆盖需以页面日期为准，引用时保持企业来源属性。"
+
+  - id: "CASEDB-019"
+    name: "Regrow"
+    name_zh: "Regrow 农业韧性和可持续平台"
+    resource_ids: ["RES-0091"]
+    case_type: "commercial_platform"
+    region: ["global"]
+    scenario_ids: ["SCENARIO-006", "SCENARIO-007"]
+    technologies: ["mrv", "climate_risk", "sustainability", "supply_chain"]
+    value_claim_zh: "把农业供应链、可持续项目、MRV 和气候韧性数据连接起来。"
+    reusable_angle_zh: "农业 AI 的企业价值可以从田间增产扩展到供应链可持续和风险披露。"
+    caveats_zh: "MRV 和减排/土壤碳相关结论必须符合项目方法学、审计和当地监管要求。"
+
+  - id: "CASEDB-020"
+    name: "Source.ag"
+    name_zh: "Source.ag 温室 AI 运营平台"
+    resource_ids: ["RES-0092"]
+    case_type: "commercial_platform"
+    region: ["eu", "global"]
+    scenario_ids: ["SCENARIO-001", "SCENARIO-004", "SCENARIO-006"]
+    technologies: ["greenhouse_ai", "yield_forecast", "irrigation_control", "operations_dashboard"]
+    value_claim_zh: "面向温室种植提供数据工作区、产量预测、栽培计划和灌溉控制。"
+    reusable_angle_zh: "受控环境农业是 AI 进入生产控制更清晰的场景，数据闭环比大田更短。"
+    caveats_zh: "温室案例不能直接迁移到露天大田，硬件、作物和运营流程差异很大。"
+
+  - id: "CASEDB-021"
+    name: "Semios"
+    name_zh: "Semios 特种作物传感与农艺服务"
+    resource_ids: ["RES-0093"]
+    case_type: "commercial_platform"
+    region: ["north_america", "global"]
+    scenario_ids: ["SCENARIO-001", "SCENARIO-002"]
+    technologies: ["iot", "pest_management", "irrigation", "climate_monitoring", "field_services"]
+    value_claim_zh: "为特种作物提供气候、虫害、病害、霜冻、灌溉、植物胁迫和田间服务。"
+    reusable_angle_zh: "高价值作物场景里，平台常以服务和运维绑定硬件与模型。"
+    caveats_zh: "特种作物的 ROI 与作物价值、虫害压力和服务密度高度相关，不能外推到所有作物。"
+
+  - id: "CASEDB-022"
+    name: "Arable"
+    name_zh: "Arable 水资源和作物智能"
+    resource_ids: ["RES-0094"]
+    case_type: "commercial_platform"
+    region: ["us", "global"]
+    scenario_ids: ["SCENARIO-001", "SCENARIO-004"]
+    technologies: ["field_sensing", "irrigation_optimization", "crop_intelligence", "api"]
+    value_claim_zh: "用田间观测、作物用水、灌溉数据和 API 帮助企业与种植者优化水资源管理。"
+    reusable_angle_zh: "水资源管理商业案例可以把企业水目标和农户灌溉决策连接起来。"
+    caveats_zh: "节水与产量效果需基于当地水价、作物、灌溉制度和执行情况验证。"
+
+  - id: "CASEDB-023"
+    name: "Cropin"
+    name_zh: "Cropin 智能农业云"
+    resource_ids: ["RES-0095"]
+    case_type: "commercial_platform"
+    region: ["global"]
+    scenario_ids: ["SCENARIO-005", "SCENARIO-006"]
+    technologies: ["agriculture_cloud", "data_hub", "genai", "traceability", "farm_apps"]
+    value_claim_zh: "把农业云、数据中台、农场应用和 AI/GenAI 能力整合成平台化产品。"
+    reusable_angle_zh: "农业大模型类产品如果要进入业务，通常需要数据中台和场景应用承接。"
+    caveats_zh: "AI/GenAI 能力边界必须通过任务评测和专家审核确认，不能只依据产品页描述。"
+
+  - id: "CASEDB-024"
+    name: "Phytech Manna"
+    name_zh: "Phytech / Manna 灌溉智能"
+    resource_ids: ["RES-0096"]
+    case_type: "commercial_platform"
+    region: ["global"]
+    scenario_ids: ["SCENARIO-001"]
+    technologies: ["satellite", "irrigation", "decision_support", "automation"]
+    value_claim_zh: "把卫星模型、田间工具、灌溉建议和自动化能力组合成灌溉管理产品。"
+    reusable_angle_zh: "商业智能灌溉的关键是从遥感/模型走到农户能执行的建议和控制。"
+    caveats_zh: "企业客户故事和视频素材可作案例，不可替代第三方实测。"
+
+  - id: "CASEDB-025"
+    name: "Netafim GrowSphere"
+    name_zh: "Netafim GrowSphere 精准灌溉操作系统"
+    resource_ids: ["RES-0097"]
+    case_type: "commercial_platform"
+    region: ["global"]
+    scenario_ids: ["SCENARIO-001"]
+    technologies: ["irrigation", "fertigation", "controllers", "monitoring"]
+    value_claim_zh: "把灌溉、施肥、控制器和监测组合为精准灌溉操作系统。"
+    reusable_angle_zh: "灌溉设备企业正在把硬件优势延伸成数字操作系统和数据服务。"
+    caveats_zh: "不同灌溉基础设施、作物和地块条件会显著影响实施成本和收益。"
+
+  - id: "CASEDB-026"
+    name: "FarmQA"
+    name_zh: "FarmQA 农艺侦察和建议平台"
+    resource_ids: ["RES-0098"]
+    case_type: "commercial_platform"
+    region: ["us", "global"]
+    scenario_ids: ["SCENARIO-002", "SCENARIO-005", "SCENARIO-006"]
+    technologies: ["scouting", "recommendations", "prescriptions", "field_reports", "satellite"]
+    value_claim_zh: "为农艺师提供侦察、建议、处方、土样、地图、影像和报告工具。"
+    reusable_angle_zh: "农技问答类产品应落在侦察、建议、报告和专家服务闭环里，而不是孤立聊天。"
+    caveats_zh: "农药/植保建议需要专家责任和当地合规审核。"
+
+  - id: "CASEDB-027"
+    name: "Sentera"
+    name_zh: "Sentera 高分辨率作物洞察"
+    resource_ids: ["RES-0099"]
+    case_type: "commercial_platform"
+    region: ["us", "global"]
+    scenario_ids: ["SCENARIO-004", "SCENARIO-008"]
+    technologies: ["high_resolution_imagery", "ai", "sensors", "precision_agriculture"]
+    value_claim_zh: "通过高分辨率影像、AI、数据科学和传感器提供植物级精准农业洞察。"
+    reusable_angle_zh: "作物监测可按分辨率分层：卫星看广域，无人机/传感器看细节。"
+    caveats_zh: "高分辨率采集成本、频次和数据处理链会影响可规模化程度。"
+
+  - id: "CASEDB-028"
+    name: "Traction Advanced Farm Management"
+    name_zh: "Traction 高级农场经营管理"
+    resource_ids: ["RES-0100"]
+    case_type: "commercial_platform"
+    region: ["us"]
+    scenario_ids: ["SCENARIO-006", "SCENARIO-014"]
+    technologies: ["farm_finance", "crop_planning", "work_orders", "reporting", "compliance"]
+    value_claim_zh: "整合 Conservis 和 Granular Business 能力，支持大型农场的计划、预算、工单、合同和经营报告。"
+    reusable_angle_zh: "农场管理平台越接近财务和经营控制，越适合承接 ROI 和基准评估。"
+    caveats_zh: "美国大型农场经营管理场景不能直接代表小农户或其他国家经营结构。"

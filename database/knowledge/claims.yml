@@ -145,3 +145,99 @@ claims:
     use_for: ["data_architecture", "technology_selection", "consulting_report"]
     content_angle_zh: "适合写数据底座观点：平台早期省掉元数据和接口标准，后期会在多品牌、多地块、多模型扩展时还债。"
     caution_zh: "标准只能降低技术摩擦，不能自动解决数据权属、商业激励和供应商封闭生态问题。"
+
+  - id: "CLAIM-019"
+    claim_zh: "商业化农场管理平台的核心壁垒通常不是单一 AI 功能，而是农户、农艺师、服务商和管理者共同使用的工作流网络。"
+    evidence_level: "moderate"
+    resource_ids: ["RES-0027", "RES-0028", "RES-0089", "RES-0090", "RES-0098", "RES-0100"]
+    use_for: ["consulting_report", "data_architecture", "benchmark_case"]
+    content_angle_zh: "适合写农业 SaaS：看板容易复制，协作、记录、合规和服务网络更难复制。"
+    caution_zh: "企业产品页只能证明其功能定位，不能直接证明客户留存或商业壁垒强度。"
+
+  - id: "CLAIM-020"
+    claim_zh: "精准喷洒 ROI 不能只看用药减少，还必须同时记录作业速度、漏检、误伤、杂草压力和作物安全。"
+    evidence_level: "moderate"
+    resource_ids: ["RES-0024", "RES-0042", "RES-0083", "RES-0088"]
+    use_for: ["roi_model", "benchmark_case", "risk_control"]
+    content_angle_zh: "适合提醒客户：少打药只是一个指标，真正验收要看减量后有没有牺牲防效和作物安全。"
+    caution_zh: "不同作物、药剂、田间条件和设备价格会改变 ROI，不应直接外推企业案例数字。"
+
+  - id: "CLAIM-021"
+    claim_zh: "智能灌溉的现金化空间取决于水价、水权、抽水能耗、作物价值和执行率；没有这些条件，节水未必等于可见利润。"
+    evidence_level: "strong"
+    resource_ids: ["RES-0016", "RES-0048", "RES-0057", "RES-0094", "RES-0096", "RES-0097"]
+    use_for: ["roi_model", "consulting_report", "technology_selection"]
+    content_angle_zh: "适合写灌溉 ROI：先判断水有没有价格和约束，再讨论模型能节多少水。"
+    caution_zh: "公共 ET 和商业灌溉工具都需要本地制度、作物和灌溉基础设施校准。"
+
+  - id: "CLAIM-022"
+    claim_zh: "作物监测应按尺度分层：卫星适合连续广域，无人机和高分影像适合田间细节、灾损取证和模型复核。"
+    evidence_level: "moderate"
+    resource_ids: ["RES-0014", "RES-0015", "RES-0085", "RES-0087", "RES-0099"]
+    use_for: ["technology_selection", "consulting_report", "content_ip"]
+    content_angle_zh: "适合解释为什么农业遥感项目不是卫星或无人机二选一，而是按决策尺度组合。"
+    caution_zh: "高分辨率通常伴随更高采集、处理和运维成本。"
+
+  - id: "CLAIM-023"
+    claim_zh: "农业知识助手的产品化入口往往不是独立聊天框，而是侦察、建议、处方草稿、报告和专家服务闭环。"
+    evidence_level: "moderate"
+    resource_ids: ["RES-0032", "RES-0045", "RES-0095", "RES-0098"]
+    use_for: ["content_ip", "technology_selection", "risk_control"]
+    content_angle_zh: "适合写农业大模型落地：问答能力要嵌入农艺服务流程，才有真实使用场景。"
+    caution_zh: "处方、诊断和金融建议不能由模型直接自动发布。"
+
+  - id: "CLAIM-024"
+    claim_zh: "受控环境农业比露天大田更容易形成 AI 闭环，因为传感密度高、环境变量可控、运营动作频繁且结果反馈更快。"
+    evidence_level: "moderate"
+    resource_ids: ["RES-0092"]
+    use_for: ["benchmark_case", "technology_selection", "content_ip"]
+    content_angle_zh: "适合用 Source.ag 类案例解释：为什么温室 AI 更接近运营控制，而不仅是监测。"
+    caution_zh: "温室场景的闭环优势不能直接迁移到露天大田。"
+
+  - id: "CLAIM-025"
+    claim_zh: "农业供应链可持续和 MRV 产品的可信度取决于活动数据、遥感证据、模型版本、方法学和审计链，而不是漂亮仪表盘。"
+    evidence_level: "moderate"
+    resource_ids: ["RES-0091", "RES-0089", "RES-0095"]
+    use_for: ["risk_control", "consulting_report", "content_ip"]
+    content_angle_zh: "适合写 ESG/碳农业反方观点：没有审计链的 MRV 只是展示层，不是可信声明。"
+    caution_zh: "减排、再生农业或土壤碳结论必须绑定项目方法学和第三方审核要求。"
+
+  - id: "CLAIM-026"
+    claim_zh: "气候风险 AI 的价值不在于预言单一结果，而在于把概率风险转化为采购、库存、供应商组合和替代产区预案。"
+    evidence_level: "moderate"
+    resource_ids: ["RES-0026", "RES-0091", "RES-0018", "RES-0046"]
+    use_for: ["market_context", "risk_control", "consulting_report"]
+    content_angle_zh: "适合写供应链韧性：不要问模型会不会百分百预测，而要问企业能否提前准备。"
+    caution_zh: "必须保留概率、情景和不确定性，不应给出确定性减产或涨价判断。"
+
+  - id: "CLAIM-027"
+    claim_zh: "农机互操作项目的第一验收目标应是关键字段可映射、作业记录可追溯、异常数据可发现，而不是一开始就追求全品牌全设备覆盖。"
+    evidence_level: "strong"
+    resource_ids: ["RES-0021", "RES-0022", "RES-0023", "RES-0041", "RES-0079", "RES-0080"]
+    use_for: ["data_architecture", "technology_selection", "risk_control"]
+    content_angle_zh: "适合做实施建议：先接一个品牌或一类作业，把数据质量规则跑通。"
+    caution_zh: "标准和接口只是基础，现场设备年限、供应商权限和用户习惯仍会影响落地。"
+
+  - id: "CLAIM-028"
+    claim_zh: "区域农业投资选址应把自然适宜性、现实种植格局、市场接入、基础设施和政策约束分层排序。"
+    evidence_level: "strong"
+    resource_ids: ["RES-0047", "RES-0049", "RES-0069", "RES-0070", "RES-0071", "RES-0072"]
+    use_for: ["consulting_report", "market_context", "technology_selection"]
+    content_angle_zh: "适合写选址方法论：哪里能种是一张图，哪里值得投是另一张图。"
+    caution_zh: "公开数据只能做初筛，最终投资建议必须补充地块尽调和本地访谈。"
+
+  - id: "CLAIM-029"
+    claim_zh: "农场管理平台的 ROI 更容易先从人工记录、报表、合规、计划和现金流管理切入，而不是直接承诺增产。"
+    evidence_level: "moderate"
+    resource_ids: ["RES-0051", "RES-0052", "RES-0090", "RES-0098", "RES-0100"]
+    use_for: ["roi_model", "consulting_report", "benchmark_case"]
+    content_angle_zh: "适合做销售话术：先让客户少漏记、少返工、少错报，再谈更复杂的 AI 优化。"
+    caution_zh: "经营效率收益需要客户自身流程数据支持，不能只凭产品功能推断。"
+
+  - id: "CLAIM-030"
+    claim_zh: "农业 AI 数据库进入可交付阶段后，最有价值的不是素材数量，而是每条素材能否被绑定到场景、ROI、风险和内容用途。"
+    evidence_level: "strong"
+    resource_ids: ["RES-0003", "RES-0008", "RES-0023", "RES-0056"]
+    use_for: ["consulting_report", "data_architecture", "content_ip"]
+    content_angle_zh: "适合解释资料库建设逻辑：从堆来源变成可调用知识，才支持自动写报告和文案。"
+    caution_zh: "结构化字段不能替代人工判断，关键结论仍要回到原始来源核验。"

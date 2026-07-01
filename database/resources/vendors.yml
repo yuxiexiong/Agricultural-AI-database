@@ -81,3 +81,147 @@ vendors:
     primary_scenarios: ["SCENARIO-006"]
     strengths_zh: "农场数据平台和田间决策支持入口明确。"
     watch_items_zh: "关注数据所有权、平台生态、区域可用性和与其他系统互操作。"
+
+  - id: "VENDOR-011"
+    name: "xarvio"
+    vendor_type: "digital_crop_management"
+    resource_ids: ["RES-0083"]
+    primary_scenarios: ["SCENARIO-003", "SCENARIO-006", "SCENARIO-010"]
+    strengths_zh: "把作物模型、变量作业地图、遥感、生育期和农机连接放在同一平台。"
+    watch_items_zh: "关注 John Deere/Agrirouter 等连接能力、作物覆盖、变量作业处方和企业试验口径。"
+
+  - id: "VENDOR-012"
+    name: "Taranis"
+    vendor_type: "crop_intelligence_computer_vision"
+    resource_ids: ["RES-0084"]
+    primary_scenarios: ["SCENARIO-002", "SCENARIO-004", "SCENARIO-005"]
+    strengths_zh: "叶片级图像和农艺顾问工作流结合紧密，适合作为高分辨率侦察案例。"
+    watch_items_zh: "关注 Ag Assistant、叶片级采集成本、病虫害识别边界和农艺顾问采纳情况。"
+
+  - id: "VENDOR-013"
+    name: "DroneDeploy"
+    vendor_type: "drone_mapping_platform"
+    resource_ids: ["RES-0085"]
+    primary_scenarios: ["SCENARIO-004", "SCENARIO-008"]
+    strengths_zh: "无人机航测、站苗计数、NDVI、灾损取证和 VRA 输出能力完整。"
+    watch_items_zh: "关注农业场景是否仍是核心战略、硬件生态、监管要求和与 FieldView/Esri 等平台集成。"
+
+  - id: "VENDOR-014"
+    name: "Corvian"
+    vendor_type: "enterprise_ag_data_services"
+    resource_ids: ["RES-0086"]
+    primary_scenarios: ["SCENARIO-006", "SCENARIO-011"]
+    strengths_zh: "覆盖企业技术、数据智能、保险/信贷、可持续合规和数字农艺。"
+    watch_items_zh: "关注 Farmers Edge 迁移后的产品定位、保险金融边界、数据许可和企业客户案例。"
+
+  - id: "VENDOR-015"
+    name: "EOS Data Analytics"
+    vendor_type: "commercial_remote_sensing_platform"
+    resource_ids: ["RES-0087"]
+    primary_scenarios: ["SCENARIO-004", "SCENARIO-008"]
+    strengths_zh: "商业遥感平台形态清晰，适合做公开遥感与商业服务对比。"
+    watch_items_zh: "关注影像来源、指标算法、平台价格、数据许可和客户区域覆盖。"
+
+  - id: "VENDOR-016"
+    name: "Ecorobotix"
+    vendor_type: "precision_spraying_robotics"
+    resource_ids: ["RES-0088"]
+    primary_scenarios: ["SCENARIO-003", "SCENARIO-012"]
+    strengths_zh: "植物级 AI 与高精度喷洒硬件结合，传播性和 ROI 叙事都强。"
+    watch_items_zh: "关注作物算法覆盖、药剂合规、实际速度、经销服务网络和企业效果数字边界。"
+
+  - id: "VENDOR-017"
+    name: "AGRIVI"
+    vendor_type: "farm_management_supply_chain_platform"
+    resource_ids: ["RES-0089"]
+    primary_scenarios: ["SCENARIO-005", "SCENARIO-006"]
+    strengths_zh: "覆盖农场、食品企业、投入品企业、溯源和 AI 农艺互动，价值链视角强。"
+    watch_items_zh: "关注 AI Engage 的安全边界、供应链客户案例、IoT/ERP 集成和公共部门项目。"
+
+  - id: "VENDOR-018"
+    name: "Agworld"
+    vendor_type: "agronomy_collaboration_platform"
+    resource_ids: ["RES-0090"]
+    primary_scenarios: ["SCENARIO-006"]
+    strengths_zh: "种植者、农艺师、服务商和承包商协作链条清楚。"
+    watch_items_zh: "关注 Semios Group 生态、合规记录、农艺服务商留存和跨平台数据集成。"
+
+  - id: "VENDOR-019"
+    name: "Regrow"
+    vendor_type: "agriculture_sustainability_mrv"
+    resource_ids: ["RES-0091"]
+    primary_scenarios: ["SCENARIO-006", "SCENARIO-007"]
+    strengths_zh: "将农业数据、供应链韧性、MRV 和可持续项目连接到企业客户需求。"
+    watch_items_zh: "关注土壤碳/MRV 方法学、审计合作、供应链客户和合规风险。"
+
+  - id: "VENDOR-020"
+    name: "Source.ag"
+    vendor_type: "greenhouse_ai_operations"
+    resource_ids: ["RES-0092"]
+    primary_scenarios: ["SCENARIO-001", "SCENARIO-004", "SCENARIO-006"]
+    strengths_zh: "温室数据、产量预测、栽培策略和灌溉控制闭环短。"
+    watch_items_zh: "关注作物扩展、温室硬件集成、自动控制边界和与人工种植经验的分工。"
+
+  - id: "VENDOR-021"
+    name: "Semios"
+    vendor_type: "specialty_crop_iot_services"
+    resource_ids: ["RES-0093"]
+    primary_scenarios: ["SCENARIO-001", "SCENARIO-002"]
+    strengths_zh: "在特种作物中把传感器、虫害、病害、灌溉和田间服务打包。"
+    watch_items_zh: "关注特种作物覆盖、服务密度、设备维护、病虫害模型和区域扩张。"
+
+  - id: "VENDOR-022"
+    name: "Arable"
+    vendor_type: "field_sensing_water_stewardship"
+    resource_ids: ["RES-0094"]
+    primary_scenarios: ["SCENARIO-001", "SCENARIO-004"]
+    strengths_zh: "田间传感、作物用水、灌溉数据和企业水资源目标连接明确。"
+    watch_items_zh: "关注传感器部署成本、API 生态、企业水项目方法和农户执行率。"
+
+  - id: "VENDOR-023"
+    name: "Cropin"
+    vendor_type: "agriculture_cloud_ai_platform"
+    resource_ids: ["RES-0095"]
+    primary_scenarios: ["SCENARIO-005", "SCENARIO-006"]
+    strengths_zh: "农业云、数据中台、应用和 GenAI 产品组合完整。"
+    watch_items_zh: "关注 GenAI 评测、安全边界、客户行业分布、数据接入复杂度和项目交付能力。"
+
+  - id: "VENDOR-024"
+    name: "Phytech / Manna"
+    vendor_type: "irrigation_intelligence"
+    resource_ids: ["RES-0096"]
+    primary_scenarios: ["SCENARIO-001"]
+    strengths_zh: "卫星模型、田间工具、灌溉建议和自动化之间的商业链条清楚。"
+    watch_items_zh: "关注 Phytech 与 Manna 整合、不同作物案例、自动化控制边界和区域水资源约束。"
+
+  - id: "VENDOR-025"
+    name: "Netafim"
+    vendor_type: "precision_irrigation_infrastructure"
+    resource_ids: ["RES-0097"]
+    primary_scenarios: ["SCENARIO-001"]
+    strengths_zh: "灌溉硬件、施肥、控制器和数字工具结合，是设备企业数字化样本。"
+    watch_items_zh: "关注 GrowSphere 模块、控制器生态、项目交付、作物方案和水资源项目合作。"
+
+  - id: "VENDOR-026"
+    name: "FarmQA"
+    vendor_type: "digital_agronomy_workflow"
+    resource_ids: ["RES-0098"]
+    primary_scenarios: ["SCENARIO-002", "SCENARIO-005", "SCENARIO-006"]
+    strengths_zh: "侦察、建议、处方、地图、影像和报告贴近农艺师日常工作。"
+    watch_items_zh: "关注用药建议合规、客户数据权属、Planet 影像集成和农艺服务商采用。"
+
+  - id: "VENDOR-027"
+    name: "Sentera"
+    vendor_type: "high_resolution_crop_imagery"
+    resource_ids: ["RES-0099"]
+    primary_scenarios: ["SCENARIO-004", "SCENARIO-008"]
+    strengths_zh: "高分辨率作物影像、传感器和 AI 洞察适合作为卫星之外的数据层。"
+    watch_items_zh: "关注传感器硬件、FieldAgent/SmartScript 产品线、采集频次和渠道合作。"
+
+  - id: "VENDOR-028"
+    name: "Traction Ag"
+    vendor_type: "farm_finance_operations_platform"
+    resource_ids: ["RES-0100"]
+    primary_scenarios: ["SCENARIO-006", "SCENARIO-014"]
+    strengths_zh: "将 Conservis 和 Granular Business 的高级经营管理能力并入农场财务/运营平台。"
+    watch_items_zh: "关注收购整合、美国大型农场适配、经营报表、工单和 ROI/预算功能。"

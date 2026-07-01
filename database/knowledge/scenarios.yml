@@ -8,7 +8,7 @@ scenarios:
     fit_for: ["consulting_report", "roi_model", "technology_selection"]
     data_needs: ["weather", "soil_moisture", "evapotranspiration", "crop_stage", "field_boundary"]
     ai_methods: ["time_series_forecasting", "water_stress_detection", "rule_model_hybrid"]
-    resource_ids: ["RES-0016", "RES-0017", "RES-0018", "RES-0025", "RES-0048", "RES-0057", "RES-0058", "RES-0059", "RES-0060", "RES-0061", "RES-0062"]
+    resource_ids: ["RES-0016", "RES-0017", "RES-0018", "RES-0025", "RES-0048", "RES-0057", "RES-0058", "RES-0059", "RES-0060", "RES-0061", "RES-0062", "RES-0092", "RES-0093", "RES-0094", "RES-0096", "RES-0097"]
     business_value_zh: "节水、稳产、减少过度灌溉、支持水权和合规管理。"
     implementation_risks_zh: "传感器布点不足、农户不执行建议、本地水价和水权制度无法支撑 ROI。"
     first_pilot_zh: "选择 1-2 种高价值作物和 3-5 个代表性地块，先验证 ET + 土壤湿度 + 农艺规则的建议闭环。"
@@ -19,7 +19,7 @@ scenarios:
     fit_for: ["consulting_report", "content_ip", "risk_control"]
     data_needs: ["field_images", "weather", "crop_stage", "pest_history", "expert_labels"]
     ai_methods: ["computer_vision", "spatiotemporal_risk_model", "human_in_the_loop"]
-    resource_ids: ["RES-0032", "RES-0033", "RES-0045"]
+    resource_ids: ["RES-0032", "RES-0033", "RES-0045", "RES-0084", "RES-0093", "RES-0098"]
     business_value_zh: "提前预警、减少误施药、提升农技服务覆盖效率。"
     implementation_risks_zh: "误诊风险高，不能直接替代植保专家；农药建议涉及合规和安全边界。"
     first_pilot_zh: "先做识别和风险分级，不直接给处方；输出必须包含置信度和专家复核入口。"
@@ -30,7 +30,7 @@ scenarios:
     fit_for: ["benchmark_case", "roi_model", "content_ip"]
     data_needs: ["machine_vision", "field_map", "weed_pressure", "equipment_telemetry", "input_cost"]
     ai_methods: ["real_time_detection", "edge_inference", "actuation_control"]
-    resource_ids: ["RES-0024", "RES-0042", "RES-0021", "RES-0022"]
+    resource_ids: ["RES-0024", "RES-0042", "RES-0021", "RES-0022", "RES-0083", "RES-0088"]
     business_value_zh: "投入品节省、环境压力降低、作业自动化，是 ROI 较容易表达的场景。"
     implementation_risks_zh: "设备成本、田间光照/尘土/速度干扰、作物品类适配和售后维护。"
     first_pilot_zh: "以高价值作物或杂草压力明显的地块验证，记录用药量、漏检率、误伤率和作业效率。"
@@ -41,7 +41,7 @@ scenarios:
     fit_for: ["consulting_report", "technology_selection", "monthly_intelligence"]
     data_needs: ["satellite_imagery", "weather", "soil", "crop_labels", "yield_history"]
     ai_methods: ["remote_sensing_indices", "spatiotemporal_modeling", "ensemble_forecasting"]
-    resource_ids: ["RES-0011", "RES-0013", "RES-0014", "RES-0015", "RES-0034", "RES-0063", "RES-0064", "RES-0065", "RES-0066", "RES-0067", "RES-0077"]
+    resource_ids: ["RES-0011", "RES-0013", "RES-0014", "RES-0015", "RES-0034", "RES-0063", "RES-0064", "RES-0065", "RES-0066", "RES-0067", "RES-0077", "RES-0084", "RES-0085", "RES-0087", "RES-0092", "RES-0094", "RES-0099"]
     business_value_zh: "支持生产调度、保险定价、采购计划和区域粮食安全判断。"
     implementation_risks_zh: "历史产量标签口径不一致、地块边界缺失、模型跨区泛化不稳定。"
     first_pilot_zh: "先做县/区域级预测，再逐步下钻到地块级；用历史年份做回测。"
@@ -52,7 +52,7 @@ scenarios:
     fit_for: ["content_ip", "technology_selection", "risk_control"]
     data_needs: ["expert_knowledge", "localized_guidelines", "crop_calendar", "policy_docs", "faq_logs"]
     ai_methods: ["retrieval_augmented_generation", "knowledge_graph", "evaluation_benchmark"]
-    resource_ids: ["RES-0032", "RES-0033", "RES-0044", "RES-0045"]
+    resource_ids: ["RES-0032", "RES-0033", "RES-0044", "RES-0045", "RES-0089", "RES-0095", "RES-0098"]
     business_value_zh: "降低农技服务成本，提升内容生产效率和基层服务覆盖。"
     implementation_risks_zh: "幻觉、过度确定、地区/作物不适配，尤其不能直接输出高风险处方。"
     first_pilot_zh: "限定作物、地区和问题类型；先做资料检索 + 专家审核，而不是全自动农艺顾问。"
@@ -63,7 +63,7 @@ scenarios:
     fit_for: ["consulting_report", "data_architecture", "technology_selection"]
     data_needs: ["farm_records", "field_boundary", "machinery_data", "iot", "satellite", "inventory"]
     ai_methods: ["data_integration", "recommendation", "anomaly_detection", "workflow_automation"]
-    resource_ids: ["RES-0023", "RES-0027", "RES-0028", "RES-0041", "RES-0068", "RES-0079", "RES-0080", "RES-0081", "RES-0082"]
+    resource_ids: ["RES-0023", "RES-0027", "RES-0028", "RES-0041", "RES-0068", "RES-0079", "RES-0080", "RES-0081", "RES-0082", "RES-0083", "RES-0086", "RES-0089", "RES-0090", "RES-0091", "RES-0092", "RES-0095", "RES-0098", "RES-0100"]
     business_value_zh: "把分散数据汇总为可运营资产，为后续模型、报告、合规和服务闭环打基础。"
     implementation_risks_zh: "数据录入负担、标准不统一、跨供应商接口不稳定、农户缺少持续使用动力。"
     first_pilot_zh: "优先打通地块、作物、农事记录和遥感四张基础表，再接入复杂模型。"
@@ -74,7 +74,7 @@ scenarios:
     fit_for: ["market_context", "risk_control", "content_ip"]
     data_needs: ["climate_forecast", "supplier_location", "crop_calendar", "historical_loss", "market_price"]
     ai_methods: ["probabilistic_forecasting", "scenario_analysis", "supply_chain_risk_scoring"]
-    resource_ids: ["RES-0026", "RES-0018", "RES-0019"]
+    resource_ids: ["RES-0026", "RES-0018", "RES-0019", "RES-0091"]
     business_value_zh: "帮助食品农业企业做采购、选址、库存、品种和供应商组合决策。"
     implementation_risks_zh: "气候模型不确定性高，不能把概率风险包装成确定性结论。"
     first_pilot_zh: "选择 1 条供应链和 2-3 个关键产区，做风险地图和预案，而不是直接优化全球网络。"
@@ -85,7 +85,7 @@ scenarios:
     fit_for: ["technology_selection", "data_architecture"]
     data_needs: ["satellite_catalog", "cloud_compute", "training_labels", "geospatial_pipeline"]
     ai_methods: ["geospatial_feature_engineering", "segmentation", "classification", "time_series_modeling"]
-    resource_ids: ["RES-0040", "RES-0043", "RES-0014", "RES-0015"]
+    resource_ids: ["RES-0040", "RES-0043", "RES-0014", "RES-0015", "RES-0085", "RES-0087", "RES-0099"]
     business_value_zh: "快速验证地理空间信号，降低前期自建遥感平台的不确定性。"
     implementation_risks_zh: "原型平台的便利性可能掩盖生产化的成本、权限、数据治理和运维问题。"
     first_pilot_zh: "用公开数据和小范围历史标签跑通端到端流程，再评估是否迁移到自有平台。"
@@ -107,7 +107,7 @@ scenarios:
     fit_for: ["data_architecture", "technology_selection", "risk_control"]
     data_needs: ["machine_logs", "task_data", "field_boundary", "isobus", "farm_management_system"]
     ai_methods: ["data_mapping", "quality_rules", "operation_analytics"]
-    resource_ids: ["RES-0021", "RES-0022", "RES-0023", "RES-0041", "RES-0079", "RES-0080"]
+    resource_ids: ["RES-0021", "RES-0022", "RES-0023", "RES-0041", "RES-0079", "RES-0080", "RES-0083"]
     business_value_zh: "把农机作业从黑箱变成可分析、可追溯、可优化的数据流。"
     implementation_risks_zh: "跨品牌兼容、字段口径、数据所有权和设备年限是主要阻力。"
     first_pilot_zh: "先接入一个品牌或一类作业，建立字段映射和质量检查，再扩到多品牌。"
@@ -118,7 +118,7 @@ scenarios:
     fit_for: ["consulting_report", "roi_model", "risk_control"]
     data_needs: ["weather_history", "yield_history", "remote_sensing", "farm_profile", "loss_records"]
     ai_methods: ["risk_scoring", "index_insurance_model", "fraud_detection"]
-    resource_ids: ["RES-0018", "RES-0016", "RES-0046"]
+    resource_ids: ["RES-0018", "RES-0016", "RES-0046", "RES-0086"]
     business_value_zh: "用客观数据降低核保、查勘和风控成本，扩大小农户金融服务覆盖。"
     implementation_risks_zh: "金融建议和保险定价属于高风险场景，需要合规、解释性和人工审核。"
     first_pilot_zh: "先做风险分层和查勘辅助，不直接自动拒保或自动定价。"
@@ -129,7 +129,7 @@ scenarios:
     fit_for: ["content_ip", "benchmark_case", "technology_selection"]
     data_needs: ["vision_stream", "navigation", "field_conditions", "task_map", "safety_logs"]
     ai_methods: ["real_time_vision", "path_planning", "edge_ai", "actuation_control"]
-    resource_ids: ["RES-0042", "RES-0031"]
+    resource_ids: ["RES-0042", "RES-0031", "RES-0088"]
     business_value_zh: "应对劳动力短缺、提升作业一致性，并把 AI 从建议层推进到执行层。"
     implementation_risks_zh: "安全、维护、地形适应、设备成本和售后体系比模型本身更关键。"
     first_pilot_zh: "优先选择边界清楚、作业重复、经济价值高的任务，比如除草、巡检或采收辅助。"
@@ -151,7 +151,7 @@ scenarios:
     fit_for: ["roi_model", "consulting_report", "market_context"]
     data_needs: ["farm_structure", "farm_finance", "production_practices", "resource_use", "operator_characteristics"]
     ai_methods: ["benchmarking", "segmentation", "cost_benefit_model", "adoption_readiness_scoring"]
-    resource_ids: ["RES-0051", "RES-0052", "RES-0036", "RES-0070", "RES-0073", "RES-0074", "RES-0075", "RES-0076", "RES-0077", "RES-0078"]
+    resource_ids: ["RES-0051", "RES-0052", "RES-0036", "RES-0070", "RES-0073", "RES-0074", "RES-0075", "RES-0076", "RES-0077", "RES-0078", "RES-0100"]
     business_value_zh: "用权威统计和经营数据建立客户画像、ROI 假设和市场进入基准，减少只靠供应商宣传估算价值。"
     implementation_risks_zh: "美国基准数据不能直接迁移到其他国家；用于客户估算时需标注地域和口径限制。"
     first_pilot_zh: "先针对美国一个作物或区域，建立农场规模、资源使用、成本收益和技术采纳假设表。"

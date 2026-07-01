@@ -1,0 +1,111 @@
+version: "0.1"
+updated_at: "2026-07-01"
+
+content_angles:
+  - id: "ANGLE-001"
+    title_zh: "农业 AI 不是先买模型，而是先让数据流动起来"
+    format: "公众号/报告开场"
+    scenario_ids: ["SCENARIO-006", "SCENARIO-010"]
+    resource_ids: ["RES-0023", "RES-0079", "RES-0080", "RES-0095"]
+    hook_zh: "很多农业 AI 项目卡住，不是因为模型不够强，而是地块、农机、农事记录和遥感数据没有打通。"
+    core_points_zh: ["先建地块和农事记录底座", "再接农机、遥感和 IoT", "最后让模型进入真实工作流"]
+    avoid_zh: "不要把数据底座包装成一次性软件采购；它更像长期治理工程。"
+
+  - id: "ANGLE-002"
+    title_zh: "节水 ROI 为什么不能只看传感器"
+    format: "短视频/咨询页"
+    scenario_ids: ["SCENARIO-001"]
+    resource_ids: ["RES-0016", "RES-0048", "RES-0094", "RES-0096", "RES-0097"]
+    hook_zh: "智能灌溉真正的闭环，是 ET、天气、作物阶段、土壤和农户执行，而不是多埋几个探头。"
+    core_points_zh: ["水价和水权决定现金化空间", "作物价值影响收益上限", "执行率决定模型建议能否变成结果"]
+    avoid_zh: "不要承诺通用节水比例；必须回到地区、作物和灌溉制度。"
+
+  - id: "ANGLE-003"
+    title_zh: "从看见杂草到控制喷头，精准农业的 ROI 才变清楚"
+    format: "案例拆解"
+    scenario_ids: ["SCENARIO-003", "SCENARIO-012"]
+    resource_ids: ["RES-0024", "RES-0042", "RES-0088"]
+    hook_zh: "最容易讲清楚的农业 AI，不是生成一句建议，而是识别之后直接控制一次作业。"
+    core_points_zh: ["视觉识别连接执行器", "投入品节省更容易量化", "误伤和漏检必须同时记录"]
+    avoid_zh: "不要只讲减少用药，也要讲作物安全、速度和维护。"
+
+  - id: "ANGLE-004"
+    title_zh: "卫星看广域，无人机和高分影像看细节"
+    format: "科普图文"
+    scenario_ids: ["SCENARIO-004", "SCENARIO-008"]
+    resource_ids: ["RES-0014", "RES-0015", "RES-0085", "RES-0099"]
+    hook_zh: "作物监测不是二选一：卫星适合连续广域，无人机和高分影像适合细节、灾损和抽样复核。"
+    core_points_zh: ["按尺度设计数据层", "按决策频率选择采集方式", "用地面样本校验模型"]
+    avoid_zh: "不要暗示高分辨率永远更好；成本和频次同样重要。"
+
+  - id: "ANGLE-005"
+    title_zh: "产量预测不是看一张图，而是做一条时间线"
+    format: "报告章节/短视频"
+    scenario_ids: ["SCENARIO-004"]
+    resource_ids: ["RES-0011", "RES-0063", "RES-0064", "RES-0065", "RES-0077"]
+    hook_zh: "真正可交付的产量预测，要把遥感时间序列、作物历、天气和官方统计口径连起来。"
+    core_points_zh: ["单张影像信息不足", "生育阶段决定解释方式", "必须用历史年份回测"]
+    avoid_zh: "不要把区域级统计标签当成地块级真值。"
+
+  - id: "ANGLE-006"
+    title_zh: "农业 SaaS 的粘性来自协作网络，不只是看板"
+    format: "企业案例分析"
+    scenario_ids: ["SCENARIO-006"]
+    resource_ids: ["RES-0090", "RES-0098", "RES-0100", "RES-0027"]
+    hook_zh: "农场管理平台最难替代的地方，是种植者、农艺师、服务商和管理者都在同一套记录里工作。"
+    core_points_zh: ["多人协作比单人看板更有粘性", "记录和合规是低估的价值", "财务和经营数据会提升 ROI 可见度"]
+    avoid_zh: "不要把平台价值只归因于 AI 功能。"
+
+  - id: "ANGLE-007"
+    title_zh: "农业大模型要落地，必须离农事工作流更近"
+    format: "观点文章"
+    scenario_ids: ["SCENARIO-005", "SCENARIO-006"]
+    resource_ids: ["RES-0032", "RES-0045", "RES-0095", "RES-0098"]
+    hook_zh: "农业大模型如果只会回答问题，很难进入生产；它需要来源、任务边界和专家复核。"
+    core_points_zh: ["RAG 和词表降低幻觉", "高风险建议需要专家审核", "问答要嵌入侦察、报告和服务流程"]
+    avoid_zh: "不要把通用聊天能力包装成自动农艺师。"
+
+  - id: "ANGLE-008"
+    title_zh: "哪里能种和哪里值得投，是两道题"
+    format: "咨询报告标题"
+    scenario_ids: ["SCENARIO-013"]
+    resource_ids: ["RES-0047", "RES-0049", "RES-0069", "RES-0071", "RES-0072"]
+    hook_zh: "作物适宜性只回答自然条件，农业投资还要看市场、物流、政策、水资源和现实生产格局。"
+    core_points_zh: ["适宜性是第一层筛选", "市场接入改变投资排序", "公开数据之后还要做地面尽调"]
+    avoid_zh: "不要把机会地图当成最终投资建议。"
+
+  - id: "ANGLE-009"
+    title_zh: "农业 ROI 先问钱花在哪，再问 AI 能省什么"
+    format: "ROI 模型说明"
+    scenario_ids: ["SCENARIO-014"]
+    resource_ids: ["RES-0051", "RES-0052", "RES-0073", "RES-0074", "RES-0100"]
+    hook_zh: "不懂农场成本结构，就没法判断 AI 的收益来自投入品、人工、风险，还是经营效率。"
+    core_points_zh: ["先建成本和收入基准", "再拆技术改善假设", "最后做敏感性分析"]
+    avoid_zh: "不要直接套供应商案例中的收益比例。"
+
+  - id: "ANGLE-010"
+    title_zh: "气候风险 AI 的价值，不是预言天气，而是提前准备预案"
+    format: "供应链韧性内容"
+    scenario_ids: ["SCENARIO-007", "SCENARIO-009"]
+    resource_ids: ["RES-0026", "RES-0091", "RES-0018", "RES-0046"]
+    hook_zh: "农业气候模型最适合帮助企业做采购、库存和替代产区预案，而不是给出确定性预言。"
+    core_points_zh: ["用概率而非确定语气", "把风险映射到供应商和作物历", "设计触发条件和预案"]
+    avoid_zh: "不要说某地一定减产或一定涨价。"
+
+  - id: "ANGLE-011"
+    title_zh: "温室 AI 为什么比大田更容易闭环"
+    format: "案例解读"
+    scenario_ids: ["SCENARIO-001", "SCENARIO-004", "SCENARIO-006"]
+    resource_ids: ["RES-0092"]
+    hook_zh: "受控环境农业的数据密度高、反馈周期短，所以产量预测和灌溉控制更容易接近运营决策。"
+    core_points_zh: ["环境变量更可控", "运营动作更频繁", "预测结果更容易验证"]
+    avoid_zh: "不要把温室经验直接外推到露天大田。"
+
+  - id: "ANGLE-012"
+    title_zh: "MRV 不是一个漂亮仪表盘，而是一条审计链"
+    format: "风险提示/企业 ESG 内容"
+    scenario_ids: ["SCENARIO-007", "SCENARIO-006"]
+    resource_ids: ["RES-0091", "RES-0089", "RES-0095"]
+    hook_zh: "农业可持续和碳相关产品最怕只有 dashboard，没有方法学、证据和审计记录。"
+    core_points_zh: ["活动数据要可追溯", "遥感和模型要有版本", "对外声明要绑定方法学和第三方审核"]
+    avoid_zh: "不要把平台监测能力等同于已验证减排结果。"

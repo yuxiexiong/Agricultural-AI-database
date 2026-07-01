@@ -1,4 +1,207 @@
 version: "0.1"
 updated_at: "2026-07-01"
 download_policy: "link_only"
-documents: []
+documents:
+  - id: "DOC-001"
+    media_type: "document"
+    title: "2022 Census of Agriculture publications"
+    source_url: "https://www.nass.usda.gov/Publications/AgCensus/2022/index.php"
+    source_name: "USDA NASS"
+    license_or_usage_note: "U.S. federal statistical publication; cite USDA NASS and report title/date."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0051"]
+    scenario_ids: ["SCENARIO-014"]
+    description_zh: "2022 美国农业普查完整报告、表格、州县数据、专题报告和在线资源入口。"
+    suitable_use_zh: "农场结构、经营基准、美国市场进入和 ROI 背景。"
+    public_display: true
+    public_display_note_zh: "可公开引用链接和统计表，需标明 USDA NASS 来源和地域口径。"
+    best_for: ["roi_model", "market_context", "consulting_report"]
+    risk_note_zh: "美国统计不能直接代表其他国家。"
+
+  - id: "DOC-002"
+    media_type: "document"
+    title: "ARMS Farm Financial and Crop Production Practices"
+    source_url: "https://www.ers.usda.gov/data-products/arms-farm-financial-and-crop-production-practices"
+    source_name: "USDA ERS"
+    license_or_usage_note: "Official USDA ERS data product page; cite USDA ERS and access date."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0052"]
+    scenario_ids: ["SCENARIO-014"]
+    description_zh: "ARMS 农场财务、资源使用和生产实践数据产品入口。"
+    suitable_use_zh: "ROI 成本结构、农场财务画像、经营基准。"
+    public_display: true
+    public_display_note_zh: "可公开链接引用；具体图表需按 USDA/ERS 要求署名。"
+    best_for: ["roi_model", "consulting_report"]
+    risk_note_zh: "调查口径和年份变化会影响比较。"
+
+  - id: "DOC-003"
+    media_type: "document"
+    title: "FAO GIEWS Crop Prospects and Food Situation"
+    source_url: "https://www.fao.org/giews/reports/crop-prospects/en/"
+    source_name: "FAO GIEWS"
+    license_or_usage_note: "FAO report page; follow FAO terms, report citation and language/version notes."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0050"]
+    scenario_ids: ["SCENARIO-009"]
+    description_zh: "FAO GIEWS 关于作物前景、粮食形势和需外部粮食援助国家的报告入口。"
+    suitable_use_zh: "粮食安全月报、灾害风险监测、政策背景。"
+    public_display: true
+    public_display_note_zh: "公开引用时保留报告号、发布时间、语言版本和 FAO 链接。"
+    best_for: ["monthly_intelligence", "consulting_report"]
+    risk_note_zh: "国家/区域风险不能直接推断单个农场损失。"
+
+  - id: "DOC-004"
+    media_type: "document"
+    title: "GEOGLAM Crop Monitor reports"
+    source_url: "https://www.cropmonitor.org/crop-monitor-for-amis"
+    source_name: "GEOGLAM Crop Monitor"
+    license_or_usage_note: "Licensed under CC BY 4.0 according to GEOGLAM Crop Monitor referencing guidelines."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0013", "RES-0063", "RES-0064"]
+    scenario_ids: ["SCENARIO-004", "SCENARIO-009"]
+    description_zh: "Crop Monitor for AMIS 和 Early Warning 的月度报告入口。"
+    suitable_use_zh: "作物长势、产量前景、粮食安全和早期预警材料。"
+    public_display: true
+    public_display_note_zh: "按 CC BY 4.0 引用报告标题、日期、URL、许可和修改说明。"
+    best_for: ["monthly_intelligence", "consulting_report"]
+    risk_note_zh: "图表和地图若改绘需明确改动。"
+
+  - id: "DOC-005"
+    media_type: "document"
+    title: "NASA Images and Media Usage Guidelines"
+    source_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    source_name: "NASA"
+    license_or_usage_note: "NASA media generally not subject to U.S. copyright but must follow NASA usage, attribution and non-endorsement rules."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0011"]
+    scenario_ids: ["SCENARIO-004", "SCENARIO-009"]
+    description_zh: "NASA 图片、视频和媒体使用规则，适合约束 NASA/NASA Harvest 图像使用。"
+    suitable_use_zh: "多模态版权边界、NASA 素材引用规则。"
+    public_display: true
+    public_display_note_zh: "可作为规则链接；具体图片仍需逐张确认 credit 和第三方版权。"
+    best_for: ["risk_control", "content_ip"]
+    risk_note_zh: "不得暗示 NASA 对商业产品或 AI 输出背书。"
+
+  - id: "DOC-006"
+    media_type: "document"
+    title: "WorldClim data documentation"
+    source_url: "https://worldclim.org/data/index.html"
+    source_name: "WorldClim"
+    license_or_usage_note: "WorldClim documentation states copyright; use data and figures according to WorldClim terms and citation guidance."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0071"]
+    scenario_ids: ["SCENARIO-013"]
+    description_zh: "WorldClim 全球气候和天气数据说明页面。"
+    suitable_use_zh: "作物适宜性、气候背景层、投资选址方法说明。"
+    public_display: false
+    public_display_note_zh: "公开图示建议自制，并在数据来源中引用 WorldClim。"
+    best_for: ["technology_selection", "consulting_report"]
+    risk_note_zh: "研究用途和商业用途需核对条款。"
+
+  - id: "DOC-007"
+    media_type: "document"
+    title: "ERA5 hourly data on single levels documentation"
+    source_url: "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels"
+    source_name: "Copernicus Climate Data Store"
+    license_or_usage_note: "ERA5 dataset page states CC-BY licence; cite Copernicus/ECMWF and DOI where applicable."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0018"]
+    scenario_ids: ["SCENARIO-004", "SCENARIO-007", "SCENARIO-013"]
+    description_zh: "ERA5 再分析数据集文档、许可、变量、时空分辨率和引用信息。"
+    suitable_use_zh: "气候风险、产量预测、适宜性选址的数据说明。"
+    public_display: true
+    public_display_note_zh: "按 CC-BY 和 DOI/数据集引用要求署名。"
+    best_for: ["technology_selection", "risk_control"]
+    risk_note_zh: "ERA5 是再分析数据，不能替代地面站实测。"
+
+  - id: "DOC-008"
+    media_type: "document"
+    title: "FAO AQUASTAT resources"
+    source_url: "https://www.fao.org/aquastat/en/"
+    source_name: "FAO AQUASTAT"
+    license_or_usage_note: "FAO AQUASTAT official page; follow FAO terms, dataset citation and country/profile notes."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0057"]
+    scenario_ids: ["SCENARIO-001", "SCENARIO-013"]
+    description_zh: "FAO AQUASTAT 水与农业数据库、地图、国家概况和数据分析入口。"
+    suitable_use_zh: "水资源管理、灌溉政策、国家水资源背景。"
+    public_display: true
+    public_display_note_zh: "公开引用时保留 FAO/AQUASTAT 名称、链接和访问日期。"
+    best_for: ["consulting_report", "market_context"]
+    risk_note_zh: "国家级水资源统计不能直接替代地块级灌溉决策。"
+
+  - id: "DOC-009"
+    media_type: "document"
+    title: "AGRIVI eBooks and brochures"
+    source_url: "https://www.agrivi.com/ebooks/"
+    source_name: "AGRIVI"
+    license_or_usage_note: "Company gated or downloadable resources; copyright remains with AGRIVI."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0089"]
+    scenario_ids: ["SCENARIO-005", "SCENARIO-006", "SCENARIO-014"]
+    description_zh: "AGRIVI 关于 AI agent、FMS 采购、绿色声明、CSRD、产品召回等电子书和手册入口。"
+    suitable_use_zh: "商业案例、话术参考、农场管理平台和 AI advisor 内容线索。"
+    public_display: false
+    public_display_note_zh: "不要上传或转发企业 PDF，本库只保留入口链接。"
+    best_for: ["content_ip", "benchmark_case"]
+    risk_note_zh: "企业白皮书不等于独立证据。"
+
+  - id: "DOC-010"
+    media_type: "document"
+    title: "Ecorobotix ARA620 brochure entry"
+    source_url: "https://ecorobotix.com/crop-care/ara-620-uhp-sprayer/"
+    source_name: "Ecorobotix"
+    license_or_usage_note: "Company brochure/download link on product page; copyright remains with Ecorobotix."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0088"]
+    scenario_ids: ["SCENARIO-003", "SCENARIO-012"]
+    description_zh: "ARA620 产品页上的 brochure 下载入口和技术说明。"
+    suitable_use_zh: "精准喷洒设备规格、ROI 假设和案例拆解线索。"
+    public_display: false
+    public_display_note_zh: "不下载和分发 brochure，需链接引用或申请授权。"
+    best_for: ["benchmark_case", "roi_model"]
+    risk_note_zh: "企业规格和减量数字需按作物和地区验证。"
+
+  - id: "DOC-011"
+    media_type: "document"
+    title: "FAO/IIASA GAEZ data portal"
+    source_url: "https://gaez.fao.org/"
+    source_name: "FAO/IIASA GAEZ"
+    license_or_usage_note: "Official GAEZ portal; follow FAO/IIASA terms, dataset citation and layer-specific conditions."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0049"]
+    scenario_ids: ["SCENARIO-013"]
+    description_zh: "全球农业生态区数据门户，用于作物适宜性、潜在产量和情景分析。"
+    suitable_use_zh: "农业投资选址、作物适宜性和机会地图方法说明。"
+    public_display: false
+    public_display_note_zh: "公开图表建议自制并引用 GAEZ 来源，不直接搬运门户截图。"
+    best_for: ["consulting_report", "technology_selection"]
+    risk_note_zh: "中宏观适宜性不能替代地块尽调。"
+
+  - id: "DOC-012"
+    media_type: "document"
+    title: "GEOGLAM Crop Monitor referencing guidelines"
+    source_url: "https://www.cropmonitor.org/referencing-guidelines"
+    source_name: "GEOGLAM Crop Monitor"
+    license_or_usage_note: "Referencing page states reports, visualizations, datasets and website content are licensed under CC BY 4.0."
+    local_downloaded: false
+    local_path: ""
+    related_resource_ids: ["RES-0013", "RES-0063", "RES-0064"]
+    scenario_ids: ["SCENARIO-004", "SCENARIO-009"]
+    description_zh: "GEOGLAM Crop Monitor 对报告、图形、数据集和网页内容的引用与许可说明。"
+    suitable_use_zh: "多模态版权说明、图表复用规范、报告引用模板。"
+    public_display: true
+    public_display_note_zh: "作为许可依据公开引用；使用素材时仍需附具体产品引用。"
+    best_for: ["risk_control", "monthly_intelligence"]
+    risk_note_zh: "改绘或翻译时必须注明修改。"

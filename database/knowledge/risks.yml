@@ -1,0 +1,93 @@
+version: "0.1"
+updated_at: "2026-07-01"
+
+risks:
+  - id: "RISK-001"
+    name_zh: "农业知识助手幻觉与过度确定"
+    scenario_ids: ["SCENARIO-005"]
+    resource_ids: ["RES-0032", "RES-0033", "RES-0044", "RES-0045", "RES-0095", "RES-0098"]
+    severity: "high"
+    risk_zh: "生成式 AI 可能把不完整、跨地区或过期知识包装成确定答案。"
+    boundary_zh: "定位为检索、解释、分诊和草稿生成；高风险建议必须有人类专家审核。"
+    mitigation_zh: "限定地区、作物和任务；强制引用来源；输出置信度和不可回答条件；保留专家复核记录。"
+
+  - id: "RISK-002"
+    name_zh: "病虫害识别与农药处方风险"
+    scenario_ids: ["SCENARIO-002", "SCENARIO-005"]
+    resource_ids: ["RES-0084", "RES-0093", "RES-0098", "RES-0045"]
+    severity: "high"
+    risk_zh: "误识别或误处方可能造成药害、残留、抗性、环境和食品安全问题。"
+    boundary_zh: "系统可做识别、分级、资料检索和建议草稿，不应自动给出最终用药处方。"
+    mitigation_zh: "保留图片和地块上下文；接入本地标签和法规库；用专家确认作为处方发布前置条件。"
+
+  - id: "RISK-003"
+    name_zh: "农业保险、信贷和金融风控自动决策"
+    scenario_ids: ["SCENARIO-011"]
+    resource_ids: ["RES-0086", "RES-0046", "RES-0016", "RES-0018"]
+    severity: "high"
+    risk_zh: "模型风险分数如果直接用于拒保、定价或授信，可能产生合规、公平性和解释性问题。"
+    boundary_zh: "先做查勘辅助、风险分层和人工审核工具，不做全自动金融决策。"
+    mitigation_zh: "记录输入数据、模型版本、解释因素和人工决策链；按本地金融/保险监管复核。"
+
+  - id: "RISK-004"
+    name_zh: "农业数据权属与平台锁定"
+    scenario_ids: ["SCENARIO-006", "SCENARIO-010"]
+    resource_ids: ["RES-0023", "RES-0027", "RES-0028", "RES-0079", "RES-0080", "RES-0095"]
+    severity: "high"
+    risk_zh: "农场记录、设备遥测、处方图和产量数据进入平台后，权属、导出和二次使用边界可能不清。"
+    boundary_zh: "平台建设必须把数据所有权、授权、导出、删除、共享和二次训练写进合同或治理规则。"
+    mitigation_zh: "优先采用标准化字段和可导出格式；建立数据目录、访问权限和供应商退出方案。"
+
+  - id: "RISK-005"
+    name_zh: "气候预测确定性叙事"
+    scenario_ids: ["SCENARIO-007", "SCENARIO-009", "SCENARIO-011"]
+    resource_ids: ["RES-0026", "RES-0091", "RES-0018", "RES-0046"]
+    severity: "medium"
+    risk_zh: "气候模型和遥感异常信号存在不确定性，若被包装成确定预测会误导采购、保险和政策决策。"
+    boundary_zh: "只用概率、情景、置信区间和触发条件表达，不做单点确定性承诺。"
+    mitigation_zh: "保留历史回测、模型校准、情景假设和人工解释，明确适用时间窗。"
+
+  - id: "RISK-006"
+    name_zh: "公共数据许可、稳定性和尺度误用"
+    scenario_ids: ["SCENARIO-001", "SCENARIO-004", "SCENARIO-008", "SCENARIO-013", "SCENARIO-014"]
+    resource_ids: ["RES-0014", "RES-0015", "RES-0016", "RES-0043", "RES-0049", "RES-0052"]
+    severity: "medium"
+    risk_zh: "公开数据可以降低原型成本，但许可、更新频率、空间尺度和服务稳定性未必适合正式商业系统。"
+    boundary_zh: "原型和报告引用可以使用公共数据；商业部署前必须逐项核验许可和服务条款。"
+    mitigation_zh: "建立来源清单、版本日期、许可备注、替代数据源和本地缓存策略。"
+
+  - id: "RISK-007"
+    name_zh: "企业官方 ROI 数字外推"
+    scenario_ids: ["SCENARIO-001", "SCENARIO-003", "SCENARIO-006", "SCENARIO-014"]
+    resource_ids: ["RES-0024", "RES-0042", "RES-0088", "RES-0094", "RES-0097", "RES-0100"]
+    severity: "medium"
+    risk_zh: "企业案例中的节省、增产或覆盖数字通常来自特定作物、地区、价格和客户条件。"
+    boundary_zh: "企业数字只能作为案例线索和假设上限，不能直接作为客户项目 ROI 结论。"
+    mitigation_zh: "把每个数字拆成来源、条件、地区、作物和日期；用客户基准数据重算敏感性区间。"
+
+  - id: "RISK-008"
+    name_zh: "跨区域迁移与本地化不足"
+    scenario_ids: ["SCENARIO-001", "SCENARIO-004", "SCENARIO-013", "SCENARIO-014"]
+    resource_ids: ["RES-0048", "RES-0049", "RES-0051", "RES-0052", "RES-0073", "RES-0092"]
+    severity: "medium"
+    risk_zh: "美国、欧洲或温室场景中的数据、经营结构和技术效果不能直接迁移到其他国家或露天大田。"
+    boundary_zh: "跨国交付必须标注地域口径，并寻找本地价格、成本、政策和样本数据替代。"
+    mitigation_zh: "先做国家/区域适配表；把不可迁移假设列为尽调问题，而不是默认成立。"
+
+  - id: "RISK-009"
+    name_zh: "农业机器人与自动化作业安全"
+    scenario_ids: ["SCENARIO-003", "SCENARIO-012"]
+    resource_ids: ["RES-0042", "RES-0088"]
+    severity: "high"
+    risk_zh: "自动化执行涉及人机安全、误伤作物、设备维护、地形适应和现场责任划分。"
+    boundary_zh: "试点应在边界清楚、人员隔离和任务可控的场景进行，不以模型识别准确率替代现场安全评估。"
+    mitigation_zh: "设置停机机制、作业日志、责任边界、培训记录和现场巡检流程。"
+
+  - id: "RISK-010"
+    name_zh: "可持续、MRV 和碳相关结论审计风险"
+    scenario_ids: ["SCENARIO-007", "SCENARIO-006"]
+    resource_ids: ["RES-0091", "RES-0089", "RES-0095"]
+    severity: "high"
+    risk_zh: "MRV、减排、再生农业或土壤碳结论如果缺少方法学和审计链，容易变成不可验证宣传。"
+    boundary_zh: "平台可做数据收集、监测和项目管理；对外声明必须绑定方法学、审计和监管要求。"
+    mitigation_zh: "保留活动数据、遥感证据、模型版本、方法学引用、第三方审核和不确定性说明。"
