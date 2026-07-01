@@ -87,10 +87,10 @@ Agri AI/
 - 农业 AI 技术地图：计算机视觉、遥感、时序预测、生成式 AI、知识图谱、边缘 AI、机器人、数字孪生。
 - 农业数据底座：遥感、IoT、农机、气象、土壤、农艺记录、市场与供应链、文献和词表。
 - 国际政策与趋势：FAO、OECD-FAO、欧盟 CAP、欧盟农业数据空间、AIM for Climate、WFP。
-- 公开数据源：Sentinel-2、Landsat、NASA POWER、ERA5、OpenET、FAOSTAT、SoilGrids、USDA Quick Stats、CropScape。
+- 公开数据源：Sentinel-2、Landsat、NASA POWER、ERA5、OpenET、WaPOR、GAEZ、FAOSTAT、SoilGrids、USDA Quick Stats、USDA Census of Agriculture、ARMS、CropScape、NLCD。
 - 标准与互操作：ISO 11783 / ISOBUS、ISOBUS Data Dictionary、AgGateway ADAPT、STAC、AGROVOC。
 - 标杆案例：John Deere See & Spray、CropX、xFarm、ClimateAi、OpenET、Google Earth Engine、Carbon Robotics。
-- 应用场景：智能灌溉、病虫害预警、精准喷洒、产量预测、农技助手、农业保险、供应链风险、农机互操作。
+- 应用场景：智能灌溉、病虫害预警、精准喷洒、产量预测、农技助手、农业保险、供应链风险、农机互操作、区域作物适宜性、农场经营基准与 ROI。
 
 ## 维护原则
 

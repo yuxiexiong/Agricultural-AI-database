@@ -26,6 +26,8 @@
 | [`resources/cases.yml`](./resources/cases.yml) | 标杆案例二次结构化卡片 |
 | [`resources/vendors.yml`](./resources/vendors.yml) | 企业和项目生态观察 |
 
+当前来源层已按高可信来源优先扩展，新增资源应优先选择 A/B 级一手来源，并通过 `resource_ids` 进入可调用的 `datasets`、`claims` 或 `scenarios`。
+
 ## Knowledge 层
 
 | 文件 | 内容 |

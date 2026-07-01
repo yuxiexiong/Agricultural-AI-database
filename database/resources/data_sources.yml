@@ -417,3 +417,297 @@ resources:
   - technology_selection
   - risk_control
   local_downloaded: false
+- id: RES-0047
+  title: FAO Hand-in-Hand Geospatial Platform
+  title_zh: FAO 手拉手地理空间平台
+  url: https://www.fao.org/hih-geospatial-platform/en/
+  source_name: FAO
+  source_type: official_international
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - geospatial_ai
+  - data_platform
+  - food_security
+  - public_data
+  - decision_support
+  linked_material_ids:
+  - DATA-031
+  - SRC-047
+  summary_zh: FAO 开放地理空间平台，整合粮食安全指标、农业统计和来自 FAO、UN、NGO、学术、私营部门与空间机构的数据层。
+  why_it_matters_zh: 适合国际农业大数据项目做国家/区域级数据底座、投资优先级分析和公共治理场景。
+  best_for:
+  - consulting_report
+  - data_architecture
+  - monthly_intelligence
+  callable_use_cases:
+  - "按国家/区域检索粮食安全和农业空间数据"
+  - "支撑区域农业投资、风险和数据底座章节"
+  local_downloaded: false
+- id: RES-0048
+  title: WaPOR, remote sensing for water productivity
+  title_zh: FAO WaPOR 农业水生产力遥感数据库
+  url: https://www.fao.org/in-action/remote-sensing-for-water-productivity/en/
+  source_name: FAO
+  source_type: official_international
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - remote_sensing
+  - irrigation
+  - water_productivity
+  - evapotranspiration
+  - decision_support
+  linked_material_ids:
+  - DATA-032
+  - SCN-001
+  - SRC-048
+  summary_zh: FAO 基于卫星数据开发的公开近实时数据库，用于监测不同尺度的农业水生产力，并支持水与土地生产力、水管理等应用。
+  why_it_matters_zh: 是智能灌溉、水资源管理、干旱监测和水生产率咨询场景的高质量官方数据源。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - roi_model
+  callable_use_cases:
+  - "为智能灌溉场景调用 ET 和水生产力数据源"
+  - "为水资源/干旱管理报告提供官方来源"
+  local_downloaded: false
+- id: RES-0049
+  title: Global Agro-Ecological Zones
+  title_zh: FAO/IIASA 全球农业生态区 GAEZ
+  url: https://www.fao.org/land-water/databases-and-software/gaez/en/
+  source_name: FAO / IIASA
+  source_type: official_international
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - crop_suitability
+  - agro_ecological_zones
+  - potential_yield
+  - climate_risk
+  - land_resources
+  linked_material_ids:
+  - DATA-033
+  - SCN-013
+  - SRC-049
+  summary_zh: FAO 与 IIASA 长期开发的全球农业生态区系统，提供土地水资源、农业气候资源、作物适宜性、潜在产量、实际产量和产量差距等数据与分析。
+  why_it_matters_zh: 适合做作物适宜性、区域选址、气候情景下产量潜力和农业投资优先级分析。
+  best_for:
+  - consulting_report
+  - data_architecture
+  - technology_selection
+  callable_use_cases:
+  - "为作物适宜性和潜在产量分析调用 GAEZ"
+  - "支撑区域选址和农业投资章节"
+  local_downloaded: false
+- id: RES-0050
+  title: Global Information and Early Warning System on Food and Agriculture
+  title_zh: FAO GIEWS 全球粮农信息与预警系统
+  url: https://www.fao.org/giews/en/
+  source_name: FAO
+  source_type: official_international
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - food_security
+  - early_warning
+  - market_monitoring
+  - crop_prospects
+  - risk_monitoring
+  linked_material_ids:
+  - DATA-034
+  - SCN-009
+  - SRC-050
+  summary_zh: FAO 全球粮农信息与预警系统，持续监测各国粮食安全并提示新出现的粮食短缺风险，提供报告、国家分析、数据和工具。
+  why_it_matters_zh: 适合月度行业情报、粮食安全预警、区域风险和农产品市场监测。
+  best_for:
+  - monthly_intelligence
+  - consulting_report
+  - risk_control
+  callable_use_cases:
+  - "生成粮食安全和作物前景月报时调用"
+  - "为区域风险预警和市场监测提供官方来源"
+  local_downloaded: false
+- id: RES-0051
+  title: USDA Census of Agriculture
+  title_zh: USDA 农业普查
+  url: https://www.nass.usda.gov/AgCensus/
+  source_name: USDA National Agricultural Statistics Service
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - us
+  tags:
+  - ag_statistics
+  - farm_structure
+  - county_data
+  - production_practices
+  - official_statistics
+  linked_material_ids:
+  - DATA-035
+  - SRC-051
+  summary_zh: 美国每五年一次的农业普查，覆盖农场和牧场、经营者、土地使用、所有权、生产实践、收入和支出等。
+  why_it_matters_zh: 适合美国农业市场、农场结构、客户画像、地理扩张和政策背景分析。
+  best_for:
+  - market_context
+  - consulting_report
+  - data_architecture
+  callable_use_cases:
+  - "按州/县调用美国农场结构和经营背景数据"
+  - "支撑美国市场进入和客户画像章节"
+  local_downloaded: false
+- id: RES-0052
+  title: ARMS Farm Financial and Crop Production Practices
+  title_zh: USDA ERS ARMS 农场财务与生产实践数据
+  url: https://www.ers.usda.gov/data-products/arms-farm-financial-and-crop-production-practices/
+  source_name: USDA Economic Research Service
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - us
+  tags:
+  - farm_finance
+  - production_practices
+  - resource_use
+  - economics
+  - api
+  linked_material_ids:
+  - DATA-036
+  - ROI-007
+  - SRC-052
+  summary_zh: USDA ERS 农业资源管理调查，是美国农场生产实践、资源使用、经济状况和农户/牧场主福祉的重要数据源，并提供交互工具和 API。
+  why_it_matters_zh: 适合农业 AI ROI、经营基准、资源使用和客户财务画像分析。
+  best_for:
+  - roi_model
+  - market_context
+  - data_architecture
+  callable_use_cases:
+  - "为 ROI 章节调用农场财务和资源使用基准"
+  - "为美国客户分层和经营画像提供权威数据"
+  local_downloaded: false
+- id: RES-0053
+  title: USDA Ag Data Commons
+  title_zh: USDA Ag Data Commons 农业研究数据目录
+  url: https://www.nal.usda.gov/services/agdatacommons
+  source_name: USDA National Agricultural Library
+  source_type: government
+  resource_type: data_catalog
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - us
+  tags:
+  - data_catalog
+  - research_data
+  - agricultural_research
+  - metadata
+  - open_data
+  linked_material_ids:
+  - DATA-037
+  - SRC-053
+  summary_zh: USDA 国家农业图书馆提供的农业研究数据目录，用于发现、描述和复用农业科学数据集。
+  why_it_matters_zh: 适合构建农业 AI 数据发现层，补充训练数据、研究数据和元数据治理线索。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - consulting_report
+  callable_use_cases:
+  - "检索 USDA 资助或关联的农业研究数据集"
+  - "为数据目录和元数据治理方案提供官方样板"
+  local_downloaded: false
+- id: RES-0054
+  title: NAL Agricultural Thesaurus
+  title_zh: USDA NAL 农业叙词表 NALT
+  url: https://lod.nal.usda.gov/nalt/en/
+  source_name: USDA National Agricultural Library
+  source_type: government
+  resource_type: vocabulary
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year: 2022
+  region:
+  - global
+  - us
+  tags:
+  - vocabulary
+  - linked_data
+  - knowledge_graph
+  - semantic_interoperability
+  - machine_readable
+  linked_material_ids:
+  - STD-007
+  - DATA-038
+  - SRC-054
+  summary_zh: USDA NAL 农业叙词表，覆盖农业、生物和相关学科，已作为面向机器时代的多方案语义系统发布，支持互操作、可扩展和机器可读。
+  why_it_matters_zh: 适合农业知识图谱、英文/西文语义检索、元数据规范和多系统术语对齐。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - risk_control
+  callable_use_cases:
+  - "为农业知识图谱和标签规范调用术语来源"
+  - "为多语言/跨系统语义互操作提供词表依据"
+  local_downloaded: false
+- id: RES-0055
+  title: National Land Cover Database
+  title_zh: USGS 国家土地覆盖数据库 NLCD
+  url: https://www.usgs.gov/centers/eros/science/national-land-cover-database
+  source_name: U.S. Geological Survey
+  source_type: government
+  resource_type: data_portal
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - us
+  tags:
+  - land_cover
+  - remote_sensing
+  - landsat
+  - geospatial_ai
+  - environmental_context
+  linked_material_ids:
+  - DATA-039
+  - SRC-055
+  summary_zh: USGS EROS 牵头的 Landsat 30 米土地覆盖数据库，是美国土地覆盖、生态状态、土地管理和气候影响分析的重要基础数据。
+  why_it_matters_zh: 适合为农业遥感模型补充土地覆盖、周边环境和区域变化背景。
+  best_for:
+  - data_architecture
+  - technology_selection
+  - risk_control
+  callable_use_cases:
+  - "为美国农业遥感模型调用土地覆盖背景层"
+  - "支撑土地利用变化和环境风险章节"
+  local_downloaded: false

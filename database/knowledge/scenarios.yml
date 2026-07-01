@@ -133,3 +133,25 @@ scenarios:
     business_value_zh: "应对劳动力短缺、提升作业一致性，并把 AI 从建议层推进到执行层。"
     implementation_risks_zh: "安全、维护、地形适应、设备成本和售后体系比模型本身更关键。"
     first_pilot_zh: "优先选择边界清楚、作业重复、经济价值高的任务，比如除草、巡检或采收辅助。"
+
+  - id: "SCENARIO-013"
+    name_zh: "区域作物适宜性与农业投资选址"
+    priority: "high"
+    fit_for: ["consulting_report", "market_context", "technology_selection"]
+    data_needs: ["agro_climate", "soil", "land_cover", "water_resources", "crop_suitability", "market_access"]
+    ai_methods: ["multi_criteria_screening", "spatial_overlay", "scenario_analysis", "risk_scoring"]
+    resource_ids: ["RES-0047", "RES-0049", "RES-0020", "RES-0018", "RES-0055"]
+    business_value_zh: "帮助政府、园区、农企和投资机构判断不同区域适合发展哪些作物、潜在产量和约束条件。"
+    implementation_risks_zh: "中宏观适宜性分析不能直接替代地块尽调；市场、基础设施、政策和供应链也会改变最终可行性。"
+    first_pilot_zh: "选择 1 个国家或省级区域、2-3 个目标作物，用 GAEZ/土壤/气候/土地覆盖做第一版机会地图。"
+
+  - id: "SCENARIO-014"
+    name_zh: "农场经营基准与 ROI 评估"
+    priority: "medium"
+    fit_for: ["roi_model", "consulting_report", "market_context"]
+    data_needs: ["farm_structure", "farm_finance", "production_practices", "resource_use", "operator_characteristics"]
+    ai_methods: ["benchmarking", "segmentation", "cost_benefit_model", "adoption_readiness_scoring"]
+    resource_ids: ["RES-0051", "RES-0052", "RES-0036"]
+    business_value_zh: "用权威统计和经营数据建立客户画像、ROI 假设和市场进入基准，减少只靠供应商宣传估算价值。"
+    implementation_risks_zh: "美国基准数据不能直接迁移到其他国家；用于客户估算时需标注地域和口径限制。"
+    first_pilot_zh: "先针对美国一个作物或区域，建立农场规模、资源使用、成本收益和技术采纳假设表。"

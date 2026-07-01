@@ -146,3 +146,111 @@ datasets:
     best_use: ["knowledge_graph", "metadata_standardization", "multilingual_search"]
     limitations_zh: "词表解决语义一致性，不直接解决数据质量和模型准确率。"
     consulting_angle_zh: "适合支撑农业知识图谱、多语言检索和跨系统元数据治理。"
+
+  - id: "DATASET-013"
+    name: "FAO Hand-in-Hand Geospatial Platform"
+    name_zh: "FAO 手拉手地理空间平台"
+    resource_ids: ["RES-0047"]
+    data_domain: ["food_security", "agricultural_statistics", "geospatial_layers", "investment_targeting"]
+    spatial_scale: ["country", "region", "subnational", "global"]
+    temporal_scale: ["varies_by_layer"]
+    access_pattern: "web_platform_data_catalog"
+    best_use: ["country_diagnostics", "investment_prioritization", "public_sector_consulting"]
+    limitations_zh: "数据层来自多来源，具体指标的更新频率、许可和空间尺度需逐项核验。"
+    consulting_angle_zh: "适合作为国际农业大数据平台的公共部门样板，支撑国家/区域级农业投资和风险研判。"
+
+  - id: "DATASET-014"
+    name: "FAO WaPOR"
+    name_zh: "FAO WaPOR 农业水生产力遥感数据"
+    resource_ids: ["RES-0048"]
+    data_domain: ["evapotranspiration", "water_productivity", "irrigation", "land_productivity"]
+    spatial_scale: ["field_approx", "scheme", "basin", "country"]
+    temporal_scale: ["near_real_time", "seasonal", "multi_year"]
+    access_pattern: "web_portal_geospatial_data"
+    best_use: ["irrigation_advisory", "water_productivity", "drought_monitoring", "roi_model"]
+    limitations_zh: "遥感水生产力数据需结合本地灌溉制度、作物和地面观测校准。"
+    consulting_angle_zh: "可直接服务智能灌溉、水资源管理和节水 ROI 论证。"
+
+  - id: "DATASET-015"
+    name: "FAO/IIASA GAEZ"
+    name_zh: "全球农业生态区 GAEZ"
+    resource_ids: ["RES-0049"]
+    data_domain: ["crop_suitability", "potential_yield", "yield_gap", "agro_climate", "land_resources"]
+    spatial_scale: ["region", "country", "global"]
+    temporal_scale: ["historical", "current", "future_climate_scenarios"]
+    access_pattern: "web_portal_download_analysis"
+    best_use: ["crop_suitability", "site_selection", "climate_scenario_analysis", "investment_screening"]
+    limitations_zh: "适合中宏观适宜性和潜力评估，地块级经营决策仍需本地数据和专家校准。"
+    consulting_angle_zh: "适合回答“哪里适合种什么、潜在产量有多大、气候变化下风险如何变化”。"
+
+  - id: "DATASET-016"
+    name: "FAO GIEWS"
+    name_zh: "FAO 全球粮农信息与预警系统"
+    resource_ids: ["RES-0050"]
+    data_domain: ["food_security", "crop_prospects", "market_monitoring", "early_warning", "food_prices"]
+    spatial_scale: ["country", "region", "global"]
+    temporal_scale: ["continuous_monitoring", "monthly_reports"]
+    access_pattern: "reports_country_briefs_data_tools"
+    best_use: ["monthly_intelligence", "food_security_risk", "market_context"]
+    limitations_zh: "更适合国家和区域风险监测，不适合直接替代企业地块级产量模型。"
+    consulting_angle_zh: "适合月度情报和粮食安全风险章节，补充政策与市场预警依据。"
+
+  - id: "DATASET-017"
+    name: "USDA Census of Agriculture"
+    name_zh: "USDA 农业普查"
+    resource_ids: ["RES-0051"]
+    data_domain: ["farm_structure", "land_use", "operator_characteristics", "production_practices", "income_expenses"]
+    spatial_scale: ["national", "state", "county"]
+    temporal_scale: ["five_year"]
+    access_pattern: "web_tables_quickstats_reports"
+    best_use: ["us_market_entry", "customer_segmentation", "farm_structure_baseline"]
+    limitations_zh: "美国官方统计，适合宏观和县域分析；不能代表其他国家，也不能替代实时经营数据。"
+    consulting_angle_zh: "适合美国市场进入、客户画像、区域机会筛选和政策背景。"
+
+  - id: "DATASET-018"
+    name: "USDA ERS ARMS"
+    name_zh: "USDA ERS 农业资源管理调查"
+    resource_ids: ["RES-0052"]
+    data_domain: ["farm_finance", "resource_use", "production_practices", "farm_household", "management"]
+    spatial_scale: ["national", "state_optional", "farm_type"]
+    temporal_scale: ["annual_or_survey_cycle"]
+    access_pattern: "webtool_api_bulk_file"
+    best_use: ["roi_benchmark", "farm_finance_context", "resource_use_analysis"]
+    limitations_zh: "ARMS 反映美国农场经营与财务结构，跨国项目需要寻找当地等价数据。"
+    consulting_angle_zh: "适合支撑农业 AI ROI、经营基准、资源使用和客户财务画像。"
+
+  - id: "DATASET-019"
+    name: "USDA Ag Data Commons"
+    name_zh: "USDA Ag Data Commons 农业研究数据目录"
+    resource_ids: ["RES-0053"]
+    data_domain: ["research_datasets", "metadata", "agricultural_science", "data_discovery"]
+    spatial_scale: ["varies_by_dataset"]
+    temporal_scale: ["varies_by_dataset"]
+    access_pattern: "data_catalog_search"
+    best_use: ["dataset_discovery", "research_evidence", "training_data_leads"]
+    limitations_zh: "它是数据发现入口，不保证每个数据集都适合商业部署或模型训练。"
+    consulting_angle_zh: "适合为农业 AI 项目寻找研究数据、样例数据和元数据治理参考。"
+
+  - id: "DATASET-020"
+    name: "NAL Agricultural Thesaurus"
+    name_zh: "USDA NALT 农业叙词表"
+    resource_ids: ["RES-0054"]
+    data_domain: ["vocabulary", "linked_data", "semantic_search", "knowledge_graph"]
+    spatial_scale: ["global"]
+    temporal_scale: ["versioned_vocabulary"]
+    access_pattern: "linked_data_rdf_turtle"
+    best_use: ["metadata_standardization", "knowledge_graph", "semantic_interoperability"]
+    limitations_zh: "词表用于语义规范和检索，不直接提供农业生产或市场数据。"
+    consulting_angle_zh: "适合为农业知识图谱、英文/西文农业术语标准化和元数据体系提供依据。"
+
+  - id: "DATASET-021"
+    name: "USGS National Land Cover Database"
+    name_zh: "USGS NLCD 土地覆盖数据库"
+    resource_ids: ["RES-0055"]
+    data_domain: ["land_cover", "remote_sensing", "environmental_context", "land_use_change"]
+    spatial_scale: ["pixel_30m", "county", "state", "us"]
+    temporal_scale: ["multi_year"]
+    access_pattern: "web_tools_download"
+    best_use: ["land_cover_context", "remote_sensing_features", "environmental_risk"]
+    limitations_zh: "覆盖美国，30 米土地覆盖适合背景层，不等同于作物类型或地块边界。"
+    consulting_angle_zh: "适合为美国农业遥感和地块周边环境分析补充土地覆盖背景。"

@@ -150,3 +150,36 @@ resources:
   - risk_control
   - monthly_intelligence
   local_downloaded: false
+- id: RES-0056
+  title: CGIAR AI Hub
+  title_zh: CGIAR AI Hub 农业人工智能枢纽
+  url: https://www.cgiar.org/cgiar-research-portfolio-2025-2030/digital-transformation/cgiar-ai-hub/
+  source_name: CGIAR
+  source_type: public_research
+  resource_type: project
+  quality_tier: A
+  verification_status: verified
+  verified_at: '2026-07-01'
+  publication_year:
+  region:
+  - global
+  tags:
+  - generative_ai
+  - agricultural_research
+  - digital_transformation
+  - decision_support
+  - ai_products
+  linked_material_ids:
+  - TECH-018
+  - CASE-013
+  - SRC-056
+  summary_zh: CGIAR AI Hub 将 CGIAR 的农业数据、科研知识和合作网络转化为面向食品、土地和水系统的实用 AI 工具与产品。
+  why_it_matters_zh: 适合支撑农业大模型、农业 AI 产品化、研究到决策转化和国际公共科研网络相关内容。
+  best_for:
+  - technology_selection
+  - consulting_report
+  - content_ip
+  callable_use_cases:
+  - "为农业大模型/AgriLLM 章节调用国际公共科研案例"
+  - "支撑从科研数据到 AI 产品的转化路径"
+  local_downloaded: false

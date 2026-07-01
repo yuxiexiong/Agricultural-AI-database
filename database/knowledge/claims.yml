@@ -81,3 +81,27 @@ claims:
     use_for: ["technology_selection", "risk_control", "consulting_report"]
     content_angle_zh: "适合提醒客户：公开数据是起点，不是完整产品。"
     caution_zh: "部分公共数据允许研究使用但商业使用条件不同，需逐项核验。"
+
+  - id: "CLAIM-011"
+    claim_zh: "高质量农业 AI 资料库应把宏观统计、空间数据、经营数据、词表标准和场景知识分层管理，单一资料来源无法覆盖完整决策链。"
+    evidence_level: "strong"
+    resource_ids: ["RES-0047", "RES-0051", "RES-0052", "RES-0054", "RES-0049"]
+    use_for: ["consulting_report", "data_architecture", "technology_selection"]
+    content_angle_zh: "适合解释为什么数据库需要分层：国家/区域看 FAO/USDA，空间适宜性看 GAEZ/遥感，经营 ROI 看 ARMS，语义互操作看 NALT/AGROVOC。"
+    caution_zh: "分层管理不等于所有数据都可直接合并，必须处理尺度、口径、许可和更新频率差异。"
+
+  - id: "CLAIM-012"
+    claim_zh: "水资源和灌溉是农业 AI 最适合用遥感数据形成闭环的场景之一，因为蒸散发、水生产力和作物状态可以被持续观测。"
+    evidence_level: "strong"
+    resource_ids: ["RES-0016", "RES-0048", "RES-0017", "RES-0018"]
+    use_for: ["roi_model", "technology_selection", "content_ip"]
+    content_angle_zh: "适合写智能灌溉内容：不是先卖传感器，而是先建立 ET、天气、作物阶段和地块管理的水分决策闭环。"
+    caution_zh: "遥感 ET 仍需要本地灌溉制度、土壤和农艺规则校准，不能直接替代田间管理。"
+
+  - id: "CLAIM-013"
+    claim_zh: "农业大模型真正进入生产决策，需要把公共科研知识、可机器读取的数据和产品化流程连接起来，而不是只做通用问答。"
+    evidence_level: "moderate"
+    resource_ids: ["RES-0056", "RES-0032", "RES-0033", "RES-0044", "RES-0045"]
+    use_for: ["content_ip", "technology_selection", "risk_control"]
+    content_angle_zh: "适合用于农业大模型章节：农业 AI 的关键不是会说，而是能把科研、数据、农艺规则和现实决策连接成产品。"
+    caution_zh: "CGIAR AI Hub 是公共科研与产品化方向案例，不能直接代表所有商业农业大模型的成熟度。"
